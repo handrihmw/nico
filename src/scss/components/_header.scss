@@ -1,0 +1,80 @@
+/* Arunika Header */
+$header-style: ("default"),
+("center"),
+("center--image"),
+("corner"),
+("right"),
+("right--image");
+
+@each $header in $header-style {
+  .co-header-#{nth($header,1)} {
+    background-image: $clr-grad-blue;
+    background-repeat: no-repeat;
+    height: auto;
+    position: relative;
+
+    @if nth($header, 1)=='center' {
+      background-image: url("/src/images/header/accent-center-sm.svg"), $clr-grad-blue;
+      background-position: center;
+
+      @include screen(desktop) {
+        background-image: url("/src/images/header/accent-center.svg"), $clr-grad-blue;
+      }
+    }
+
+    @if nth($header, 1)=='center--image' {
+      background-image: $clr-grad-blue;
+      background-position: center;
+
+      @include screen(desktop) {
+        background-image: url("/src/images/header/accent-center.svg"), $clr-grad-blue;
+      }
+    }
+
+    @if nth($header, 1)=='corner' {
+      background-image: url("/src/images/header/accent-corner-bottom.svg"), $clr-grad-blue;
+      background-size: auto;
+      background-position: right bottom;
+
+      @include screen(desktop) {
+        background-image: url("/src/images/header/accent-corner.svg"), $clr-grad-blue;
+        background-position: right 0;
+      }
+    }
+
+    @if nth($header, 1)=='right' {
+      background-image: $clr-grad-blue;
+
+      @include screen(desktop) {
+        background-image: url("/src/images/header/accent-right.svg"), $clr-grad-blue;
+        background-size: auto;
+        background-position: right 50%;
+      }
+
+
+      @media only screen and (min-width: 1920px) {
+        background-image: $clr-grad-blue;
+      }
+    }
+
+    @if nth($header, 1)=='right--image' {
+      background-image: url("/src/images/header/accent-corner-bottom.svg"), $clr-grad-blue;
+      background-size: auto;
+      background-position: right bottom;
+
+      @include screen(desktop) {
+        background-image: url("/src/images/header/accent-right.svg"), $clr-grad-blue;
+        background-size: auto;
+        background-position: right 50%;
+      }
+
+      @media only screen and (min-width: 1920px) {
+        background-image: $clr-grad-blue;
+      }
+    }
+
+    @if nth($header, 1)=='default' {
+      background-image: $clr-grad-blue;
+    }
+  }
+}

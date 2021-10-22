@@ -1,0 +1,21 @@
+.co-background {
+  &--white {
+    background-color: $clr-white;
+    color: $clr-text-400;
+  }
+
+  &--soft {
+    background-color: $clr-soft-200;
+    color: $clr-text-400;
+  }
+
+  &--blue {
+    background: $clr-grad-blue;
+    color: $clr-white;
+  }
+
+  &--dark {
+    background-color: $clr-dark-200;
+    color: $clr-white;
+  }
+}

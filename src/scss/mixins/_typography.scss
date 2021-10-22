@@ -1,0 +1,214 @@
+@mixin as-typo($font-size, $line-height: normal, $letter-spacing: normal) {
+  font-size: #{$font-size / 16 }rem;
+
+  @if $line-height==normal {
+    line-height: normal;
+  }
+
+  @else {
+    line-height: #{$line-height / 16 }rem;
+  }
+
+  @if $letter-spacing==0 {
+    letter-spacing: normal;
+  }
+
+  @else {
+    letter-spacing: #{$letter-spacing}rem;
+  }
+}
+
+/*
+Read this :
+as-type(font-size, line-height, letter-spacing
+*/
+
+// Heading
+.co-h1 {
+  @include as-typo(56, 64, -0.02);
+  font-family: 'NunitoSansBold', sans-serif;
+  font-weight: 700;
+}
+
+.co-h2 {
+  @include as-typo(40, 56, 0);
+  font-family: 'NunitoSansBold', sans-serif;
+  font-weight: 700;
+}
+
+.co-h3 {
+  @include as-typo(32, 42, 0);
+  font-family: 'NunitoSansBold', sans-serif;
+  font-weight: 700;
+}
+
+.co-h4 {
+  @include as-typo(28, 36, 0);
+  font-family: 'NunitoSansBold', sans-serif;
+  font-weight: 700;
+}
+
+.co-h5 {
+  @include as-typo(24, 32, 0.0025);
+  font-family: 'NunitoSansBold', sans-serif;
+  font-weight: 700;
+}
+
+.co-h6 {
+  @include as-typo(20, 26, 0.005);
+  font-family: 'NunitoSansBold', sans-serif;
+  font-weight: 700;
+}
+
+.co-h7 {
+  @include as-typo(18, 27, 0.02);
+  font-family: 'NunitoSansBold', sans-serif;
+  font-weight: 700;
+}
+
+.co-h8 {
+  @include as-typo(16, 24, 0.05);
+  font-family: 'NunitoSansBold', sans-serif;
+  font-weight: 700;
+}
+
+// Sub Heading
+.co-sub {
+  &-1 {
+    @include as-typo(20, 24, 0.005);
+    font-family: "NunitoSansBold", sans-serif;
+    font-weight: 600;
+  }
+
+  &-2 {
+    @include as-typo(20, 24, 0.005);
+    font-family: "NunitoSansBold", sans-serif;
+    font-weight: 600;
+  }
+
+  &-3 {
+    @include as-typo(18, 24, 0.005);
+    font-family: "NunitoSansBold", sans-serif;
+    font-weight: 600;
+  }
+
+  &-4 {
+    @include as-typo(16, 24, 0.005);
+    font-family: "NunitoSansBold", sans-serif;
+    font-weight: 600;
+  }
+
+  &-5 {
+    @include as-typo(14, 24, 0.005);
+    font-family: "NunitoSansBold", sans-serif;
+    font-weight: 600;
+  }
+
+  &-6 {
+    @include as-typo(12, 24, 0.005);
+    font-family: "NunitoSansBold", sans-serif;
+    font-weight: 600;
+  }
+}
+
+// Body Text
+.co-body {
+  &-1 {
+    @include as-typo(20, 34, 0.005);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+
+  &-2 {
+    @include as-typo(18, 32, 0.005);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+
+  &-3 {
+    @include as-typo(16, 32, 0.005);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+
+  &-4 {
+    @include as-typo(14, 24, 0.005);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+
+  &-5 {
+    @include as-typo(12, 24, 0.005);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+
+  &-16-alt {
+    @include as-typo(16, 32, 0.02);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+
+  &-14-alt {
+    @include as-typo(14, 24, 0.02);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+
+  &-12-alt {
+    @include as-typo(12, 24, 0);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+}
+
+// Button Text
+.co-button {
+  &-1 {
+    @include as-typo(20, 32, 0.02);
+    font-family: 'NunitoSansBold', sans-serif;
+    font-weight: 700;
+  }
+
+  &-2 {
+    @include as-typo(18, 32, 0.02);
+    font-family: 'NunitoSansBold', sans-serif;
+    font-weight: 700;
+  }
+
+  &-3 {
+    @include as-typo(16, 24, 0.02);
+    font-family: 'NunitoSansBold', sans-serif;
+    font-weight: 700;
+  }
+
+  &-4 {
+    @include as-typo(16, 24, 0.02);
+    font-family: 'NunitoSansBold', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  &-5 {
+    @include as-typo(14, 16, 0.02);
+    font-family: 'NunitoSansBold', sans-serif;
+    font-weight: 700;
+  }
+
+  &-6 {
+    @include as-typo(16, 24, 0.02);
+    font-family: 'NunitoSansBold', sans-serif;
+    font-weight: 700;
+  }
+}
+
+// Caption Text
+.co-caption {
+  &-1 {
+    @include as-typo(14, 16, 0.02);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+
+  &-2 {
+    @include as-typo(12, 16, 0.02);
+    font-family: "NunitoSansRegular", sans-serif;
+  }
+}
+
+.co-overline {
+  @include as-typo(16, 24, 0.04);
+  font-family: "NunitoSansBold", sans-serif;
+  font-weight: 700;
+}

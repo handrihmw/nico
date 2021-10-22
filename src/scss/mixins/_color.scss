@@ -1,0 +1,68 @@
+/* for font-color & background-color */
+$colors: (
+  white: (
+    100: #fff
+  ),
+  blue: (
+    100: #f5faff,
+    200: #e0efff,
+    300: #94ccf7,
+    400: #2199fa,
+    500: #007aff,
+    600: #0057b2
+  ),
+  green: (
+    100: #adebe3,
+    200: #00bfa6,
+    300: #00897b
+  ),
+  orange: (
+    100: #ffe082,
+    200: #ff9800,
+    300: #c77700
+  ),
+  red: (
+    100: #fbb2b2,
+    200: #f43636,
+    300: #a83232
+  ),
+  yellow: (
+    100: #ffedb8,
+    200: #ffc721,
+    300: #ffb547
+  ),
+  gray: (
+    100: #f2f2f2,
+    200: #ededed,
+    300: #ececec,
+    400: #f3faf6,
+    500: #e0e0e0,
+    600: #a9afb8,
+    700: #808080
+  ),
+  dark: (
+    100: #7f8895,
+    200: #546071,
+    300: #29384e,
+    400: #22273c,
+    500: #121212
+  ),
+  transparent: (
+    100: transparent
+  )
+);
+
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    .co-text--#{$color}-#{$shade} {
+      color: #{$value} !important;
+    }
+    .co-bg--#{$color}-#{$shade} {
+      background-color: #{$value} !important;
+    }
+  }
+}
+
+/* ex: .co-text--green-100,
+        .co-bg--blue-200
+*/

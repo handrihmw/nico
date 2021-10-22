@@ -1,0 +1,133 @@
+$font-path : "src/font" !default;
+
+@font-face {
+  font-family: 'courseicon';
+  src: url('#{$font-path}/courseicon.eot?3y0aat');
+  src: url('#{$font-path}/courseicon.eot?3y0aat#iefix') format('embedded-opentype'),
+  url('#{$font-path}/courseicon.ttf?3y0aat') format('truetype'),
+  url('#{$font-path}/courseicon.woff?3y0aat') format('woff'),
+  url('#{$font-path}/courseicon.svg?3y0aat#courseicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="co-icon-"],
+[class*=" co-icon-"] {
+  font-family: 'courseicon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.co-icon-arrow-bottom:before {
+  content: "\e900";
+}
+
+.co-icon-facebook:before {
+  content: "\e901";
+}
+
+.co-icon-instagram:before {
+  content: "\e902";
+}
+
+.co-icon-linkedin:before {
+  content: "\e903";
+}
+
+.co-icon-twitter:before {
+  content: "\e904";
+}
+
+.co-icon-tag:before {
+  content: "\e905";
+}
+
+.co-icon-eye-open:before {
+  content: "\e906";
+}
+
+.co-icon-eye-close:before {
+  content: "\e907";
+}
+
+.co-icon-prev:before {
+  content: "\e908";
+}
+
+.co-icon-next:before {
+  content: "\e909";
+}
+
+.co-icon-setting:before {
+  content: "\e90a";
+}
+
+.co-icon-page:before {
+  content: "\e90b";
+}
+
+.co-icon-horn:before {
+  content: "\e90c";
+}
+
+.co-icon-bag:before {
+  content: "\e90d";
+}
+
+.co-icon-paint:before {
+  content: "\e90e";
+}
+
+.co-icon-desktop:before {
+  content: "\e90f";
+}
+
+.co-icon-graduation:before {
+  content: "\e910";
+}
+
+.co-icon-sign-up:before {
+  content: "\e911";
+}
+
+.co-icon-login:before {
+  content: "\e912";
+}
+
+.co-icon-logout:before {
+  content: "\e913";
+}
+
+.co-icon-search:before {
+  content: "\e914";
+}
+
+.co-icon-white {
+  color: #fff;
+}
+
+.co-icon-dark {
+  color: #29384e;
+}
+
+.co-icon-xs {
+  font-size: 1.25rem;
+}
+
+.co-icon-sm {
+  font-size: 1.5rem;
+}
+
+.co-icon-md {
+  font-size: 1.75rem;
+}
+
+.co-icon-lg {
+  font-size: 2rem;
+}

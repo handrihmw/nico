@@ -1,0 +1,71 @@
+/* Primary State */
+$clr-blue-100: #e0efff;
+$clr-blue-200: #007dff;
+$clr-blue-300: #0057b2;
+
+/* Secondary State */
+$clr-orange-100: #ffe082;
+$clr-orange-300: #ffc166;
+$clr-orange-400: #ff9800;
+$clr-orange-500: #c77700;
+
+/* Other State */
+$clr-soft-gray: #f3f4f6;
+$clr-gray-100:  #e0e0e0;
+$clr-gray-200:  #c4c4c4;
+$clr-gray-300:  #808080;
+
+/* Button State */
+$clr-btn-text-100: #f2f2f2;
+$clr-btn-text-200: #ededed;
+$clr-btn-disable:  #ececec;
+
+/* Error State */
+$clr-red-100: #fbb2b2;
+$clr-red-200: #f43636;
+$clr-red-300: #a83232;
+
+/* Success State */
+$clr-green-100: #adebe3;
+$clr-green-200: #00bfa6;
+$clr-green-300: #00897b;
+
+/* Warning State */
+$clr-yellow-100: #ffedb8;
+$clr-yellow-200: #ffc721;
+$clr-yellow-300: #ffb547;
+
+/* Text State */
+$clr-text-100: #a9afb8;
+$clr-text-200: #7f8895;
+$clr-text-300: #546071;
+$clr-text-400: #29384e;
+
+$clr-text-soft: hsla(0, 0%, 100%, 0.8);
+
+/* Bcakground State */
+$clr-white:    #ffffff;
+$clr-black:    #121212;
+$clr-soft-200: #f5faff;
+$clr-dark-200: #22273c;
+$clr-hr:       #d9dde3;
+$clr-transparent: transparent;
+
+/* Miscellaneous State */
+$clr-grad-blue: linear-gradient(
+  249.77deg,
+  #0094ff -1.99%,
+  #007dff 43.52%,
+  #026ce8 95.86%
+);
+
+/* Shade State */
+$clr-shade-80:  rgba(18, 18, 18, 0.8);
+$clr-shade-64: rgba(18, 18, 18, 0.64);
+$clr-shade-32: rgba(18, 18, 18, 0.32);
+$clr-shade-18: rgba(18, 18, 18, 0.18);
+$clr-shade-12: rgba(18, 18, 18, 0.12);
+
+/* Color Logo */
+$clr-facebook: #3b5998;
+$clr-google:   #3c6df1;
