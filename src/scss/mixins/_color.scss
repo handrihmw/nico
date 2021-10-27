@@ -54,15 +54,15 @@ $colors: (
 
 @each $color, $shades in $colors {
   @each $shade, $value in $shades {
-    .co-text--#{$color}-#{$shade} {
+    .nc-text--#{$color}-#{$shade} {
       color: #{$value} !important;
     }
-    .co-bg--#{$color}-#{$shade} {
+    .nc-bg--#{$color}-#{$shade} {
       background-color: #{$value} !important;
     }
   }
 }
 
-/* ex: .co-text--green-100,
-        .co-bg--blue-200
+/* ex: .nc-text--green-100,
+        .nc-bg--blue-200
 */

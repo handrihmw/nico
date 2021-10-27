@@ -1,0 +1,176 @@
+@import '../helpers/swipper';
+
+.nc-card {
+  border-color: $clr-white;
+  border-radius: 0.75rem;
+  box-shadow: 0px 8px 16px rgba(0, 87, 128, 0.08);
+  margin: 4rem 1rem;
+  min-height: 515px;
+  width: 95%;
+
+  @include screen(desktop) {
+    width: 90%;
+  }
+
+  &__wrapper {
+    padding: 1.5rem;
+
+    &--top {
+      padding-bottom: 0;
+    }
+
+    &--bottom {
+      padding-top: 0;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__image {
+    @extend %image-render;
+    border-radius: 0.75rem 0.75rem 0 0;
+    height: auto;
+    min-height: 145px;
+    opacity: 1;
+    width: 100%;
+
+    &:hover {
+      opacity: .8;
+      transition: opacity .3s ease-out;
+      -moz-transition: opacity .3s ease-out;
+      -webkit-transition: opacity .3s ease-out;
+      -o-transition: opacity .3s ease-out;
+    }
+
+    @include screen(desktopLarge) {
+      height: 250px;
+    }
+  }
+
+  &__title {
+    @extend %font-16-bold;
+    height: 6.5rem;
+    margin-bottom: 2rem;
+    width: 95%;
+
+    @include screen(desktop) {
+      height: 5rem;
+    }
+  }
+
+  &__line {
+    background-color: $clr-hr;
+    margin-bottom: 1.5rem;
+  }
+
+  &__author {
+    display: flex;
+    gap: 1rem;
+
+    &--image {
+      @extend %image-render;
+      aspect-ratio: 1/1;
+      height: 2.625rem;
+      width: 2.625rem;
+    }
+
+    &--name {
+      @extend %font-14-bold;
+      margin-bottom: 0;
+    }
+
+    &--role {
+      @extend %font-12;
+      color: $clr-text-200;
+      height: 1.5rem;
+    }
+  }
+
+  &__action {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &--button {
+      width: 75%;
+
+      @include screen(desktopLarge) {
+        width: 290px;
+      }
+    }
+
+    &--save {
+      @extend %image-render;
+      aspect-ratio: 1/1;
+      height: 2.5rem;
+      width: 2.5rem;
+
+      &:hover {
+        border: 1px dashed $clr-hr;
+        border-radius: 50%;
+        padding: 1px;
+      }
+    }
+  }
+}
+
+.nc-card__button--prev,
+.nc-card__button--next {
+  background-color: $clr-white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px rgba(0, 87, 128, 0.08);
+  display: none;
+  height: 48px;
+  padding: 2rem;
+  top: 41%;
+  width: 48px;
+
+  @include screen(desktop) {
+    display: block;
+  }
+}
+
+.nc-card__button--prev span,
+.nc-card__button--next span {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  border: solid 3px $clr-text-400;
+  border-left: 0;
+  border-bottom: 0;
+  bottom: 1.5rem;
+  transition: all 0.1s ease;
+}
+
+.nc-card__button--prev:hover span,
+.nc-card__button--next:hover span {
+  width: 13px;
+  height: 13px;
+}
+
+.swiper-button-disabled {
+  &.nc-card__button--prev,
+  &.nc-card__button--next {
+    background-color: lighten($clr-text-100, 10%);
+  }
+
+  &.nc-card__button--prev span,
+  &.nc-card__button--next span {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    border: solid 3px $clr-white;
+    border-left: 0;
+    border-bottom: 0;
+    bottom: 1.5rem;
+    transition: all 0.1s ease;
+  }
+}

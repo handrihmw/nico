@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/app.css">
+</head>
+
+<body>
+
+  <!-- Sign Up Step 2 -->
+  <section class="container-fluid">
+    <div class="row nc-signup">
+      <div class="col-md-12 col-xl-7 nc-signup-left">
+        <h1 class="nc-signup-left__title">Silahkan Mendaftar</h1>
+        <div class="nc-signup-left__button--wrapper">
+          <a href="javascript:void(0)" class="nc-signup-left__button nc-signup-left__button--facebook">
+            <img src="/src/images/registration/facebook.svg" class="nc-signup-left__button--icon" loading="lazy"
+              alt="facebook" />
+            Daftar dengan Facebook
+          </a>
+          <a href="javascript:void(0)" class="nc-signup-left__button nc-signup-left__button--google">
+            <img src="/src/images/registration/google.svg" class="nc-signup-left__button--icon" loading="lazy"
+              alt="google" />
+            Daftar dengan Gmail
+          </a>
+        </div>
+        <div class="nc-signup-left__option">Atau</div>
+        <div class="nc-signup-left__form">
+          <div class="mb-3">
+            <label for="yourusername" class="nc-signup-left__label form-label">Username</label>
+            <input type="text" class="nc-signup-left__input form-control" id="yourusername" placeholder="Contoh: budi"
+              aria-describedby="yourusernamehelp" />
+            <div id="yourusernamehelp" class="nc-signup-left__message">
+              Username yang Anda masukkan tidak valid
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="yourpassword" class="nc-signup-left__label form-label">Password</label>
+            <div class="input-group flex-nowrap">
+              <input type="password" class="nc-signup-left__input nc-signup-left__input--border form-control"
+                id="yourpassword" placeholder="Masukan Password" aria-describedby="yourpasswordhelp" />
+              <span toggle="#yourpassword"
+                class="input-group-text nc-signup-left__input--icon nc-icon-eye-close js-pass-first"></span>
+            </div>
+            <div id="yourpasswordhelp" class="nc-signup-left__message">
+              Minimal 6 karakter dengan kombinasi angka, huruf, dan karakter khusus
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="yourpasswordconf" class="nc-signup-left__label form-label">Konfirmasi Password</label>
+            <div class="input-group flex-nowrap">
+              <input type="password" class="nc-signup-left__input nc-signup-left__input--border form-control"
+                id="yourpasswordconf" placeholder="Konfirmasi Password" aria-describedby="yourpasswordconfhelp" />
+              <span toggle="#yourpasswordconf"
+                class="input-group-text nc-signup-left__input--icon nc-icon-eye-close js-pass-second"></span>
+            </div>
+            <div id="yourpasswordconfhelp" class="nc-signup-left__message">
+              Konfirmasi password yang Anda masukkan tidak sama
+            </div>
+          </div>
+        </div>
+        <div class="nc-signup-left__button--wrapper">
+          <a href="javascript:void(0)" class="nc-signup-left__action nc-btn-outline--primary">Kembali</a>
+          <a href="javascript:void(0)" class="nc-signup-left__action nc-btn--primary nc-btn--disabled">Daftar</a>
+          <!-- Remove class .nc-btn--disabled to enable button and delete this comment if you're done!  -->
+        </div>
+        <hr class="nc-bg--gray-600" />
+        <p class="nc-signup-left__info">
+          Sudah punya akun?
+          <a href="javascript:void(0)" class="nc-signup-left__info--link" data-bs-toggle="modal"
+            data-bs-target="#thanksModal">Login disini</a>
+        </p>
+      </div>
+      <div class="col-md-12 col-xl-5 nc-signup-right">
+        <img src="/src/images/logo/nh-logo-white.svg" class="nc-signup-right__logo" loading="lazy"
+          alt="logo niagahoster" />
+        <img src="/src/images/registration/customer-obsession.png" class="img-fluid" loading="lazy"
+          alt="customer obsession" />
+        <h2 class="nc-signup-right__title">Customer Obsession</h2>
+        <p class="nc-signup-right__description">
+          di Niagahoster kami percaya bahwa pelanggan harus menjadi prioritas utama. Kami ada untuk memberikan yang
+          terbaik bagi Anda.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Registration Success -->
+  <div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content nc-signin__content">
+        <div class="nc-signin__header modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close nc-signin__close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="nc-sign__thanks">
+            <img src="/src/images/registration/email-icon.svg" class="nc-signin__thanks--icon" loading="lazy"
+              alt="email icon" />
+            <h1 class="nc-signin__thanks--title">
+              Terima kasih sudah melakukan registrasi! Periksa kotak masuk email Anda dan ikuti instruksi yang ada untuk
+              verifikasi akun.
+            </h1>
+            <p class="nc-signin__thanks--description">
+              Anda tidak menerima email dari kami? Periksa folder spam atau
+              <a href="javascript:void(0)" class="nc-signin__description--link">kirim ulang tautan verifikasi.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="dist/js/app.js"></script>
+<script src="dist/js/vendor.js"></script>
+<script>
+  $(function () {
+    $(".js-pass-first").click(function () {
+      $(this).toggleClass("nc-icon-eye-open")
+      var input = $($(this).attr("toggle"))
+      if (input.attr("type") == "password") {
+        input.attr("type", "text")
+      } else {
+        input.attr("type", "password")
+      }
+    });
+
+    $(".js-pass-second").click(function () {
+      $(this).toggleClass("nc-icon-eye-open")
+      var input = $($(this).attr("toggle"))
+      if (input.attr("type") == "password") {
+        input.attr("type", "text")
+      } else {
+        input.attr("type", "password")
+      }
+    })
+  })
+</script>
+
+</html>

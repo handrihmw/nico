@@ -24,56 +24,56 @@ as-type(font-size, line-height, letter-spacing
 */
 
 // Heading
-.co-h1 {
+.nc-h1 {
   @include as-typo(56, 64, -0.02);
   font-family: 'NunitoSansBold', sans-serif;
   font-weight: 700;
 }
 
-.co-h2 {
+.nc-h2 {
   @include as-typo(40, 56, 0);
   font-family: 'NunitoSansBold', sans-serif;
   font-weight: 700;
 }
 
-.co-h3 {
+.nc-h3 {
   @include as-typo(32, 42, 0);
   font-family: 'NunitoSansBold', sans-serif;
   font-weight: 700;
 }
 
-.co-h4 {
+.nc-h4 {
   @include as-typo(28, 36, 0);
   font-family: 'NunitoSansBold', sans-serif;
   font-weight: 700;
 }
 
-.co-h5 {
+.nc-h5 {
   @include as-typo(24, 32, 0.0025);
   font-family: 'NunitoSansBold', sans-serif;
   font-weight: 700;
 }
 
-.co-h6 {
+.nc-h6 {
   @include as-typo(20, 26, 0.005);
   font-family: 'NunitoSansBold', sans-serif;
   font-weight: 700;
 }
 
-.co-h7 {
+.nc-h7 {
   @include as-typo(18, 27, 0.02);
   font-family: 'NunitoSansBold', sans-serif;
   font-weight: 700;
 }
 
-.co-h8 {
+.nc-h8 {
   @include as-typo(16, 24, 0.05);
   font-family: 'NunitoSansBold', sans-serif;
   font-weight: 700;
 }
 
 // Sub Heading
-.co-sub {
+.nc-sub {
   &-1 {
     @include as-typo(20, 24, 0.005);
     font-family: "NunitoSansBold", sans-serif;
@@ -112,7 +112,7 @@ as-type(font-size, line-height, letter-spacing
 }
 
 // Body Text
-.co-body {
+.nc-body {
   &-1 {
     @include as-typo(20, 34, 0.005);
     font-family: "NunitoSansRegular", sans-serif;
@@ -155,7 +155,7 @@ as-type(font-size, line-height, letter-spacing
 }
 
 // Button Text
-.co-button {
+.nc-button {
   &-1 {
     @include as-typo(20, 32, 0.02);
     font-family: 'NunitoSansBold', sans-serif;
@@ -195,7 +195,7 @@ as-type(font-size, line-height, letter-spacing
 }
 
 // Caption Text
-.co-caption {
+.nc-caption {
   &-1 {
     @include as-typo(14, 16, 0.02);
     font-family: "NunitoSansRegular", sans-serif;
@@ -207,7 +207,7 @@ as-type(font-size, line-height, letter-spacing
   }
 }
 
-.co-overline {
+.nc-overline {
   @include as-typo(16, 24, 0.04);
   font-family: "NunitoSansBold", sans-serif;
   font-weight: 700;

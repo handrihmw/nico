@@ -1,5 +1,5 @@
 // Section Variant
-// ex: .co-section-white, .co-section-soft, .co-section-blue, .co-section-dark
+// ex: .nc-section-white, .nc-section-soft, .nc-section-blue, .nc-section-dark
 
 $section-colors: ("white", $clr-white, $clr-text-400, $clr-text-200),
 ("soft", $clr-soft-200, $clr-text-400, $clr-text-200),
@@ -9,7 +9,7 @@ $section-colors: ("white", $clr-white, $clr-text-400, $clr-text-200),
 ("line", none, $clr-white, $clr-text-soft);
 
 @each $color in $section-colors {
-  .co-section-#{nth($color,1)} {
+  .nc-section-#{nth($color,1)} {
     background: nth($color,2);
     display: flex;
     flex-direction: column;
@@ -50,12 +50,12 @@ $section-colors: ("white", $clr-white, $clr-text-400, $clr-text-200),
 }
 
 // Section Position
-// ex: .co-section-left, .co-section-center
+// ex: .nc-section-left, .nc-section-center
 
 $section-positions: ("left", start), ("center", center);
 
 @each $position in $section-positions {
-  .co-section-#{nth($position,1)} {
+  .nc-section-#{nth($position,1)} {
     align-items: nth($position,1);
 
     @include screen(mobileSmall) {
@@ -63,34 +63,13 @@ $section-positions: ("left", start), ("center", center);
     }
   }
 
-  .co-section-#{nth($position,2)} {
+  .nc-section-#{nth($position,2)} {
     align-items: nth($position,2);
     text-align: nth($position,2);
 
     @include screen(mobileSmall) {
       align-items: unset;
       text-align: left;
-    }
-  }
-}
-
-// Section Background Image
-// ex: .co-section-solid, .co-section-line
-
-$section-images: ("solid", "line");
-
-@each $bg-image in $section-images {
-  .co-section-#{$bg-image} {
-    background-blend-mode: overlay;
-    background-image: url("~assets/images/accent/#{$bg-image}.svg"), $clr-grad-blue;
-    background-position: 50%;
-    background-repeat: no-repeat, repeat;
-
-    &__subtitle {
-      @extend %font-20-bold;
-      color: $clr-white;
-      margin-bottom: 2rem;
-      text-decoration: underline;
     }
   }
 }

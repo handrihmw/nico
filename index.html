@@ -9,38 +9,40 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="dist/css/swipper.css">
   <link rel="stylesheet" href="dist/css/app.css">
 </head>
-<header class="co-header-right">
-  <nav class="navbar co-navbar-top navbar-expand-lg navbar-light">
+<header class="nc-header-right">
+  <nav class="navbar nc-navbar-top navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a class="navbar-brand" aria-label="Logo Niagahoster" href="https://www.niagahoster.co.id/">
+      <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
         <img src="https://www.niagahoster.co.id/assets/images/2021/logo/nh-logo-white.svg" loading="lazy"
-          class="co-navbar__logo d-none d-md-block w-100" alt="logo niagahoster">
+          class="nc-navbar__logo d-none d-md-block w-100" alt="logo niagahoster">
         <img src="https://www.niagahoster.co.id/assets/images/2021/logo/n-logo-white.svg" loading="lazy"
-          class="co-navbar__logo d-block d-md-none" alt="logo niagahoster">
+          class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
       </a>
-      <a class="co-btn--primary co-btn--sm co-navbar-top__button ml-4 ms-4 d-block d-lg-none" href="javascript:void(0)"> Course Area</a>
-      <!-- <a class="d-block d-lg-none mx-auto">
-        <img src="/img/search.svg" class="co-navbar-top__search" loading="lazy" alt="search">
-      </a> -->
-
-      <!-- <a href="#" class="btn-search -blue js-searchOpen">
-        <i class="co-icon-search" aria-hidden="true"></i>
+      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-block d-lg-none" href="javascript:void(0)"> Course
+        Area</a>
+      <a href="javascript:void(0);" class="d-block d-lg-none mx-auto btn-search -blue js-searchOpen">
+        <i class="nc-icon-search nc-icon-sm" aria-hidden="true"></i>
       </a>
 
-      <section class="search-overlay">
+      <section class="search-overlay d-block d-lg-none">
         <form class="search-form">
-          <a href="#" class="btn-search js-searchClose">
-            <i class="co-icon-setting" aria-hidden="true"></i>
+          <a href="javascript:void(0);" class="btn-search js-searchClose">
+            <i class="nc-icon-close nc-icon-white nc-icon-sm" aria-hidden="true"></i>
           </a>
-          <input class="search" type="search" placeholder="Cari course terbaik untuk Anda" />
+          <input class="search mt-3" type="search" placeholder="Cari..." />
+          <div class="nc-searchbar__suggest">
+            <p class="nc-searchbar__suggest--title">Suggestion</p>
+            <p class="nc-searchbar__suggest--list">Step by step belajar UX design untuk pemula</p>
+            <p class="nc-searchbar__suggest--list">cara menjadi ux designer untuk prmula banget</p>
+          </div>
         </form>
-      </section> -->
+      </section>
 
-      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarNico"
-        aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+        data-bs-target="#navbarNico" aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
@@ -49,46 +51,48 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarNico">
       <ul class="navbar-nav">
-        <li class="co-navbar__list ml-md-3">
-          <a class="co-btn--primary co-btn--sm co-navbar-top__button d-none d-lg-block" href="javascript:void(0)"> Course
+        <li class="nc-navbar__list ml-md-3">
+          <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-lg-block" href="javascript:void(0)">
+            Course
             Area</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0 mx-auto d-none d-lg-block">
-        <input class="co-navbar-top__form form-control" type="search" placeholder="Cari course terbaik untuk Anda"
+        <input class="nc-navbar-top__form form-control" type="search" placeholder="Cari course terbaik untuk Anda"
           aria-label="Search">
       </form>
-      <ul class="navbar-nav co-navbar-top__button--wrapper">
+      <ul class="navbar-nav nc-navbar-top__button--wrapper">
         <!-- After Login -->
-        <li class="co-navbar-top__list d-none d-lg-block">
-          <a class="co-btn-outline--white co-btn--sm co-navbar-top__button" href="javascript:void(0)"> Kelas Saya</a>
+        <li class="nc-navbar-top__list d-none d-lg-block">
+          <a class="nc-btn-outline--white nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Kelas Saya</a>
         </li>
-        <li class="dropdown co-navbar-top__list d-none d-lg-block">
-          <a class="co-navbar-top__list--account" data-toggle="dropdown" href="javascript:void(0)">
-            <img src="/img/avatar-soft.svg" class="co-navbar-top__list--icon" loading="lazy" alt="avatar icon">
-            <p class="co-navbar-top__list--text">Hallo, Dinda Nabila</p>
+        <li class="dropdown nc-navbar-top__list d-none d-lg-block">
+          <a class="nc-navbar-top__list--account" data-toggle="dropdown" href="javascript:void(0)">
+            <img src="/img/avatar-soft.svg" class="nc-navbar-top__list--icon" loading="lazy" alt="avatar icon">
+            <p class="nc-navbar-top__list--text">Hallo, Dinda Nabila</p>
           </a>
-          <div class="dropdown-menu co-navbar-account__wrapper">
-            <ul class="co-navbar-account__card">
-              <li class="co-navbar-account__card-list">
-                <a class="co-navbar-account__card-detail" href="javascript:void(0)">
-                  <img src="/img/avatar.svg" class="co-navbar-account__card-detail--image" loading="lazy" alt="nico setting">
-                  <div class="co-navbar-account__card-deatail--wrapper">
-                    <p class="co-navbar-account__card-detail--name">Dinda Nabila</p>
-                    <p class="co-navbar-account__card-detail--email">dinda.nabila@mail.com</p>
+          <div class="dropdown-menu nc-navbar-account__wrapper">
+            <ul class="nc-navbar-account__card">
+              <li class="nc-navbar-account__card-list">
+                <a class="nc-navbar-account__card-detail" href="javascript:void(0)">
+                  <img src="/img/avatar.svg" class="nc-navbar-account__card-detail--image" loading="lazy"
+                    alt="nico setting">
+                  <div class="nc-navbar-account__card-deatail--wrapper">
+                    <p class="nc-navbar-account__card-detail--name">Dinda Nabila</p>
+                    <p class="nc-navbar-account__card-detail--email">dinda.nabila@mail.com</p>
                   </div>
                 </a>
               </li>
-              <li class="co-navbar-account__card-list">
-                <a class="co-navbar-account__card--item" href="javascript:void(0)">
-                  <i class="co-icon-setting co-icon-dark co-icon-xs"></i>
-                  <p class="co-navbar-account__card--text">Pengaturan</p>
+              <li class="nc-navbar-account__card-list">
+                <a class="nc-navbar-account__card--item" href="javascript:void(0)">
+                  <i class="nc-icon-setting nc-icon-dark nc-icon-xs"></i>
+                  <p class="nc-navbar-account__card--text">Pengaturan</p>
                 </a>
               </li>
-              <li class="co-navbar-account__card-list">
-                <a class="co-navbar-account__card--item" href="javascript:void(0)">
-                  <i class="co-icon-logout co-icon-dark co-icon-xs"></i>
-                  <p class="co-navbar-account__card--text">Logout</p>
+              <li class="nc-navbar-account__card-list">
+                <a class="nc-navbar-account__card--item" href="javascript:void(0)">
+                  <i class="nc-icon-logout nc-icon-dark nc-icon-xs"></i>
+                  <p class="nc-navbar-account__card--text">Logout</p>
                 </a>
               </li>
             </ul>
@@ -96,59 +100,59 @@
         </li>
 
         <!-- Before Login -->
-        <!-- <li class="co-navbar-top__list d-none d-lg-block">
-          <a class="co-btn-outline--white co-btn--sm co-navbar-top__button" href="javascript:void(0)"> Masuk</a>
+        <!-- <li class="nc-navbar-top__list d-none d-lg-block">
+          <a class="nc-btn-outline--white nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Masuk</a>
         </li>
-        <li class="co-navbar-top__list d-none d-lg-block">
-          <a class="co-btn--primary co-btn--sm co-navbar-top__button" href="javascript:void(0)"> Daftar</a>
+        <li class="nc-navbar-top__list d-none d-lg-block">
+          <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Daftar</a>
         </li> -->
       </ul>
 
       <!-- Navbar Mobile -->
       <ul class="navbar-nav d-block d-lg-none mb-3">
         <!-- Before Login -->
-        <li class="co-navbar-top__list">
-          <a class="co-navbar-top__list--item" href="javascript:void(0)">
-            <i class="co-icon-login co-icon-white co-icon-md"></i>
-            <p class="co-navbar-top__list--text">Login</p>
+        <li class="nc-navbar-top__list">
+          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
+            <i class="nc-icon-login nc-icon-white nc-icon-md"></i>
+            <p class="nc-navbar-top__list--text">Login</p>
           </a>
         </li>
-        <li class="co-navbar-top__list">
-          <a class="co-navbar-top__list--item" href="javascript:void(0)">
-            <i class="co-icon-sign-up co-icon-white co-icon-md"></i>
-            <p class="co-navbar-top__list--text">Daftar</p>
+        <li class="nc-navbar-top__list">
+          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
+            <i class="nc-icon-sign-up nc-icon-white nc-icon-md"></i>
+            <p class="nc-navbar-top__list--text">Daftar</p>
           </a>
         </li>
 
         <!-- After Login -->
-        <li class="co-navbar-top__list">
-          <a class="co-navbar-top__list--item" href="javascript:void(0)">
-            <i class="co-icon-graduation co-icon-white co-icon-md"></i>
-            <p class="co-navbar-top__list--text">Kelas Saya</p>
+        <li class="nc-navbar-top__list">
+          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
+            <i class="nc-icon-graduation nc-icon-white nc-icon-md"></i>
+            <p class="nc-navbar-top__list--text">Kelas Saya</p>
           </a>
         </li>
-        <li class="co-navbar-top__list">
-          <a class="co-navbar-top__list--item" href="javascript:void(0)">
-            <i class="co-icon-setting co-icon-white co-icon-md"></i>
-            <p class="co-navbar-top__list--text">Pengaturan</p>
+        <li class="nc-navbar-top__list">
+          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
+            <i class="nc-icon-setting nc-icon-white nc-icon-md"></i>
+            <p class="nc-navbar-top__list--text">Pengaturan</p>
           </a>
         </li>
-        <li class="co-navbar-top__list">
-          <a class="co-navbar-top__list--item" href="javascript:void(0)">
-            <i class="co-icon-logout co-icon-white co-icon-md"></i>
-            <p class="co-navbar-top__list--text">Logout</p>
+        <li class="nc-navbar-top__list">
+          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
+            <i class="nc-icon-logout nc-icon-white nc-icon-md"></i>
+            <p class="nc-navbar-top__list--text">Logout</p>
           </a>
         </li>
       </ul>
 
-      <div class="co-navbar-social">
-        <hr class="co-navbar-social__line">
-        <p class="co-navbar-social__copyright">
+      <div class="nc-navbar-social">
+        <hr class="nc-navbar-social__line">
+        <p class="nc-navbar-social__copyright">
           Copyright ©2021 Niagahoster
         </p>
-        <div class="co-navbar-social__wrapper">
-          <ul class="co-navbar-social__list">
-            <li class="co-navbar-social__icon">
+        <div class="nc-navbar-social__wrapper">
+          <ul class="nc-navbar-social__list">
+            <li class="nc-navbar-social__icon">
               <a href="https://www.facebook.com/niagahoster" target="_blank" rel="noopener noreferrer"
                 aria-label="facebook niagahoster">
                 <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +162,7 @@
                 </svg>
               </a>
             </li>
-            <li class="co-navbar-social__icon">
+            <li class="nc-navbar-social__icon">
               <a href="https://www.instagram.com/niagahoster.id" target="_blank" rel="noopener noreferrer"
                 aria-label="instagram niagahoster">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,8 +172,8 @@
                 </svg>
               </a>
             </li>
-            <li class="co-navbar-social__icon">
-              <a href="https://www.linkedin.com/company/niagahoster" class="co-navbar-top__icon" target="_blank"
+            <li class="nc-navbar-social__icon">
+              <a href="https://www.linkedin.com/company/niagahoster" class="nc-navbar-top__icon" target="_blank"
                 rel="noopener noreferrer" aria-label="linkedin niagahoster">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -178,7 +182,7 @@
                 </svg>
               </a>
             </li>
-            <li class="co-navbar-social__icon">
+            <li class="nc-navbar-social__icon">
               <a href="https://twitter.com/niagahoster" target="_blank" rel="noopener noreferrer"
                 aria-label="twitter niagahoster">
                 <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,24 +200,24 @@
   </nav>
 
   <!-- Navbar Bottom Desktop -->
-  <nav class="navbar co-navbar__bottom navbar-expand-lg co-background--soft d-none d-lg-block">
+  <nav class="navbar nc-navbar__bottom navbar-expand-lg nc-background--soft d-none d-lg-block">
     <div class="container">
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mx-auto">
-          <li class="co-navbar-bottom__list">
-            <a class="co-navbar-bottom__list--item" href="javascript:void(0)">Web Development</a>
+          <li class="nc-navbar-bottom__list">
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Web Development</a>
           </li>
-          <li class="co-navbar-bottom__list">
-            <a class="co-navbar-bottom__list--item" href="javascript:void(0)">Marketing & Sales</a>
+          <li class="nc-navbar-bottom__list">
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Marketing & Sales</a>
           </li>
-          <li class="co-navbar-bottom__list">
-            <a class="co-navbar-bottom__list--item" href="javascript:void(0)">Bussiness</a>
+          <li class="nc-navbar-bottom__list">
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Bussiness</a>
           </li>
-          <li class="co-navbar-bottom__list">
-            <a class="co-navbar-bottom__list--item" href="javascript:void(0)">Design</a>
+          <li class="nc-navbar-bottom__list">
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Design</a>
           </li>
-          <li class="co-navbar-bottom__list">
-            <a class="co-navbar-bottom__list--item" href="javascript:void(0)">IT & Software</a>
+          <li class="nc-navbar-bottom__list">
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">IT & Software</a>
           </li>
         </ul>
       </div>
@@ -223,8 +227,8 @@
   <!-- Navbar Bottom Mobile -->
   <section class="accordion accordion-flush align-items-center" id="accordionFlushExample">
     <div class="accordion-item">
-      <h2 class="accordion-header co-category d-block d-lg-none" id="flush-headingOne">
-        <button class="accordion-button co-navbar-bottom__title collapsed" type="button" data-bs-toggle="collapse"
+      <h2 class="accordion-header nc-category d-block d-lg-none" id="flush-headingOne">
+        <button class="accordion-button nc-navbar-bottom__title collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
           Pilih Kategori Kelas
         </button>
@@ -233,34 +237,34 @@
         data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item co-navbar-bottom__list ">
-              <a class="co-navbar-bottom__list--item" href="javascript:void(0)">
-                <i class="co-icon-page co-icon-dark co-icon-xs"></i>
-                <p class="co-navbar-bottom__list--text">Web Development</p>
+            <li class="nav-item nc-navbar-bottom__list ">
+              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
+                <i class="nc-icon-page nc-icon-dark nc-icon-xs"></i>
+                <p class="nc-navbar-bottom__list--text">Web Development</p>
               </a>
             </li>
-            <li class="nav-item co-navbar-bottom__list">
-              <a class="co-navbar-bottom__list--item" href="javascript:void(0)">
-                <i class="co-icon-horn co-icon-dark co-icon-xs"></i>
-                <p class="co-navbar-bottom__list--text">Marketing & Sales</p>
+            <li class="nav-item nc-navbar-bottom__list">
+              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
+                <i class="nc-icon-horn nc-icon-dark nc-icon-xs"></i>
+                <p class="nc-navbar-bottom__list--text">Marketing & Sales</p>
               </a>
             </li>
-            <li class="nav-item co-navbar-bottom__list">
-              <a class="co-navbar-bottom__list--item" href="javascript:void(0)">
-                <i class="co-icon-bag co-icon-dark co-icon-xs"></i>
-                <p class="co-navbar-bottom__list--text">Bussiness</p>
+            <li class="nav-item nc-navbar-bottom__list">
+              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
+                <i class="nc-icon-bag nc-icon-dark nc-icon-xs"></i>
+                <p class="nc-navbar-bottom__list--text">Bussiness</p>
               </a>
             </li>
-            <li class="nav-item co-navbar-bottom__list">
-              <a class="co-navbar-bottom__list--item" href="javascript:void(0)">
-                <i class="co-icon-paint co-icon-dark co-icon-xs"></i>
-                <p class="co-navbar-bottom__list--text">Design</p>
+            <li class="nav-item nc-navbar-bottom__list">
+              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
+                <i class="nc-icon-paint nc-icon-dark nc-icon-xs"></i>
+                <p class="nc-navbar-bottom__list--text">Design</p>
               </a>
             </li>
-            <li class="nav-item co-navbar-bottom__list">
-              <a class="co-navbar-bottom__list--item" href="javascript:void(0)">
-                <i class="co-icon-desktop co-icon-dark co-icon-xs"></i>
-                <p class="co-navbar-bottom__list--text">IT & Software</p>
+            <li class="nav-item nc-navbar-bottom__list">
+              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
+                <i class="nc-icon-desktop nc-icon-dark nc-icon-xs"></i>
+                <p class="nc-navbar-bottom__list--text">IT & Software</p>
               </a>
             </li>
           </ul>
@@ -269,22 +273,24 @@
     </div>
   </section>
 
-  <section class="co-hero">
+  <section class="nc-hero">
     <div class="container">
-      <div class="row co-hero__wrapper">
+      <div class="row nc-hero__wrapper">
         <div class="col-lg-6 mb-5 mb-lg-0">
-          <h1 class="co-hero__title">Niagahoster Course</h1>
-          <p class="co-hero__description--md">
-            Kembangkan kemampuan seputar digital marketing, online presence, cloud dan hosting bersama para ahli di kursus online Niagahoster Course. Kunjungi forum komunitas belajar kami untuk dapatkan insight terbaik setiap harinya.
+          <h1 class="nc-hero__title">Niagahoster Course</h1>
+          <p class="nc-hero__description--md">
+            Kembangkan kemampuan seputar digital marketing, online presence, cloud dan hosting bersama para ahli di
+            kursus online Niagahoster Course. Kunjungi forum komunitas belajar kami untuk dapatkan insight terbaik
+            setiap harinya.
           </p>
           <a href="javascript:void(0)" class="
-              co-btn--primary
-              co-hero__button
+              nc-btn--primary
+              nc-hero__button
             ">Gabung Sekarang</a>
         </div>
         <div class="col-lg-6">
           <img src="https://www.niagahoster.co.id/assets/images/2021/arunika/hosting-indonesia/hero.png"
-            class="co-hero__image" loading="lazy" alt="Caption Here">
+            class="nc-hero__image" loading="lazy" alt="Caption Here">
         </div>
       </div>
     </div>
@@ -292,31 +298,603 @@
 </header>
 
 <body>
-  <script src="dist/js/app.js"></script>
-  <script src="dist/js/vendor.js"></script>
-  <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
-  <script>
-    $(function(e) {
-      var $open = $('.js-searchOpen');
-      var $close = $('.js-searchClose');
-      var $body = $('body');
-      var $lay = $('.search-overlay');
-      var $input = $('.search-form > .search');
-      
-      $open.on('click', function(e) {
-        e.preventDefault(); 
-        $body.addClass('-hide'); 
-        $lay.addClass('-show'); 
-        $input.focus(); // focus
-      });
-      // .js-searchClose
-      $close.on('click', function(e) {
-        e.preventDefault();
-        $body.removeClass('-hide'); 
-        $lay.removeClass('-show'); // .search-overlay .-show
-      });
-    });
-  </script>
+  <!-- Course Pilihan -->
+  <section class="nc-section-white">
+    <div class="container">
+      <div class="nc-section-center">
+        <h2 class="nc-section-white__title">Course Pilihan</h2>
+      </div>
+      <div class="swiper-container slider1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Web Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-3.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Best WordPress Theme & Responsive Blogger Template for Professional Blog</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Sosial Media Specialist at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-2.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Kelas WA 20 Niagahoster: Belajar Mendapatkan Uang dari Internet agar cepat kaya
+                  raya seperti elon musk</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">UX Designer at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Web Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-3.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Best WordPress Theme & Responsive Blogger Template for Professional Blog</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Sosial Media Specialist at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-2.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Kelas WA 20 Niagahoster: Belajar Mendapatkan Uang dari Internet</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">UX Designer at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-button-prev nc-card__button--prev"><span></span></div>
+        <div class="swiper-button-next nc-card__button--next"><span></span></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Course Feature -->
+  <section class="nc-section-white">
+    <div class="container">
+      <div class="row nc-headline">
+        <div class="nc-headline__wrapper col-md-6">
+          <img src="/src/images/feature/thumbs.png" loading="lazy" alt="image thumbnail" class="nc-headline__image">
+        </div>
+        <div class="nc-headline__wrapper col-md-6">
+          <h2 class="nc-headline__title">100%</h2>
+          <p class="nc-headline__description">Akses gratis ke seluruh materi course yang ada pada platform Niagahoster
+            Course.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row nc-headline">
+        <div class="nc-headline__wrapper order-lg-2 order-md-1 col-md-6">
+          <img src="/src/images/feature/thumbs-2.png" loading="lazy" alt="image thumbnail" class="nc-headline__image">
+        </div>
+        <div class="nc-headline__wrapper order-lg-1 order-md-2 col-md-6">
+          <h2 class="nc-headline__title">Dukungan Forum Komunitas</h2>
+          <p class="nc-headline__description">Disamping mendapatkan materi dan praktik dari para expert Anda akan
+            mendapatkan dukungan komunitas untuk membantu progress belajar Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Course Banner -->
+  <section class="nc-section-soft">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="nc-feature__card nc-feature__card--sm">
+            <h3 class="nc-feature__title nc-feature__title--sm">Fleksibilitas</h3>
+            <p class="nc-feature__description nc-feature__description--sm">Firewall Imunify360 mampu mendeteksi ancaman
+              keamanan dan melindungi website secara menyeluruh dengan teknologi AI terpadu</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="nc-feature__card nc-feature__card--sm">
+            <h3 class="nc-feature__title nc-feature__title--sm">Kurikulum Terkini</h3>
+            <p class="nc-feature__description nc-feature__description--sm">Education Team Niagahoster senantiasa
+              memastikan kurikulum yang ada serta course yang kami berikan selalu up-to-date dan mengikuti perkembangan
+              yang ada sehingga Anda akan selalu dapat meningkatkan kemampuan Anda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row nc-banner">
+        <div class="nc-banner__wrapper col-lg-6">
+          <h2 class="nc-banner__title">Kesempatan Akses Mentoring Program Eksklusif</h2>
+          <p class="nc-banner__description">Dengan mengikuti Course yang ada pada Niagahoster Course dan mampu
+            menyelesaikannya, maka Anda akan mendapatkan kesempatan untuk bergabung dengan Mentoring Program Exclusive
+            yang hanya kami tawarkan pada pengguna Niagahoster Course.</p>
+          <a href="javascript:void(0);" class="nc-btn--primary nc-banner__button">Belajar di Course</a>
+        </div>
+        <div class="nc-banner__wrapper col-lg-6">
+          <img src="/src/images/banner/thumbs.png" class="nc-banner__illustration" loading="lazy"
+            alt="Performa Luar Biasa">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Course Review -->
+  <section class="nc-section-white">
+    <div class="container">
+      <div class="nc-slider-testimony">
+        <div class="nc-slider__wrapper">
+          <img src="/src/images/icon/quote.svg" class="nc-slider__quote" loading="lazy" alt="Caption Here">
+        </div>
+        <div class="nc-slider__wrapper">
+          <h2 class="nc-slider__title">Review Niagahoster Course</h2>
+          <p class="nc-slider__description">Ribuan pelanggan telah menggunakan layanan Niagahoster. Kini giliran Anda
+            membuktikannya!</p>
+        </div>
+        <div class="nc-slider__action">
+          <i class="swiper-button-prev nc-icon-prev nc-icon-md"></i>
+          <i class="swiper-button-next nc-icon-next nc-icon-md"></i>
+        </div>
+      </div>
+
+      <div class="nc-transparent">
+        <div class="row swiper-container slider2">
+          <div class="swiper-wrapper col-md-12">
+            <div class="col-md-6 col-sm-12 swiper-slide">
+              <div class="nc-feature__card nc-feature__card--md">
+                <p class="nc-feature__title nc-feature__title--md">
+                  Recommended Hosting!
+                </p>
+                <p class="nc-feature__description nc-feature__description--md">
+                  The best hosting I’ve ever met! Serius loh, selain harganya terjangkau, kualitas server serta pelayanannya
+                  terbaik dibanding provider lainnya yang pernah saya coba. RECOMMENDED!!!
+                </p>
+                <div class="nc-feature__account">
+                  <img src="/src/images/icon/circle.png" class="nc-feature__account--image" loading="lazy" alt="Icon">
+                  <div class="nc-feature__account-wrapper">
+                    <p class="nc-feature__account--username">Rent Villa di Lembang</p>
+                    <p class="nc-feature__account--website">https://www.niagahoster.co.id/</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 swiper-slide">
+              <div class="nc-feature__card nc-feature__card--md">
+                <p class="nc-feature__title nc-feature__title--md">
+                  Good Job, Niagahoster!
+                </p>
+                <p class="nc-feature__description nc-feature__description--md">
+                  Sangat susah mencari penyedia layanan web hosting yang memiliki spek berkualitas, unlimited, respon cepat,
+                  dan customer support 24 jam. Terlebih NH berani memberikan garansi serta harga yang ditawarkan bisa
+                  dibilang termurah di kelasnya. Good job, Niagahoster!
+                </p>
+                <div class="nc-feature__account">
+                  <img src="/src/images/icon/circle.png" class="nc-feature__account--image" loading="lazy" alt="Icon">
+                  <div class="nc-feature__account-wrapper">
+                    <p class="nc-feature__account--username">Digital Optimizer Indonesia</p>
+                    <p class="nc-feature__account--website">https://www.niagahoster.co.id</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 swiper-slide">
+              <div class="nc-feature__card nc-feature__card--md">
+                <p class="nc-feature__title nc-feature__title--md">
+                  Recommended Hosting!
+                </p>
+                <p class="nc-feature__description nc-feature__description--md">
+                  The best hosting I’ve ever met! Serius loh, selain harganya terjangkau, kualitas server serta pelayanannya
+                  terbaik dibanding provider lainnya yang pernah saya coba. RECOMMENDED!!!
+                </p>
+                <div class="nc-feature__account">
+                  <img src="/src/images/icon/circle.png" class="nc-feature__account--image" loading="lazy" alt="Icon">
+                  <div class="nc-feature__account-wrapper">
+                    <p class="nc-feature__account--username">Rent Villa di Lembang</p>
+                    <p class="nc-feature__account--website">https://www.niagahoster.co.id/</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 swiper-slide">
+              <div class="nc-feature__card nc-feature__card--md">
+                <p class="nc-feature__title nc-feature__title--md">
+                  Good Job, Niagahoster!
+                </p>
+                <p class="nc-feature__description nc-feature__description--md">
+                  Sangat susah mencari penyedia layanan web hosting yang memiliki spek berkualitas, unlimited, respon cepat,
+                  dan customer support 24 jam. Terlebih NH berani memberikan garansi serta harga yang ditawarkan bisa
+                  dibilang termurah di kelasnya. Good job, Niagahoster!
+                </p>
+                <div class="nc-feature__account">
+                  <img src="/src/images/icon/circle.png" class="nc-feature__account--image" loading="lazy" alt="Icon">
+                  <div class="nc-feature__account-wrapper">
+                    <p class="nc-feature__account--username">Digital Optimizer Indonesia</p>
+                    <p class="nc-feature__account--website">https://www.niagahoster.co.id</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Course Join -->
+  <section class="nc-section-accent">
+    <div class="nc-section-accent__wrapper">
+      <h2 class="nc-section-accent__title">Mulai Course Anda Dari Sekarang!</h2>
+      <p class="nc-section-accent__description">Bergabung sekarang dan dapatkan update mengenai course-course terbaru dari
+        Niagahoster Course dan juga kesempatan bergabung dalam mentoring program eksklusif serta komunitas belajar.</p>
+      <a href="javascript:void(0);" class="nc-section-accent__button nc-btn--primary">Ikuti Course</a>
+    </div>
+  </section>
 </body>
 
+<footer class="nc-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h4 class="nc-footer__list--title">Web Hosting</h4>
+        <ul class="nc-footer__list">
+          <li><a href="https://www.niagahoster.co.id/hosting-indonesia" class="nc-footer__list--item">Hosting
+              Indonesia</a></li>
+          <li><a href="https://www.niagahoster.co.id/cloud-hosting" class="nc-footer__list--item">Cloud Hosting</a></li>
+          <li><a href="https://www.niagahoster.co.id/email-hosting" class="nc-footer__list--item">Email Hosting</a></li>
+          <li><a href="https://www.niagahoster.co.id/web-hosting-unlimited" class="nc-footer__list--item">Web Hosting
+              Unlimited</a></li>
+          <li><a href="https://www.niagahoster.co.id/hosting-terbaik" class="nc-footer__list--item">Hosting Terbaik</a>
+          </li>
+          <li><a href="https://www.niagahoster.co.id/hosting-murah" class="nc-footer__list--item">Hosting Murah</a></li>
+          <li><a href="https://www.niagahoster.co.id/hosting-singapore" class="nc-footer__list--item">Hosting Singapore
+              SG</a></li>
+          <li><a href="https://www.niagahoster.co.id/ssl-murah" class="nc-footer__list--item">Keamanan SSL/HTTPS</a>
+          </li>
+          <li><a href="https://www.niagahoster.co.id/datacenter-hosting" class="nc-footer__list--item">Data Center
+              Hosting Terbaik</a></li>
+          <li><a href="https://www.niagahoster.co.id/hosting-gratis" class="nc-footer__list--item">Hosting Gratis</a>
+          </li>
+          <li><a href="https://www.niagahoster.co.id/transfer-hosting" class="nc-footer__list--item">Transfer
+              Hosting</a></li>
+        </ul>
+        <h4 class="nc-footer__list--title">Domain</h4>
+        <ul class="nc-footer__list">
+          <li><a href="https://www.niagahoster.co.id/domain-murah" class="nc-footer__list--item">Domain</a></li>
+          <li><a href="https://www.niagahoster.co.id/domain-id" class="nc-footer__list--item">Domain .ID</a></li>
+          <li><a href="https://www.niagahoster.co.id/domain-gratis" class="nc-footer__list--item">Domain Gratis</a></li>
+          <li><a href="https://www.niagahoster.co.id/promo-domain-com" class="nc-footer__list--item">Promo Domain
+              .COM</a></li>
+          <li><a href="https://www.niagahoster.co.id/whois" class="nc-footer__list--item">WHOIS</a></li>
+          <li><a href="https://www.niagahoster.co.id/transfer-domain" class="nc-footer__list--item">Transfer Domain</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h4 class="nc-footer__list--title">Virtual Private Server</h4>
+        <ul class="nc-footer__list">
+          <li><a href="https://www.niagahoster.co.id/vps-kvm-indonesia" class="nc-footer__list--item">VPS KVM
+              Indonesia</a></li>
+          <li><a href="https://www.niagahoster.co.id/cloud-vps-hosting" class="nc-footer__list--item">Cloud VPS
+              Hosting</a></li>
+          <li><a href="https://www.niagahoster.co.id/cyberpanel-vps" class="nc-footer__list--item">CyberPanel VPS
+              Hosting</a></li>
+        </ul>
+        <h4 class="nc-footer__list--title">WordPress Hosting</h4>
+        <ul class="nc-footer__list">
+          <li><a href="https://www.niagahoster.co.id/wordpress-hosting" class="nc-footer__list--item">WordPress
+              Hosting</a></li>
+          <li><a href="https://www.niagahoster.co.id/managed-wordpress" class="nc-footer__list--item">Managed
+              WordPress</a></li>
+        </ul>
+        <h4 class="nc-footer__list--title">Website</h4>
+        <ul class="nc-footer__list">
+          <li><a href="https://www.niagahoster.co.id/membuat-website" class="nc-footer__list--item">Website Instan</a>
+          </li>
+          <li><a href="https://www.niagahoster.co.id/membuat-website?s=1" class="nc-footer__list--item">Jasa Pembuatan
+              Website</a></li>
+        </ul>
+        <h4 class="nc-footer__list--title">Bantuan</h4>
+        <ul class="nc-footer__list">
+          <li><a href="https://www.niagahoster.co.id/pembayaran" class="nc-footer__list--item">Cara Pembayaran</a></li>
+          <li><a href="https://www.niagahoster.co.id/ebook" class="nc-footer__list--item">Ebook Gratis</a></li>
+          <li><a href="https://www.niagahoster.co.id/kb" class="nc-footer__list--item">Knowledge Base</a></li>
+          <li><a href="https://www.niagahoster.co.id/blog" class="nc-footer__list--item">Niagahoster Blog</a></li>
+          <li><a href="https://course.niagahoster.co.id/" class="nc-footer__list--item" target="_blank"
+              rel="noopener noreferrer">Niagahoster Course</a></li>
+          <li><a href="https://www.niagahoster.co.id/forum" class="nc-footer__list--item">Niagahoster Forum</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="nc-footer__list--title">Kemitraan</h4>
+            <ul class="nc-footer__list">
+              <li><a href="https://www.niagahoster.co.id/poin" class="nc-footer__list--item">Niagahoster Poin</a></li>
+              <li><a href="https://www.niagahoster.co.id/reseller-hosting" class="nc-footer__list--item">Niagahoster
+                  Partner</a></li>
+              <li><a href="https://www.niagahoster.co.id/afiliasi" class="nc-footer__list--item">Program Afiliasi
+                  Niagahoster</a></li>
+            </ul>
+            <h4 class="nc-footer__list--title">Perusahaan</h4>
+            <ul class="nc-footer__list">
+              <li><a href="https://www.niagahoster.co.id/about-us" class="nc-footer__list--item">Tentang Niagahoster</a>
+              </li>
+              <li><a href="https://www.niagahoster.co.id/kontak" class="nc-footer__list--item">Kontak</a></li>
+              <li><a href="https://www.niagahoster.co.id/karir" class="nc-footer__list--item">Karir</a></li>
+              <li><a href="https://www.niagahoster.co.id/event" class="nc-footer__list--item">Event</a></li>
+              <li><a href="https://status.niagahoster.co.id/" class="nc-footer__list--item" target="_blank"
+                  rel="noopener noreferrer">Status Layanan</a></li>
+              <li><a href="https://www.niagahoster.co.id/review" class="nc-footer__list--item">Review Pelanggan</a></li>
+              <li><a href="https://www.niagahoster.co.id/promosi" class="nc-footer__list--item">Penawaran &amp; Promo
+                  Spesial</a></li>
+              <li><a href="https://www.niagahoster.co.id/virtual-summit" class="nc-footer__list--item">Niagahoster
+                  Virtual Summit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img src="/src/images/logo/nh-logo-white.svg" loading="lazy" class="nc-footer__list--logo"
+              alt="Niagahoster Logo" />
+            <ul class="nc-footer__list">
+              <li class="nc-footer__list nc-footer__list--about">
+                Misi Kami adalah membantu jutaan orang memanfaatkan potensi yang ada di internet untuk membangun
+                kesuksesan online.
+              </li>
+              <li class="nc-footer__list nc-footer__list--about my-4">
+                Jl. Palagan Tentara Pelajar No. 81 Jongkang, Sariharjo, Ngaglik, Sleman, Daerah Istimewa Yogyakarta,
+                55581
+              </li>
+              <li class="nc-footer__list nc-footer__list--about">Telepon: <a href="tel:+622742885822"
+                  class="nc-footer__privacy--link">0274-2885822</a></li>
+              <li class="nc-footer__list nc-footer__list--about">
+                Whatsapp: <a href="https://api.whatsapp.com/send?phone=62895395186038&amp;text=Hallo%20Niagahoster!"
+                  aria-label="whatsapp" class="nc-footer__privacy--link">0895395186038</a>
+              </li>
+            </ul>
+            <ul class="nc-footer__list-icon">
+              <li class="nc-footer__social-icon">
+                <a href="https://www.facebook.com/niagahoster" class="nc-footer__icon" target="_blank"
+                  aria-label="facebook" rel="noopener noreferrer">
+                  <i class="nc-icon-facebook"></i>
+                </a>
+              </li>
+              <li class="nc-footer__social-icon">
+                <a href="https://www.instagram.com/niagahoster.id" class="nc-footer__icon" target="_blank"
+                  aria-label="instagram" rel="noopener noreferrer">
+                  <i class="nc-icon-instagram"></i>
+                </a>
+              </li>
+              <li class="nc-footer__social-icon">
+                <a href="https://www.linkedin.com/company/niagahoster" class="nc-footer__icon" target="_blank"
+                  aria-label="linkedin" rel="noopener noreferrer">
+                  <i class="nc-icon-linkedin"></i>
+                </a>
+              </li>
+              <li class="nc-footer__social-icon">
+                <a href="https://twitter.com/niagahoster" class="nc-footer__icon" target="_blank" aria-label="twitter"
+                  rel="noopener noreferrer">
+                  <i class="nc-icon-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+            <h4 class="nc-footer__list--title">Newsletter</h4>
+            <form id="newsletter" class="form-inline nc-footer__form">
+              <!-- <label for="newsletter-email" class="sr-only">Berlangganan Email </label> -->
+              <input id="newsletter-email" type="email" class="nc-footer__form--input form-control" name="email"
+                placeholder="Ketik alamat email disini" />
+              <button id="newsletter-btn" type="submit"
+                class="nc-footer__form--button nc-btn--primary">Berlangganan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr class="nc-footer__line" />
+    <div class="row clearfix">
+      <div class="column col-lg-7 col-md-12">
+        <p class="nc-footer__copyright">
+          Copyright ©2021 Niagahoster | Hosting powered by PHP8, CloudLinux, CloudFlare, BitNinja and DC DCI-Indonesia |
+          Cloud VPS Murah powered by Webuzo Softaculous, Intel SSD and cloud computing technology
+        </p>
+      </div>
+      <div class="column col-lg-5 col-md-12">
+        <ul class="nc-footer__privacy">
+          <li class="nc-footer__privacy--list"><a href="https://www.niagahoster.co.id/syarat-dan-ketentuan"
+              class="nc-footer__privacy--link">Syarat dan Ketentuan</a></li>
+          <li class="nc-footer__privacy--list"><a href="https://www.niagahoster.co.id/kebijakan-privasi"
+              class="nc-footer__privacy--link">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="dist/js/app.js"></script>
+<script src="dist/js/vendor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/js/swiper.min.js"></script>
+<script>
+  $(function (e) {
+    var $open = $('.js-searchOpen');
+    var $close = $('.js-searchClose');
+    var $body = $('body');
+    var $lay = $('.search-overlay');
+    var $input = $('.search-form > .search');
+
+    $open.on('click', function (e) {
+      e.preventDefault();
+      $body.addClass('-hide');
+      $lay.addClass('-show');
+      $input.focus();
+    });
+
+    $close.on('click', function (e) {
+      e.preventDefault();
+      $body.removeClass('-hide');
+      $lay.removeClass('-show');
+    });
+  });
+</script>
+<script>
+  var swiper = new Swiper('.slider1', {
+    slidesPerView: "auto",
+    lazyLoading: true,
+    navigation: {
+      nextEl: '.nc-card__button--next',
+      prevEl: '.nc-card__button--prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1.25
+      },
+      600: {
+        slidesPerView: 2.5
+      },
+      900: {
+        slidesPerView: 3
+      },
+      1200: {
+        slidesPerView: 3
+      }
+    }
+  });
+</script>
+
+<script>
+    var newSwiper = new Swiper('.slider2', {
+    slidesPerView: "auto",
+    lazyLoading: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.nc-icon-next',
+      prevEl: '.nc-icon-prev'
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1
+      },
+      600: {
+        slidesPerView: 1.5
+      },
+      900: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 2
+      }
+    }
+  });
+</script>
 </html>

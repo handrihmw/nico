@@ -1,0 +1,50 @@
+.nc-section-accent {
+  align-items: center;
+  background-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg width='857' height='857' viewBox='0 0 857 857' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M428.5 856C664.602 856 856 664.602 856 428.5C856 192.398 664.602 1 428.5 1C192.398 1 1 192.398 1 428.5C1 664.602 192.398 856 428.5 856Z' stroke='%232199FA'/%3E%3Cpath d='M428.5 741C601.089 741 741 601.089 741 428.5C741 255.911 601.089 116 428.5 116C255.911 116 116 255.911 116 428.5C116 601.089 255.911 741 428.5 741Z' stroke='%232199FA'/%3E%3C/svg%3E"), $clr-grad-blue;
+  background-position: 50%;
+  background-repeat: no-repeat, repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  text-align: start;
+
+  @include screen(desktop) {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  &__wrapper {
+    width: 100%;
+
+    @include screen(desktopLarge) {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    @extend %font-40;
+    color: $clr-white;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    @extend %font-16;
+    color: $clr-text-soft;
+    margin-bottom: 4rem;
+    padding: 0;
+
+    @include screen(desktop) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    @include screen(desktop) {
+      width: 250px;
+    }
+  }
+}

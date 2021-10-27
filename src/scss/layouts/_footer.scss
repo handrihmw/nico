@@ -1,0 +1,182 @@
+.nc-footer {
+  background: $clr-dark-200;
+  color: $clr-white;
+  outline: none;
+  padding: 4rem 1rem 1rem 1rem;
+
+  @include screen(desktopLarge) {
+    padding: 5rem 1rem 1rem 1rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 16px 0;
+
+    >li:not(:last-child) {
+      padding-bottom: 10px;
+    }
+
+    &--title {
+      @extend %font-16-bold;
+      padding-left: 10px;
+    }
+
+    &--item {
+      @extend %font-14;
+      color: $clr-text-soft;
+      padding-left: 10px;
+      transition: color 0.8s;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $clr-white;
+        text-decoration: none;
+      }
+    }
+
+    &--logo {
+      @extend %image-render;
+      height: auto;
+      margin-bottom: 1.5rem;
+      padding-right: 2rem;
+      width: 255px;
+    }
+
+    &--about {
+      @extend %font-14;
+      padding: 0 8px;
+    }
+  }
+
+  &__list-icon {
+    @extend %font-16;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1.25rem 0;
+
+    >li:not(:last-child) {
+      margin-right: 1.25rem;
+    }
+
+    @include screen(desktop) {
+      margin-left: -1.25rem;
+    }
+  }
+
+  &__icon {
+    background: rgba(246, 246, 246, 0.15);
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.25rem;
+    height: 48px;
+    position: relative;
+    transition: ease 0.6s;
+    width: 48px;
+
+    i {
+      color: $clr-white;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      background: $clr-orange-400;
+    }
+
+    &:active {
+      background: darken($clr-orange-400, 5%);
+    }
+
+    &:focus {
+      background: $clr-orange-400;
+      border: 1px solid $clr-white;
+    }
+  }
+
+  &__line {
+    border-top: 1px solid $clr-hr;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__copyright {
+    @extend %font-12;
+    color: $clr-text-soft;
+    text-align: left;
+    width: 100%;
+
+    @include screen(desktopLarge) {
+      width: 85%;
+    }
+  }
+
+  &__privacy {
+    @extend %font-12;
+    color: $clr-text-soft;
+    margin-top: 2rem;
+    padding-left: 0;
+    text-align: start;
+
+    @include screen(desktop) {
+      margin-top: 0;
+      text-align: end;
+    }
+
+    &--list {
+      border-right: 1px solid $clr-text-soft;
+      display: inline-block;
+      line-height: 0.75rem;
+      margin-right: 0.5rem;
+      position: relative;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &--link {
+      color: $clr-white;
+      padding-right: 0.5rem;
+      text-decoration: none;
+
+      &:hover {
+        color: $clr-text-soft;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    float: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 2rem;
+
+    @include screen(desktopLarge) {
+      flex-direction: unset;
+    }
+
+    &--input {
+      @extend %font-16;
+      border: none;
+      border-radius: 1.5rem;
+      color: $clr-text-100;
+      display: block;
+      height: 48px;
+      margin-bottom: 10px;
+      padding: 1rem 2rem;
+      position: relative;
+      width: 100%;
+
+      @include screen(desktopLarge) {
+        width: 95%;
+      }
+    }
+  }
+}

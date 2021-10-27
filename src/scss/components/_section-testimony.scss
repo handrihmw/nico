@@ -1,0 +1,97 @@
+.nc-slider {
+  display: flex;
+  margin-bottom: 6rem;
+  position: relative;
+
+  @include screen(desktop) {
+    margin-bottom: 4rem;
+  }
+
+  &-testimony {
+    display: grid;
+    justify-content: start;
+    margin-bottom: 2rem;
+    position: relative;
+
+    @include screen(desktop) {
+      align-items: start;
+      display: flex;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__quote {
+    @extend %image-render;
+    border-radius: 50%;
+    height: 60px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    width: 60px;
+
+    @include screen(desktop) {
+      height: 80px;
+      margin-bottom: 0;
+      width: 80px;
+    }
+  }
+
+  &__title {
+    @extend %font-40;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    @extend %font-16;
+    color: $clr-text-200;
+    margin-bottom: 1rem;
+
+    .text-blue {
+      color: $clr-blue-200;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+  &__action {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+    margin-left: auto;
+    position: absolute;
+    right: 2rem;
+    top: -0.5rem;
+
+    @include screen(desktop) {
+      justify-content: center;
+      position: relative;
+      right: 4rem;
+      top: 1.5rem;
+    }
+
+    &-default {
+      margin-bottom: 2rem;
+      top: 5rem;
+
+      @include screen(desktop) {
+        margin-bottom: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.swiper-button-prev.nc-icon-prev,
+.swiper-button-next.nc-icon-next {
+  color: $clr-text-400;
+  margin: 1rem;
+  transform: rotate(180deg);
+}
+
+.swiper-button-disabled.nc-icon-prev,
+.swiper-button-disabled.nc-icon-next {
+  background: transparent;
+  color: $clr-text-100;
+  opacity: 0.2;
+}

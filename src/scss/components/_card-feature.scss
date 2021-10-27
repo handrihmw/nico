@@ -1,0 +1,93 @@
+.nc-feature {
+  &__card {
+    background-color: $clr-white;
+    border-radius: 1rem;
+    box-shadow: $shadow-soft;
+    height: auto;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+
+    @include screen(desktop) {
+      margin-bottom: 0;
+    }
+
+    &--sm {
+      height: auto;
+  
+      @include screen(desktopLarge) {
+        height: 205px;
+      }
+    }
+
+    &--md {
+      box-shadow: $shadow-white-soft;
+
+      @include screen(desktopLarge) {
+        height: 420px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+
+    &--sm {
+      @extend %font-20-bold;
+    }
+
+    &--md {
+      @extend %font-24;
+    }
+  }
+
+  &__description {
+    color: $clr-text-200;
+    height: auto;
+    margin-bottom: 3rem;
+
+    @include screen(desktop) {
+      height: 200px;
+      margin-bottom: 1rem;
+    }
+
+    &--sm {
+      @extend %font-16;
+    }
+
+    &--md {
+      @extend %font-18;
+    }
+  }
+
+  &__account {
+    align-items: center;
+    display: grid;
+    justify-content: start;
+
+    @include screen(desktop) {
+      display: flex;
+    }
+
+    &-wrapper {
+      margin-top: 1rem;
+    }
+
+    &--image {
+      border-radius: 50%;
+      height: 48px;
+      margin-right: 1rem;
+      object-fit: cover;
+      width: 48px;
+    }
+
+    &--username {
+      @extend %font-18-bold;
+      margin-bottom: 0;
+    }
+
+    &--website {
+      @extend %font-16;
+      color: $clr-text-200;
+    }
+  }
+}

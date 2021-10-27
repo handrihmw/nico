@@ -15,7 +15,6 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
   border-radius: 1.875rem;
   display: block;
   height: calc(3rem + 2px);
-  min-width: 9rem;
   outline: none;
   padding: 0.75rem 3.5rem;
   text-align: center;
@@ -32,22 +31,22 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
 @each $button in $button-array {
 
   /* Solid Button */
-  .co-btn--#{nth($button, 1)} {
+  .nc-btn--#{nth($button, 1)} {
     @extend %as-btn;
     background: #{nth($button, 2)};
     box-shadow: #{nth($button, 4)};
     color: #{nth($button, 3)};
   }
 
-  .co-btn--#{nth($button, 1)}:hover {
+  .nc-btn--#{nth($button, 1)}:hover {
     background: darken(nth(nth($button, 2), 1), 3%);
     box-shadow: none;
     color: #{nth($button, 3)};
     text-decoration: none;
   }
 
-  .co-btn--#{nth($button, 1)}:focus,
-  .co-btn--#{nth($button, 1)}:active {
+  .nc-btn--#{nth($button, 1)}:focus,
+  .nc-btn--#{nth($button, 1)}:active {
     background: darken(nth(nth($button, 2), 1), 6%);
     border: 1px solid $clr-white;
     color: #{nth($button, 3)};
@@ -55,67 +54,36 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
   }
 
   /* Outline Button */
-  .co-btn-outline--#{nth($button, 1)} {
+  .nc-btn-outline--#{nth($button, 1)} {
     @extend %as-btn;
     color: #{nth($button, 2)};
     background: transparent;
     border: solid 1px #{nth($button, 2)};
   }
 
-  .co-btn-outline--#{nth($button, 1)}:hover,
-  .co-btn-outline--#{nth($button, 1)}:focus,
-  .co-btn-outline--#{nth($button, 1)}:active {
+  .nc-btn-outline--#{nth($button, 1)}:hover,
+  .nc-btn-outline--#{nth($button, 1)}:focus,
+  .nc-btn-outline--#{nth($button, 1)}:active {
     box-shadow: #{nth($button, 4)};
     color: #{nth($button, 2)};
     text-decoration: none;
   }
 
-  /* Neutral Button */
-  .co-btn-neutral--#{nth($button, 1)} {
-    @extend %as-btn;
-    color: #{nth($button, 2)};
-    background: transparent;
-  }
-
-  .co-btn-neutral--#{nth($button, 1)}:hover {
-    background: lighten(nth(nth($button, 2), 1), 30%);
-    box-shadow: none;
-    color: #{nth($button, 2)};
-    text-decoration: none;
-  }
-
-  .co-btn-neutral--#{nth($button, 1)}:focus {
-    background: lighten(nth(nth($button, 2), 1), 20%);
-    color: darken(nth(nth($button, 2), 1), 10%);
-    text-decoration: none;
-  }
-
-  .co-btn-neutral--#{nth($button, 1)}:active {
-    color: darken(nth(nth($button, 2), 1), 10%);
-    text-decoration: none;
-  }
-
-  .co-btn-neutral--dark:hover,
-  .co-btn-neutral--dark:focus,
-  .co-btn-neutral--dark:active {
-    color: $clr-white;
-  }
-
   /* Text Button */
-  .co-btn-text {
+  .nc-btn-text {
     @extend %as-btn;
     color: $clr-blue-200;
     background: transparent;
   }
 
-  .co-btn-text:hover {
+  .nc-btn-text:hover {
     background: $clr-btn-text-100;
     color: $clr-blue-200;
     text-decoration: none;
   }
 
-  .co-btn-text:focus,
-  .co-btn-text:active {
+  .nc-btn-text:focus,
+  .nc-btn-text:active {
     background: transparent;
     border: solid 1px $clr-btn-text-200;
     color: $clr-blue-200;
@@ -123,19 +91,19 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
   }
 }
 
-.co-btn--disabled,
-.co-btn-outline--disabled,
-.co-btn-neutral--disabled {
+.nc-btn--disabled,
+.nc-btn-outline--disabled,
+.nc-btn-neutral--disabled {
   pointer-events: none;
 }
 
-.co-btn--sm {
+.nc-btn--sm {
   @extend %font-14;
   height: calc(2.5rem + 2px);
   padding: 0.5rem 2rem;
 }
 
-.co-btn--lg {
+.nc-btn--lg {
   height: calc(4rem + 2px);
   padding: 0.5rem 4rem;
 }

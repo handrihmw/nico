@@ -7,7 +7,7 @@ $header-style: ("default"),
 ("right--image");
 
 @each $header in $header-style {
-  .co-header-#{nth($header,1)} {
+  .nc-header-#{nth($header,1)} {
     background-image: $clr-grad-blue;
     background-repeat: no-repeat;
     height: auto;
@@ -46,7 +46,7 @@ $header-style: ("default"),
       background-image: $clr-grad-blue;
 
       @include screen(desktop) {
-        background-image: url("/src/images/header/accent-right.svg"), $clr-grad-blue;
+        background-image: url("data:image/svg+xml,%3Csvg width='809' height='620' viewBox='0 0 809 620' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M386.062 622.5C558.651 622.5 698.562 482.589 698.562 310C698.562 137.411 558.651 -2.5 386.062 -2.5C213.473 -2.5 73.5618 137.411 73.5618 310C73.5618 482.589 213.473 622.5 386.062 622.5Z' stroke='%232199FA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.70036 110C80.4191 -25.0385 222.501 -117 386.062 -117C621.887 -117 813.062 74.1744 813.062 310C813.062 545.826 621.887 737 386.062 737C216.514 737 70.0461 638.183 1.10981 495H0C69.0107 638.752 215.946 738 386.062 738C622.44 738 814.062 546.378 814.062 310C814.062 73.6221 622.44 -118 386.062 -118C221.929 -118 79.3749 -25.6105 7.56822 110H8.70036Z' fill='%232199FA'/%3E%3C/svg%3E"), $clr-grad-blue;
         background-size: auto;
         background-position: right 50%;
       }
@@ -63,7 +63,7 @@ $header-style: ("default"),
       background-position: right bottom;
 
       @include screen(desktop) {
-        background-image: url("/src/images/header/accent-right.svg"), $clr-grad-blue;
+        background-image: url("data:image/svg+xml,%3Csvg width='809' height='620' viewBox='0 0 809 620' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M386.062 622.5C558.651 622.5 698.562 482.589 698.562 310C698.562 137.411 558.651 -2.5 386.062 -2.5C213.473 -2.5 73.5618 137.411 73.5618 310C73.5618 482.589 213.473 622.5 386.062 622.5Z' stroke='%232199FA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.70036 110C80.4191 -25.0385 222.501 -117 386.062 -117C621.887 -117 813.062 74.1744 813.062 310C813.062 545.826 621.887 737 386.062 737C216.514 737 70.0461 638.183 1.10981 495H0C69.0107 638.752 215.946 738 386.062 738C622.44 738 814.062 546.378 814.062 310C814.062 73.6221 622.44 -118 386.062 -118C221.929 -118 79.3749 -25.6105 7.56822 110H8.70036Z' fill='%232199FA'/%3E%3C/svg%3E"), $clr-grad-blue;
         background-size: auto;
         background-position: right 50%;
       }
