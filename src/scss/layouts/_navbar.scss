@@ -479,7 +479,6 @@
 }
 
 .nc-searchbar {
-
   &__suggest {
     margin-top: 2rem;
     text-align: end;
@@ -495,7 +494,11 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      width: 350px;
+      width: 300px;
+
+      @include screen(tablet) {
+        width: 350px;
+      }
     }
   }
 }

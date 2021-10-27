@@ -4,7 +4,8 @@ $header-style: ("default"),
 ("center--image"),
 ("corner"),
 ("right"),
-("right--image");
+("right--image"),
+("none");
 
 @each $header in $header-style {
   .nc-header-#{nth($header,1)} {
@@ -55,6 +56,10 @@ $header-style: ("default"),
       @media only screen and (min-width: 1920px) {
         background-image: $clr-grad-blue;
       }
+    }
+
+    @if nth($header, 1)=='none' {
+      background-image: $clr-grad-blue;
     }
 
     @if nth($header, 1)=='right--image' {

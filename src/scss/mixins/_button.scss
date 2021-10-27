@@ -100,7 +100,7 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
 .nc-btn--sm {
   @extend %font-14;
   height: calc(2.5rem + 2px);
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .nc-btn--lg {

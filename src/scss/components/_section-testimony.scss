@@ -45,12 +45,7 @@
     @extend %font-16;
     color: $clr-text-200;
     margin-bottom: 1rem;
-
-    .text-blue {
-      color: $clr-blue-200;
-      font-weight: 700;
-      text-decoration: underline;
-    }
+    width: 90%;
   }
 
   &__action {
@@ -60,7 +55,7 @@
     justify-content: end;
     margin-left: auto;
     position: absolute;
-    right: 2rem;
+    right: 3rem;
     top: -0.5rem;
 
     @include screen(desktop) {
