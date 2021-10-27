@@ -5,7 +5,7 @@
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
   letter-spacing: 0;
-  line-height: 4rem;
+  line-height: clamp(2.25rem, 3vw, 4rem);
 }
 
 %font-48 {
@@ -21,7 +21,7 @@
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 700;
   letter-spacing: -0.02rem;
-  line-height: clamp(3rem, 3vw, 3.5rem);
+  line-height: clamp(2.25rem, 3vw, 3.5rem);
 }
 
 %font-32 {
@@ -66,7 +66,7 @@
   font-family: 'NunitoSansRegular', sans-serif;
   font-size: clamp(1.125rem, 4vw, 1.25rem);
   letter-spacing: 0.005rem;
-  line-height: 2rem;
+  line-height: clamp(1.5rem, 3vw, 2rem);
 }
 
 %font-20-bold {
@@ -81,7 +81,7 @@
   font-family: 'NunitoSansRegular', sans-serif;
   font-size: clamp(1rem, 4vw, 1.125rem);
   letter-spacing: 0.005rem;
-  line-height: 1.688rem;
+  line-height: clamp(1.5rem, 3vw, 1.688rem);
 }
 
 %font-18-bold {
@@ -89,7 +89,7 @@
   font-size: clamp(1rem, 4vw, 1.125rem);
   font-weight: 700;
   letter-spacing: 0.02rem;
-  line-height: 1.688rem;
+  line-height: clamp(1.5rem, 3vw, 1.688rem);
 }
 
 %font-16 {

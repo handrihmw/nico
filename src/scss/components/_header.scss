@@ -15,11 +15,11 @@ $header-style: ("default"),
     position: relative;
 
     @if nth($header, 1)=='center' {
-      background-image: url("/src/images/header/accent-center-sm.svg"), $clr-grad-blue;
+      background-image: url("data:image/svg+xml,%3Csvg width='320' height='409' viewBox='0 0 320 409' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M160 56.3739C76.259 56.3739 8.37368 124.259 8.37368 208C8.37368 291.741 76.259 359.626 160 359.626C243.741 359.626 311.626 291.741 311.626 208C311.626 124.259 243.741 56.3739 160 56.3739ZM7.8877 208C7.8877 123.991 75.9906 55.8879 160 55.8879C244.009 55.8879 312.112 123.991 312.112 208C312.112 292.009 244.009 360.112 160 360.112C75.9906 360.112 7.8877 292.009 7.8877 208Z' fill='%232199FA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M160 0.485981C45.3932 0.485981 -47.514 93.3932 -47.514 208C-47.514 322.607 45.3932 415.514 160 415.514C274.607 415.514 367.514 322.607 367.514 208C367.514 93.3932 274.607 0.485981 160 0.485981ZM-48 208C-48 93.1248 45.1248 0 160 0C274.875 0 368 93.1248 368 208C368 322.875 274.875 416 160 416C45.1248 416 -48 322.875 -48 208Z' fill='%232199FA'/%3E%3C/svg%3E"), $clr-grad-blue;
       background-position: center;
 
       @include screen(desktop) {
-        background-image: url("/src/images/header/accent-center.svg"), $clr-grad-blue;
+        background-image: url("data:image/svg+xml,%3Csvg width='857' height='788' viewBox='0 0 857 788' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M428.265 672.5C600.854 672.5 740.765 532.589 740.765 360C740.765 187.411 600.854 47.5 428.265 47.5C255.676 47.5 115.765 187.411 115.765 360C115.765 532.589 255.676 672.5 428.265 672.5Z' stroke='%232199FA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M428.265 -67C292.891 -67 172.23 -4.00301 94 94.2743V92.6714C172.434 -5.2743 293.024 -68 428.265 -68C563.776 -68 684.578 -5.02282 763 93.2603V94.8666C684.784 -3.7498 563.911 -67 428.265 -67ZM855.006 345C855.178 349.979 855.265 354.979 855.265 360C855.265 595.826 664.09 787 428.265 787C192.439 787 1.26474 595.826 1.26474 360C1.26474 354.979 1.35139 349.979 1.52328 345H0.522676C0.351188 349.979 0.26474 354.979 0.26474 360C0.26474 596.378 191.887 788 428.265 788C664.643 788 856.265 596.378 856.265 360C856.265 354.979 856.178 349.979 856.007 345H855.006Z' fill='%232199FA'/%3E%3C/svg%3E"), $clr-grad-blue;
       }
     }
 
@@ -28,17 +28,17 @@ $header-style: ("default"),
       background-position: center;
 
       @include screen(desktop) {
-        background-image: url("/src/images/header/accent-center.svg"), $clr-grad-blue;
+        background-image: url("data:image/svg+xml,%3Csvg width='857' height='788' viewBox='0 0 857 788' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M428.265 672.5C600.854 672.5 740.765 532.589 740.765 360C740.765 187.411 600.854 47.5 428.265 47.5C255.676 47.5 115.765 187.411 115.765 360C115.765 532.589 255.676 672.5 428.265 672.5Z' stroke='%232199FA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M428.265 -67C292.891 -67 172.23 -4.00301 94 94.2743V92.6714C172.434 -5.2743 293.024 -68 428.265 -68C563.776 -68 684.578 -5.02282 763 93.2603V94.8666C684.784 -3.7498 563.911 -67 428.265 -67ZM855.006 345C855.178 349.979 855.265 354.979 855.265 360C855.265 595.826 664.09 787 428.265 787C192.439 787 1.26474 595.826 1.26474 360C1.26474 354.979 1.35139 349.979 1.52328 345H0.522676C0.351188 349.979 0.26474 354.979 0.26474 360C0.26474 596.378 191.887 788 428.265 788C664.643 788 856.265 596.378 856.265 360C856.265 354.979 856.178 349.979 856.007 345H855.006Z' fill='%232199FA'/%3E%3C/svg%3E"), $clr-grad-blue;
       }
     }
 
     @if nth($header, 1)=='corner' {
-      background-image: url("/src/images/header/accent-corner-bottom.svg"), $clr-grad-blue;
+      background-image: url("data:image/svg+xml,%3Csvg width='222' height='290' viewBox='0 0 222 290' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M207.999 56.3737C124.259 56.3737 56.3733 124.259 56.3733 208C56.3733 291.741 124.259 359.626 207.999 359.626C291.74 359.626 359.626 291.741 359.626 208C359.626 124.259 291.74 56.3737 207.999 56.3737ZM55.8873 208C55.8873 123.991 123.99 55.8877 207.999 55.8877C292.009 55.8877 360.112 123.991 360.112 208C360.112 292.009 292.009 360.112 207.999 360.112C123.99 360.112 55.8873 292.009 55.8873 208Z' fill='%232199FA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M208 0.485981C93.3932 0.485981 0.485981 93.3932 0.485981 208C0.485981 322.607 93.3932 415.514 208 415.514C322.607 415.514 415.514 322.607 415.514 208C415.514 93.3932 322.607 0.485981 208 0.485981ZM0 208C0 93.1248 93.1248 0 208 0C322.875 0 416 93.1248 416 208C416 322.875 322.875 416 208 416C93.1248 416 0 322.875 0 208Z' fill='%232199FA'/%3E%3C/svg%3E"), $clr-grad-blue;
       background-size: auto;
       background-position: right bottom;
 
       @include screen(desktop) {
-        background-image: url("/src/images/header/accent-corner.svg"), $clr-grad-blue;
+        background-image: url("data:image/svg+xml,%3Csvg width='604' height='481' viewBox='0 0 604 481' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M428.5 480C664.602 480 856 288.602 856 52.5C856 -183.602 664.602 -375 428.5 -375C192.398 -375 1 -183.602 1 52.5C1 288.602 192.398 480 428.5 480Z' stroke='%232199FA'/%3E%3Cpath d='M428.5 365C601.089 365 741 225.089 741 52.5C741 -120.089 601.089 -260 428.5 -260C255.911 -260 116 -120.089 116 52.5C116 225.089 255.911 365 428.5 365Z' stroke='%232199FA'/%3E%3C/svg%3E"), $clr-grad-blue;
         background-position: right 0;
       }
     }
@@ -63,7 +63,7 @@ $header-style: ("default"),
     }
 
     @if nth($header, 1)=='right--image' {
-      background-image: url("/src/images/header/accent-corner-bottom.svg"), $clr-grad-blue;
+      background-image: url("data:image/svg+xml,%3Csvg width='222' height='290' viewBox='0 0 222 290' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M207.999 56.3737C124.259 56.3737 56.3733 124.259 56.3733 208C56.3733 291.741 124.259 359.626 207.999 359.626C291.74 359.626 359.626 291.741 359.626 208C359.626 124.259 291.74 56.3737 207.999 56.3737ZM55.8873 208C55.8873 123.991 123.99 55.8877 207.999 55.8877C292.009 55.8877 360.112 123.991 360.112 208C360.112 292.009 292.009 360.112 207.999 360.112C123.99 360.112 55.8873 292.009 55.8873 208Z' fill='%232199FA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M208 0.485981C93.3932 0.485981 0.485981 93.3932 0.485981 208C0.485981 322.607 93.3932 415.514 208 415.514C322.607 415.514 415.514 322.607 415.514 208C415.514 93.3932 322.607 0.485981 208 0.485981ZM0 208C0 93.1248 93.1248 0 208 0C322.875 0 416 93.1248 416 208C416 322.875 322.875 416 208 416C93.1248 416 0 322.875 0 208Z' fill='%232199FA'/%3E%3C/svg%3E"), $clr-grad-blue;
       background-size: auto;
       background-position: right bottom;
 

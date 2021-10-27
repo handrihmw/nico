@@ -4,7 +4,7 @@
   border-color: $clr-white;
   border-radius: 0.75rem;
   box-shadow: 0px 8px 16px rgba(0, 87, 128, 0.08);
-  margin: 4rem 1rem;
+  margin: 2rem 1rem;
   min-height: 515px;
   width: 95%;
 
@@ -86,9 +86,7 @@
   }
 
   &__action {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-between;
 
     &--button {
       width: 75%;
@@ -120,10 +118,10 @@
   border-radius: 50%;
   box-shadow: 0px 8px 16px rgba(0, 87, 128, 0.08);
   display: none;
-  height: 48px;
+  height: 3rem;
   padding: 2rem;
   top: 41%;
-  width: 48px;
+  width: 3rem;
 
   @include screen(desktop) {
     display: block;
@@ -132,18 +130,16 @@
 
 .nc-card__button--prev span,
 .nc-card__button--next span {
-  width: 12px;
-  height: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-center;
   background-color: transparent;
-  position: absolute;
   border: solid 3px $clr-text-400;
   border-left: 0;
   border-bottom: 0;
   bottom: 1.5rem;
+  height: 0.75rem;
+  position: absolute;
   transition: all 0.1s ease;
+  width: 0.75rem;
 }
 
 .nc-card__button--prev:hover span,
@@ -160,17 +156,15 @@
 
   &.nc-card__button--prev span,
   &.nc-card__button--next span {
-    width: 12px;
-    height: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     background-color: transparent;
-    position: absolute;
     border: solid 3px $clr-white;
     border-left: 0;
     border-bottom: 0;
     bottom: 1.5rem;
+    height: 0.75rem;
+    position: absolute;
     transition: all 0.1s ease;
+    width: 0.75rem;
   }
 }

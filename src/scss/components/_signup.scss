@@ -1,8 +1,6 @@
 .nc-signup {
-  align-items: center;
-  display: flex;
+  @extend %flex-center;
   height: 898px;
-  justify-content: center;
 
   &-left {
     padding: 2rem 1.5rem;
@@ -91,10 +89,10 @@
 
     &__input {
       border: 1px solid $clr-hr;
-      border-radius: 24px;
+      border-radius: 1.5rem;
       color: $clr-text-100;
       font-size: clamp(0.875rem, 3vw, 1rem);
-      height: 48px;
+      height: 3rem;
       margin-bottom: 4px;
       padding: 1rem;
 
@@ -112,7 +110,7 @@
         border-radius: 2.5rem;
         border-left-color: transparent;
         cursor: pointer;
-        height: 48px;
+        height: 3rem;
         padding: 1.125rem;
       }
     }
@@ -152,10 +150,8 @@
       }
 
       &--wrapper {
-        display: flex;
-        flex-direction: column;
+        @extend %flex-col-between;
         gap: 1rem;
-        justify-content: space-between;
         margin-top: 2rem;
         margin-bottom: 2rem;
 
@@ -217,14 +213,11 @@
   }
 
   &-right {
-    align-items: center;
+    @extend %flex-col-center;
     background-image: url("data:image/svg+xml,%3Csvg width='320' height='620' viewBox='0 0 320 620' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M159.912 489.075C289.709 489.075 394.931 384.67 394.931 255.879C394.931 127.088 289.709 22.6824 159.912 22.6824C30.1139 22.6824 -75.1079 127.088 -75.1079 255.879C-75.1079 384.67 30.1139 489.075 159.912 489.075Z' stroke='%232199FA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M159.828 -107.94C-42.535 -107.94 -206.576 54.7927 -206.576 255.526C-206.576 303.28 -197.291 348.884 -180.416 390.658H-181.495C-198.321 348.871 -207.576 303.271 -207.576 255.526C-207.576 54.2329 -43.0797 -108.94 159.828 -108.94C362.736 -108.94 527.232 54.2329 527.232 255.526C527.232 456.818 362.736 619.991 159.828 619.991C31.1763 619.991 -82.0336 554.394 -147.664 455.076V453.255C-82.3418 553.012 30.9743 618.991 159.828 618.991C362.191 618.991 526.232 456.258 526.232 255.526C526.232 54.7927 362.191 -107.94 159.828 -107.94Z' fill='%232199FA'/%3E%3C/svg%3E%0A"), $clr-grad-blue;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
     height: auto;
-    justify-content: center;
     overflow: hidden;
     padding: 2rem;
     position: relative;

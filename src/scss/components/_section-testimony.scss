@@ -49,10 +49,8 @@
   }
 
   &__action {
-    align-items: center;
-    display: flex;
+    @extend %flex-end;
     gap: 2rem;
-    justify-content: end;
     margin-left: auto;
     position: absolute;
     right: 3rem;

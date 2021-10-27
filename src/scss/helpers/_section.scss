@@ -20,11 +20,10 @@ $section-colors: ("white", $clr-white, $clr-text-400, $clr-text-200),
     &__title {
       @extend %font-40;
       color: nth($color,3);
-      margin-bottom: 2rem;
-      width: 100%;
+      text-align: start;
 
-      @include screen(desktopLarge) {
-        width: 75%;
+      @include screen(desktop) {
+        text-align: center;
       }
     }
 
@@ -50,26 +49,13 @@ $section-colors: ("white", $clr-white, $clr-text-400, $clr-text-200),
 }
 
 // Section Position
-// ex: .nc-section-left, .nc-section-center
+.nc-section-center {
+  display: flex;
+  justify-content: unset;
+  margin-bottom: 1rem;
 
-$section-positions: ("left", start), ("center", center);
-
-@each $position in $section-positions {
-  .nc-section-#{nth($position,1)} {
-    align-items: nth($position,1);
-
-    @include screen(mobileSmall) {
-      align-items: unset;
-    }
-  }
-
-  .nc-section-#{nth($position,2)} {
-    align-items: nth($position,2);
-    text-align: nth($position,2);
-
-    @include screen(mobileSmall) {
-      align-items: unset;
-      text-align: left;
-    }
+  @include screen(desktop) {
+    justify-content: center;
+    margin-bottom: 4rem;
   }
 }
