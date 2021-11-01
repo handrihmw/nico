@@ -7,9 +7,9 @@
   }
 
   &__logo {
-    height: auto;
+    height: 36px;
     padding-right: 1.5rem;
-    width: 100%;
+    width: 160px;
   }
 
   &__button {
@@ -26,7 +26,6 @@
   &__search {
     aspect-ratio: 1/1;
     height: 1.5rem;
-    margin-left: 1rem;
     width: 1.5rem;
   }
 
@@ -46,14 +45,14 @@
     margin-right: 2.5rem;
     transform-style: preserve-3d;
     transition: all 250ms ease-in-out;
-    width: 210px;
+    width: auto;
 
-    @include screen(desktop) {
-      width: 320px;
+    @include screen(desktopLarge) {
+      width: 550px;
     }
 
-    @include screen(desktopExtra) {
-      width: 500px;
+    @include screen(desktopExtraLarge) {
+      width: 950px;
     }
   }
 
@@ -209,7 +208,7 @@
     list-style: none;
     margin: 0;
     min-width: 260px;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     position: absolute;
     right: 0;
     top: 3rem;
@@ -218,13 +217,27 @@
       @extend %font-14-bold;
       color: $clr-text-400;
       border-radius: 8px;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0;
 
-      &:first-child {
+      &--first {
         border-bottom: 1px solid $clr-soft-gray;
         border-radius: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0.875rem;
         padding-bottom: 1.5rem;
+      }
+
+      &--last {
+        margin-bottom: 0.875rem;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $clr-blue-200;
+
+        .nc-icon-dark {
+          color: $clr-blue-200;
+        }
       }
     }
 
@@ -276,7 +289,7 @@
         border-radius: 8px;
 
         @include screen(desktop) {
-          background: darken($clr-soft-200, 5%);
+          background: darken($clr-soft-200, 3%);
         }
       }
     }
@@ -321,13 +334,13 @@
     list-style: none;
     padding: 5px 0;
 
-    > li:not(:last-child) {
+    >li:not(:last-child) {
       margin-right: 20px;
     }
   }
 
   &__icon {
-    background: #29384e;
+    background: $clr-text-400;
     border-radius: 50%;
     display: inline-block;
     font-size: clamp(1.125rem, 5vw, 1.5rem);
@@ -337,7 +350,7 @@
     width: 48px;
 
     svg {
-      color: #fff;
+      color: $clr-white;
       left: 50%;
       position: absolute;
       top: 50%;
@@ -346,7 +359,7 @@
   }
 
   &__line {
-    border-top: 1px solid #d5ebfe;
+    border-top: 1px solid $clr-hr;
     margin: 0 auto;
     width: 100%;
   }
@@ -431,19 +444,20 @@
   top: 0;
   transition: all 0.5s ease-in-out;
   width: 100vw;
-  z-index: -999;
+  z-index: -2;
 }
 
 .search-overlay.-show {
   opacity: 1;
-  z-index: 999;
+  z-index: 2;
 }
 
 .search-form {
   padding: 1rem 2rem;
-  
-  > .btn-search {
+
+  >.btn-search {
     float: right;
+
     &::after {
       content: "";
       display: block;
@@ -451,7 +465,7 @@
     }
   }
 
-  > .search {
+  >.search {
     @extend %font-16;
     appearance: none;
     -webkit-appearance: none;
@@ -467,7 +481,6 @@
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
     border-radius: 3rem;
-    color: $clr-text-soft;
     height: calc(3rem + 2px);
     outline: none;
     padding: 1rem;
@@ -487,7 +500,7 @@
       @extend %font-14;
       color: $clr-text-100;
     }
-    
+
     &--list {
       @extend %font-16;
       color: $clr-text-soft;

@@ -1,0 +1,127 @@
+.nc-category {
+  &__title {
+    @extend %font-24;
+    margin-bottom: 1.5rem;
+  }
+
+  &__accordion {
+    border-radius: 0.75rem;
+    box-shadow: $shadow-white-soft;
+    margin-bottom: 4rem;
+    padding: 1rem;
+
+    @include screen(desktop) {
+      margin-bottom: 0;
+    }
+
+    &--item {
+      border-top-left-radius: 0.75rem;
+      border-top-right-radius: 0.75rem;
+      border: 0;
+    }
+
+    &--header {
+      @extend %font-24;
+      background: $clr-white;
+      color: $clr-text-400;
+    }
+
+    &--button {
+      &:focus {
+        border-color: transparent;
+        box-shadow: none;
+      }
+
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.0002 5.41007L6.71019 1.17007C6.61723 1.07634 6.50663 1.00194 6.38477 0.951175C6.26291 0.900406 6.1322 0.874268 6.00019 0.874268C5.86818 0.874268 5.73747 0.900406 5.61562 0.951175C5.49376 1.00194 5.38316 1.07634 5.29019 1.17007L1.05019 5.41007C0.956464 5.50303 0.88207 5.61363 0.831301 5.73549C0.780533 5.85735 0.754395 5.98805 0.754395 6.12007C0.754395 6.25208 0.780533 6.38278 0.831301 6.50464C0.88207 6.6265 0.956464 6.7371 1.05019 6.83007C1.23756 7.01632 1.49101 7.12086 1.75519 7.12086C2.01938 7.12086 2.27283 7.01632 2.46019 6.83007L6.00019 3.29007L9.54019 6.83007C9.72645 7.01481 9.97785 7.11896 10.2402 7.12007C10.3718 7.12083 10.5023 7.0956 10.6241 7.04584C10.7459 6.99607 10.8568 6.92275 10.9502 6.83007C11.0473 6.74045 11.1256 6.63248 11.1807 6.51241C11.2358 6.39233 11.2666 6.26253 11.2713 6.13049C11.2759 5.99846 11.2543 5.86681 11.2078 5.74315C11.1613 5.6195 11.0907 5.50629 11.0002 5.41007Z' fill='%2329384E'/%3E%3C/svg%3E");
+      }
+
+      &:not(.collapsed) {
+        background: $clr-white;
+        box-shadow: none;
+        color: $clr-text-400;
+
+        &::after {
+          background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.0002 5.41007L6.71019 1.17007C6.61723 1.07634 6.50663 1.00194 6.38477 0.951175C6.26291 0.900406 6.1322 0.874268 6.00019 0.874268C5.86818 0.874268 5.73747 0.900406 5.61562 0.951175C5.49376 1.00194 5.38316 1.07634 5.29019 1.17007L1.05019 5.41007C0.956464 5.50303 0.88207 5.61363 0.831301 5.73549C0.780533 5.85735 0.754395 5.98805 0.754395 6.12007C0.754395 6.25208 0.780533 6.38278 0.831301 6.50464C0.88207 6.6265 0.956464 6.7371 1.05019 6.83007C1.23756 7.01632 1.49101 7.12086 1.75519 7.12086C2.01938 7.12086 2.27283 7.01632 2.46019 6.83007L6.00019 3.29007L9.54019 6.83007C9.72645 7.01481 9.97785 7.11896 10.2402 7.12007C10.3718 7.12083 10.5023 7.0956 10.6241 7.04584C10.7459 6.99607 10.8568 6.92275 10.9502 6.83007C11.0473 6.74045 11.1256 6.63248 11.1807 6.51241C11.2358 6.39233 11.2666 6.26253 11.2713 6.13049C11.2759 5.99846 11.2543 5.86681 11.2078 5.74315C11.1613 5.6195 11.0907 5.50629 11.0002 5.41007Z' fill='%2329384E'/%3E%3C/svg%3E");
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+
+  &__line {
+    background-color: $clr-hr;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: -2rem;
+
+    &--item {
+      @extend %font-16;
+      cursor: auto;
+      display: block;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-left: 1rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    &--item {
+      input {
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        width: 0;
+
+        &:checked {
+          ~ {
+            .checkmark {
+              background-color: $clr-text-400;
+
+              &:after {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+      .checkmark {
+        &:after {
+          border: solid $clr-white;
+          border-width: 0 2px 2px 0;
+          height: 10px;
+          left: 6px;
+          top: 2px;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          width: 5px;
+        }
+      }
+    }
+
+    .checkmark {
+      border: 2px solid $clr-text-400;
+      border-radius: 2rem;
+      cursor: pointer;
+      height: 1.25rem;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 1.25rem;
+
+      &:after {
+        content: "";
+        display: none;
+        position: absolute;
+      }
+    }
+  }
+}

@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document Rahasia</title>
+  <title>Search Result</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/swipper.css">
   <link rel="stylesheet" href="dist/css/app.css">
 </head>
 <header class="nc-header-none">
@@ -275,62 +276,161 @@
 
 <body>
 
-  <!-- Course Feature -->
+  <!-- Search Result Course -->
   <section class="nc-section-white">
     <div class="container">
-      <div class="row nc-headline">
-        <div class="col-md-12 col-xl-3 nc-account-left">
-          <div class="nc-account-left__avatar">
-            <div class="nc-account-left__avatar--preview">
-              <div id="imagePreview" class="nc-account-left__avatar--thumb"></div>
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="nc-category__title">Filter</h2>
+          <div class="nc-category">
+            <div class="accordion nc-category__accordion" id="accordionExample">
+              <div class="accordion-item nc-category__accordion--item">
+                <h2 class="accordion-header nc-category__accordion--header" id="headingOne">
+                  <button class="accordion-button nc-category__accordion--button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Urutkan
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="nc-category__list">
+                      <li class="nc-category__list--item">
+                        <label class="container">A - Z
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Terbaru
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Terpopuler
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Rating Terbaik
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="nc-category__line">
+              <div class="accordion-item nc-category__accordion--item">
+                <h2 class="accordion-header nc-category__accordion--header" id="headingTwo">
+                  <button class="accordion-button nc-category__accordion--button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Kategori
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="nc-category__list">
+                      <li class="nc-category__list--item">
+                        <label class="container">Semua Course
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Web Development
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Marketing & Sales
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Business
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Design
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">IT & Software
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <label for="imageUpload" class="nc-account-left__avatar--upload">
-              <span class="filename">Upload Foto</span>
-              <input id="imageUpload" type="file" class="inputfile form-control" accept=".png, .jpg, .jpeg" name="file">
-            </label>
           </div>
         </div>
-        <div class="col-md-12 col-xl-9 nc-account-right">
-          <div class="nc-account-right__button--wrapper">
-            <h1 class="nc-account-right__title">Pengaturan Akun</h1>
-            <a href="javascript:void(0)" class="nc-account-right__action nc-btn-outline--primary">Edit Akun</a>
-            <!-- <a href="javascript:void(0)" class="nc-account-right__action nc-btn--primary">Simpan</a> -->
+        <div class="col-md-8">
+          <div class="nc-card-result__search">
+            <p class="nc-card-result__search--title">Menampilkan 2 hasil untuk - <span class="nc-card-result__search--value">"UX Design"</span></p>
           </div>
-          <div class="nc-account-right__form">
-            <div class="mb-3">
-              <label for="yourname" class="nc-account-right__label form-label">Nama Lengkap</label>
-              <input type="text" class="nc-account-right__input form-control" id="yourname"
-                placeholder="Masukkan nama lengkap" aria-describedby="yournamehelp" />
-              <div id="yournamehelp" class="nc-account-right__message">
-                Data yang Anda masukkan tidak valid
+          <div class="nc-card-result">
+            <div class="row">
+              <div class="nc-card-result__wrapper col-md-4">
+                <img src="/src/images/card/card-result.png" alt="Caption Here" class="nc-card-result__images">
+                <div class="nc-card-result__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="Caption Here" class="nc-card__author--image">
+                  <h3 class="nc-card-result__author--name">Handri Hermawan</h3>
+                </div>
+              </div>
+              <div class="nc-card-result__wrapper col-md-8">
+                <h2 class="nc-card-result__title">Panduan Belajar UX Untuk Pemula</h2>
+                <div class="nc-card-result__info">
+                  <div class="nc-card-result__info--lesson">8 Materi</div>
+                  <div class="nc-card-result__info--time">1.5 Jam</div>
+                </div>
+                <p class="nc-card-result__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto iste maiores minima saepe rerum deserunt voluptatem possimus neque sit! Maxime ea dicta unde cumque provident ducimus eligendi qui vitae!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, similique.</p>
+                <div class="nc-card-result__action">
+                  <a href="" class="nc-card-result__action--join nc-btn--primary">Ikuti Course</a>
+                  <a href="" class="nc-card-result__action--save nc-btn-outline--primary">
+                    <i class="nc-icon-tag nc-icon-xs"></i>
+                    Simpan Course
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="mb-3">
-              <label for="youremail" class="nc-account-right__label form-label">Email</label>
-              <input type="text" class="nc-account-right__input form-control" id="youremail"
-                placeholder="Contoh: budi@mail.com" aria-describedby="youremailhelp" />
-              <div id="youremailhelp" class="nc-account-right__message">
-                Email yang Anda masukkan tidak valid
+          </div>
+          <div class="nc-card-result">
+            <div class="row">
+              <div class="nc-card-result__wrapper col-md-4">
+                <img src="/src/images/card/card-result.png" alt="Caption Here" class="nc-card-result__images">
+                <div class="nc-card-result__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="Caption Here" class="nc-card__author--image">
+                  <h3 class="nc-card-result__author--name">Handri Hermawan</h3>
+                </div>
               </div>
-            </div>
-            <div class="mb-3">
-              <label for="yournumber" class="nc-account-right__label form-label">Nomor Telepon/HP</label>
-              <input type="phone" class="nc-account-right__input form-control" id="yournumber"
-                placeholder="Contoh: 08123456xxx" aria-describedby="yournumberhelp" />
-              <div id="yournumberhelp" class="nc-account-right__message">
-                Data yang Anda masukkan tidak valid
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="yourpassword" class="nc-recovery-left__label form-label">Password</label>
-              <div class="input-group flex-nowrap">
-                <input type="password" class="nc-recovery-left__input nc-recovery-left__input--border form-control"
-                  id="yourpassword" placeholder="Ketik kata sandi di sini" aria-describedby="yourpasswordhelp" />
-                <span toggle="#yourpassword"
-                  class="input-group-text nc-recovery-left__input--icon nc-icon-eye-close js-pass-update"></span>
-              </div>
-              <div id="yourpasswordhelp" class="nc-recovery-left__message nc-recovery-left__message--error">
-                Kata sandi harus berisi minimal 6 karakter
+              <div class="nc-card-result__wrapper col-md-8">
+                <h2 class="nc-card-result__title">Panduan Belajar UX Untuk Pemula</h2>
+                <div class="nc-card-result__info">
+                  <div class="nc-card-result__info--lesson">8 Materi</div>
+                  <div class="nc-card-result__info--time">1.5 Jam</div>
+                </div>
+                <p class="nc-card-result__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto iste maiores minima saepe rerum deserunt voluptatem possimus neque sit! Maxime ea dicta unde cumque provident ducimus eligendi qui vitae!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, similique.</p>
+                <div class="nc-card-result__action">
+                  <a href="" class="nc-card-result__action--join nc-btn--primary">Ikuti Course</a>
+                  <a href="" class="nc-card-result__action--save nc-btn-outline--primary">
+                    <i class="nc-icon-tag nc-icon-xs"></i>
+                    Simpan Course
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -505,56 +605,4 @@
 
 <script src="dist/js/app.js"></script>
 <script src="dist/js/vendor.js"></script>
-<script>
-  $(function (e) {
-    var $open = $('.js-searchOpen');
-    var $close = $('.js-searchClose');
-    var $body = $('body');
-    var $lay = $('.search-overlay');
-    var $input = $('.search-form > .search');
-
-    $open.on('click', function (e) {
-      e.preventDefault();
-      $body.addClass('-hide');
-      $lay.addClass('-show');
-      $input.focus();
-    });
-
-    $close.on('click', function (e) {
-      e.preventDefault();
-      $body.removeClass('-hide');
-      $lay.removeClass('-show');
-    });
-  });
-
-  $(".js-pass-update").click(function () {
-    $(this).toggleClass("nc-icon-eye-open")
-    var input = $($(this).attr("toggle"))
-    if (input.attr("type") == "password") {
-      input.attr("type", "text")
-    } else {
-      input.attr("type", "password")
-    }
-  });
-
-  $("input[type=file]").change(function (e) {
-    $(this).parents(".nc-account-left__upload").find(".filename").text(e.target.files[0].name);
-  });
-
-  function readURL(input) {
-    if (input.files && input.files[0]) {
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
-        $('#imagePreview').hide();
-        $('#imagePreview').fadeIn(650);
-      }
-      reader.readAsDataURL(input.files[0]);
-    }
-  }
-  $("#imageUpload").change(function () {
-    readURL(this);
-  });
-</script>
-
 </html>

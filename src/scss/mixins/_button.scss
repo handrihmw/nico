@@ -66,6 +66,7 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
   .nc-btn-outline--#{nth($button, 1)}:hover,
   .nc-btn-outline--#{nth($button, 1)}:focus,
   .nc-btn-outline--#{nth($button, 1)}:active {
+    background: darken($clr-blue-100, 20%);
     box-shadow: #{nth($button, 4)};
     color: #{nth($button, 2)};
     text-decoration: none;

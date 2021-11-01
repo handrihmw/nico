@@ -1,0 +1,117 @@
+.nc-tooltip {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  left: 3px;
+  top: 3px;
+
+  &:hover {
+    .nc-tooltip__info {
+      visibility: visible;
+    }
+  }
+
+  &__info {
+    border-radius: 12px;
+    box-shadow: $shadow-white;
+    color: $clr-text-400;
+    visibility: hidden;
+    display: inline-block;
+    cursor: auto;
+    width: 240px;
+    padding: 1rem 1.5rem;
+    background: $clr-white;
+    position: absolute;
+    margin-top: 8px;
+    z-index: 1;
+    word-wrap: break-word;
+    text-align: left;
+    width: auto;
+
+    > a {
+      color: $clr-blue-200;
+      font-weight: 700;
+      text-decoration: underline;
+
+      &:hover {
+        color: darken($clr-blue-200, 10%);
+      }
+    }
+
+    &--sm {
+      text-align: center;
+      width: 160px;
+      z-index: 2;
+    }
+
+    &--md {
+      width: 300px;
+    }
+
+    &--bottom {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &::after {
+        position: absolute;
+        top: -9px;
+        left:50%;
+        margin-left: -12px;
+        content:"";
+        display:block;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $clr-dark-200;
+      }
+    }
+
+    &--top {
+      bottom: 120%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 5px solid transparent;
+        border-top-color: $clr-white;
+      }
+    }
+
+    &--left {
+      top: 50%;
+      left: -20.5rem;
+      transform: translateY(-50%);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        border: 10px solid transparent;
+        border-left-color: $clr-white;
+      }
+    }
+
+    &--right {
+      top: 50%;
+      left: calc(100% + 0.75rem);
+      transform: translateY(-50%);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+        border: 10px solid transparent;
+        border-right-color: $clr-white;
+      }
+    }
+  }
+}
