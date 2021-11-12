@@ -4,7 +4,7 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
 (danger $clr-red-200 $clr-white $shadows-red),
 (primary $clr-orange-400 $clr-white $shadows-orange),
 (secondary $clr-blue-200 $clr-white $shadows-blue),
-(white $clr-white $clr-white none),
+(white $clr-white $clr-text-400 none),
 (hover $clr-btn-text-100 $clr-black none),
 (pressed $clr-btn-text-200 $clr-white none),
 (disabled $clr-btn-disable $clr-text-100 none);
@@ -14,7 +14,7 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
   border: 1px solid transparent;
   border-radius: 1.875rem;
   display: block;
-  height: calc(2.5rem + 2px);
+  height: 2.5rem;
   outline: none;
   padding: 0.5rem 2rem;
   text-align: center;
@@ -24,8 +24,6 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
 
   @include screen(desktop) {
     display: inline-block;
-    height: calc(3rem + 2px);
-    padding: 0.75rem 3.5rem;
   }
 }
 
@@ -36,8 +34,12 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
   .nc-btn--#{nth($button, 1)} {
     @extend %as-btn;
     background: #{nth($button, 2)};
-    box-shadow: #{nth($button, 4)};
+    box-shadow: none;
     color: #{nth($button, 3)};
+
+    @include screen(desktop) {
+      box-shadow: #{nth($button, 4)};
+    }
   }
 
   .nc-btn--#{nth($button, 1)}:hover {
@@ -66,7 +68,6 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
   .nc-btn-outline--#{nth($button, 1)}:hover,
   .nc-btn-outline--#{nth($button, 1)}:focus,
   .nc-btn-outline--#{nth($button, 1)}:active {
-    background: darken($clr-blue-100, 20%);
     box-shadow: #{nth($button, 4)};
     color: #{nth($button, 2)};
     text-decoration: none;
@@ -101,21 +102,10 @@ $button-array: (dark $clr-black $clr-white $shadows-black),
 }
 
 .nc-btn--sm {
-  @extend %font-14;
-  height: calc(2.5rem + 2px);
   padding: 0.5rem 1.5rem;
-
-  @include screen(desktop) {
-    padding: 0.5rem 2.5rem;
-  }
 }
 
 .nc-btn--lg {
-  height: calc(4rem + 2px);
-  padding: 0.5rem 4rem;
-
-  @include screen(desktop) {
-    height: calc(3.5rem + 2px);
-    padding: 0.75rem 3.5rem;
-  }
+  height: 3rem;
+  padding: 0.75rem 3rem;
 }

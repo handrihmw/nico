@@ -1,0 +1,63 @@
+.nc-navbar-lesson {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  color: $clr-white;
+  padding: 1rem;
+
+  @include screen(desktop) {
+    display: flex;
+    padding: 1.5rem 2rem;
+  }
+
+  &__center {
+    @extend %flex-center;
+    gap: 1.5rem;
+
+    @include screen(desktop) {
+      gap: 2rem;
+    }
+  }
+
+  &__logo {
+    @extend %image-render;
+    height: 42px;
+    max-width: 100%;
+    width: 153px;
+  }
+
+  &__title {
+    @extend %font-20;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 35rem;
+
+    @include screen(desktopLarge) {
+      width: 42rem;
+    }
+
+    &--wrapper {
+      display: none;
+
+      @include screen(desktop) {
+        display: block;
+      }
+    }
+  }
+
+  &__divider {
+    border-left: 1px solid $clr-blue-brigt;
+    display: none;
+    height: 3rem;
+
+    @include screen(desktopLarge) {
+      display: block;
+    }
+  }
+}

@@ -12,25 +12,32 @@
   <link rel="stylesheet" href="dist/css/swipper.css">
   <link rel="stylesheet" href="dist/css/app.css">
 </head>
-<header class="nc-header-none">
-  <nav class="navbar nc-navbar-top navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
-        <img src="https://www.niagahoster.co.id/assets/images/2021/logo/nh-logo-white.svg" loading="lazy"
-          class="nc-navbar__logo d-none d-md-block w-100" alt="logo niagahoster">
-        <img src="https://www.niagahoster.co.id/assets/images/2021/logo/n-logo-white.svg" loading="lazy"
-          class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
-      </a>
-      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-block d-lg-none" href="javascript:void(0)"> Course
+<header class="nc-header-right">
+  <nav class="navbar nc-navbar-top navbar-expand-lg">
+    <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
+      <img src="/src/images/logo/nh-logo.svg" loading="lazy"
+        class="nc-navbar__logo d-none d-md-block" alt="logo niagahoster">
+      <img src="/src/images/logo/n-logo.svg" loading="lazy"
+        class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
+    </a>
+    <div class="d-flex justify-content-end align-items-center gap-3">
+      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-md-block" href="javascript:void(0)"> Course
         Area</a>
-      <a href="javascript:void(0);" class="d-block d-lg-none mx-auto btn-search js-searchOpen">
+      <a href="javascript:void(0);" class="d-block d-lg-none nc-navbar-top__search js-searchOpen">
         <i class="nc-icon-search nc-icon-sm" aria-hidden="true"></i>
+      </a>
+
+      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+        data-bs-target="#navbarNico" aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </a>
 
       <section class="search-overlay d-block d-lg-none">
         <form class="search-form">
           <a href="javascript:void(0);" class="btn-search js-searchClose">
-            <i class="nc-icon-close nc-icon-white nc-icon-sm" aria-hidden="true"></i>
+            <i class="nc-icon-close nc-icon-dark nc-icon-sm" aria-hidden="true"></i>
           </a>
           <input class="search mt-3" type="search" placeholder="Cari..." />
           <div class="nc-searchbar__suggest">
@@ -40,28 +47,17 @@
           </div>
         </form>
       </section>
-
-      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse"
-        data-bs-target="#navbarNico" aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-
     </div>
     <div class="collapse navbar-collapse" id="navbarNico">
       <ul class="navbar-nav">
         <li class="nc-navbar__list ml-md-3">
-          <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-lg-block" href="javascript:void(0)">
-            Course
-            Area</a>
+          <form class="form-inline d-none d-lg-block">
+            <input class="nc-navbar-top__form form-control" type="search" placeholder="Cari course terbaik untuk Anda"
+              aria-label="Search">
+          </form>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 mx-auto d-none d-lg-block">
-        <input class="nc-navbar-top__form form-control" type="search" placeholder="Cari course terbaik untuk Anda"
-          aria-label="Search">
-      </form>
-      <ul class="navbar-nav nc-navbar-top__button--wrapper">
+      <ul class="navbar-nav nc-navbar-top__button--wrapper mx-auto">
         <!-- After Login -->
         <li class="nc-navbar-top__list d-none d-lg-block">
           <a class="nc-btn-outline--white nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Kelas Saya</a>
@@ -73,7 +69,7 @@
           </a>
           <div class="dropdown-menu nc-navbar-account__wrapper">
             <ul class="nc-navbar-account__card">
-              <li class="nc-navbar-account__card-list">
+              <li class="nc-navbar-account__card-list nc-navbar-account__card-list--first">
                 <a class="nc-navbar-account__card-detail" href="javascript:void(0)">
                   <img src="/img/avatar.svg" class="nc-navbar-account__card-detail--image" loading="lazy"
                     alt="nico setting">
@@ -89,7 +85,7 @@
                   <p class="nc-navbar-account__card--text">Pengaturan</p>
                 </a>
               </li>
-              <li class="nc-navbar-account__card-list">
+              <li class="nc-navbar-account__card-list nc-navbar-account__card-list--last">
                 <a class="nc-navbar-account__card--item" href="javascript:void(0)">
                   <i class="nc-icon-logout nc-icon-dark nc-icon-xs"></i>
                   <p class="nc-navbar-account__card--text">Logout</p>
@@ -280,7 +276,7 @@
   <section class="nc-section-white">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <h2 class="nc-category__title">Filter</h2>
           <div class="nc-category">
             <div class="accordion nc-category__accordion" id="accordionExample">
@@ -378,7 +374,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
           <div class="nc-card-result__search">
             <p class="nc-card-result__search--title">Menampilkan 0 hasil untuk - <span class="nc-card-result__search--value">"UX Design"</span></p>
           </div>
@@ -550,7 +546,7 @@
               <input id="newsletter-email" type="email" class="nc-footer__form--input form-control" name="email"
                 placeholder="Ketik alamat email disini" />
               <button id="newsletter-btn" type="submit"
-                class="nc-footer__form--button nc-btn--primary">Berlangganan</button>
+                class="nc-footer__form--button nc-btn--primary nc-btn--lg">Berlangganan</button>
             </form>
           </div>
         </div>

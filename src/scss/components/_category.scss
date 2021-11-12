@@ -5,6 +5,7 @@
   }
 
   &__accordion {
+    background: $clr-white;
     border-radius: 0.75rem;
     box-shadow: $shadow-white-soft;
     margin-bottom: 4rem;
@@ -63,16 +64,14 @@
       @extend %font-16;
       cursor: auto;
       display: block;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
       position: relative;
       padding-left: 1rem;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-    }
 
-    &--item {
       input {
         height: 0;
         opacity: 0;
@@ -104,6 +103,41 @@
           transform: rotate(45deg);
           width: 5px;
         }
+      }
+
+      &-last {
+        margin-bottom: 0;
+      }
+    }
+
+    &--radio {
+      @extend %font-16;
+      cursor: pointer;
+      display: block;
+      margin-bottom: 1.25rem;
+      
+      .form-check-input {
+        border: 2px solid $clr-text-400;
+        height: 1.25rem;
+        margin-right: 0.75rem;
+        width: 1.25rem;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &:checked {
+          background-color: $clr-text-400;
+          border-color: $clr-text-400;
+        }
+      }
+
+      .form-check-label {
+        margin-top: 3px;
+      }
+
+      &-last {
+        margin-bottom: 0;
       }
     }
 

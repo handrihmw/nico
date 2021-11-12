@@ -13,18 +13,25 @@
   <link rel="stylesheet" href="dist/css/app.css">
 </head>
 <header class="nc-header-right">
-  <nav class="navbar nc-navbar-top navbar-expand-lg navbar-light justify-content-center">
-    <div class="container-fluid">
-      <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
-        <img src="/src/images/logo/nh-logo.svg" loading="lazy"
-          class="nc-navbar__logo d-none d-md-block" alt="logo niagahoster">
-        <img src="/src/images/logo/n-logo.svg" loading="lazy"
-          class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
-      </a>
-      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-block d-lg-none" href="javascript:void(0)"> Course
+  <nav class="navbar nc-navbar-top navbar-expand-lg">
+    <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
+      <img src="/src/images/logo/nh-logo.svg" loading="lazy"
+        class="nc-navbar__logo d-none d-md-block" alt="logo niagahoster">
+      <img src="/src/images/logo/n-logo.svg" loading="lazy"
+        class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
+    </a>
+    <div class="d-flex justify-content-end align-items-center gap-3">
+      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-md-block" href="javascript:void(0)"> Course
         Area</a>
-      <a href="javascript:void(0);" class="d-block d-lg-none mx-lg-auto nc-navbar-top__search js-searchOpen">
+      <a href="javascript:void(0);" class="d-block d-lg-none nc-navbar-top__search js-searchOpen">
         <i class="nc-icon-search nc-icon-sm" aria-hidden="true"></i>
+      </a>
+
+      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+        data-bs-target="#navbarNico" aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </a>
 
       <section class="search-overlay d-block d-lg-none">
@@ -40,22 +47,9 @@
           </div>
         </form>
       </section>
-
-      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse"
-        data-bs-target="#navbarNico" aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-
     </div>
     <div class="collapse navbar-collapse" id="navbarNico">
-      <ul class="navbar-nav mx-auto">
-        <li class="nc-navbar__list ml-md-3">
-          <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-lg-block" href="javascript:void(0)">
-            Course
-            Area</a>
-        </li>
+      <ul class="navbar-nav">
         <li class="nc-navbar__list ml-md-3">
           <form class="form-inline d-none d-lg-block">
             <input class="nc-navbar-top__form form-control" type="search" placeholder="Cari course terbaik untuk Anda"
@@ -805,7 +799,7 @@
               <input id="newsletter-email" type="email" class="nc-footer__form--input form-control" name="email"
                 placeholder="Ketik alamat email disini" />
               <button id="newsletter-btn" type="submit"
-                class="nc-footer__form--button nc-btn--primary">Berlangganan</button>
+                class="nc-footer__form--button nc-btn--primary nc-btn--lg">Berlangganan</button>
             </form>
           </div>
         </div>

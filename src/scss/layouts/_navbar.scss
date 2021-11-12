@@ -1,9 +1,12 @@
 .nc-navbar-top {
   color: $clr-white;
+  gap: 0;
+  justify-content: space-between;
   padding: 1rem;
 
   @include screen(desktop) {
-    padding: 2rem 1rem;
+    gap: 3rem;
+    padding: 1.5rem 2rem;
   }
 
   &__logo {
@@ -138,14 +141,8 @@
     @extend %font-16;
 
     &.active {
-      background: transparent;
-      border-radius: 8px;
+      @extend %font-16-bold;
       color: $clr-blue-200;
-
-      @include screen(desktop) {
-        background: darken($clr-soft-200, 5%);
-        color: $clr-blue-200;
-      }
     }
 
     &--item {
@@ -158,14 +155,12 @@
       &:hover,
       &:active,
       &:focus {
-        @extend %transition-2s;
-        background: transparent;
-        border-radius: 8px;
+        color: $clr-blue-200;
+      }
 
-        @include screen(desktop) {
-          background: darken($clr-soft-200, 5%);
-          color: $clr-blue-200;
-        }
+      &:active,
+      &:focus {
+        @extend %font-16-bold;
       }
 
       @include screen(desktop) {
@@ -507,7 +502,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      width: 300px;
+      width: 250px;
 
       @include screen(tablet) {
         width: 350px;

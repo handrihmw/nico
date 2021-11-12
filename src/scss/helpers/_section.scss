@@ -52,6 +52,10 @@ $section-colors: ("white", $clr-white, $clr-text-400, $clr-text-200),
   }
 }
 
+.nc-section--none {
+  padding: 0;
+}
+
 // Section Position
 .nc-section-center {
   display: flex;
@@ -68,6 +72,7 @@ $section-colors: ("white", $clr-white, $clr-text-400, $clr-text-200),
   display: flex;
   justify-content: unset;
   margin-bottom: 1rem;
+  padding: 0 1rem;
 
   @include screen(desktop) {
     justify-content: start;
@@ -104,8 +109,8 @@ $section-colors: ("white", $clr-white, $clr-text-400, $clr-text-200),
     border: none;
     border-radius: 0.5rem;
     color: $clr-white;
-    height: 2rem;
-    padding: 0.375rem 0.625rem;
+    height: 2.5rem;
+    padding: 0.5rem 0.625rem;
     width: auto;
   }
 

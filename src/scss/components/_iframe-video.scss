@@ -1,0 +1,119 @@
+.nc-video__wrapper {
+  position: relative;
+  width: 100%;
+
+  .nc-video__player {
+    padding-top: 56.4%;
+    position: relative;
+  }
+
+  iframe {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: -90000px;
+    transition: top .05s, opacity .45s;
+    width: 100%;
+
+    &.watch {
+      opacity: 1;
+      top: 0;
+    }
+  }
+
+  .nc-video__trigger {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: visibility .33s, opacity .33s;
+    width: 100%;
+    z-index: 10;
+
+    &.removed {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:after {
+      background-color: rgba(0, 0, 0, 0.3);
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: 0.33s;
+      width: 100%;
+    }
+
+    .nc-video__play-wrapper {
+      color: $clr-white;
+      margin: 0 auto;
+      min-width: 300px;
+      position: relative;
+      top: 50%;
+      text-align: center;
+      transition: all 0.2s linear;
+      transform: translateY(-50%);
+      width: auto;
+      z-index: 1;
+
+      .nc-video__play {
+        margin-top: 5px;
+        position: relative;
+
+        &:before {
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(6px);
+          border-radius: 100%;
+          content: "";
+          left: 50%;
+          height: 3.75rem;
+          margin: -2.5rem 0 0 -2.5rem;
+          position: absolute;
+          top: 50%;
+          transition: border-color 300ms;
+          -webkit-transition: border-color 300ms;
+          -moz-transition: border-color 300ms;
+          width: 3.75rem;
+
+          @include screen(desktop) {
+            height: 5rem;
+            width: 5rem;
+          }
+        }
+
+        &:after {
+          border-left: 1.5rem solid $clr-white;
+          border-top: 0.875rem solid transparent;
+          border-bottom: 0.875rem solid transparent;
+          content: "";
+          left: 50%;
+          height: 0;
+          margin: -1.5rem 0 0 -1rem;
+          position: absolute;
+          top: 50%;
+          -webkit-transition: border-color 300ms;
+          -moz-transition: border-color 300ms;
+          transition: border-color 300ms;
+          width: 0;
+
+          @include screen(desktop) {
+            border-left: 2rem solid $clr-white;
+            border-top: 1rem solid transparent;
+            border-bottom: 1rem solid transparent;
+            margin: -1rem 0 0 -0.625rem;
+          }
+        }
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

@@ -5,31 +5,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document Rahasia</title>
+  <title>Course Tersimpan</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/swipper.css">
   <link rel="stylesheet" href="dist/css/app.css">
 </head>
 <header class="nc-header-none">
-  <nav class="navbar nc-navbar-top navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
-        <img src="https://www.niagahoster.co.id/assets/images/2021/logo/nh-logo-white.svg" loading="lazy"
-          class="nc-navbar__logo d-none d-md-block w-100" alt="logo niagahoster">
-        <img src="https://www.niagahoster.co.id/assets/images/2021/logo/n-logo-white.svg" loading="lazy"
-          class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
-      </a>
-      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-block d-lg-none" href="javascript:void(0)"> Course
+  <nav class="navbar nc-navbar-top navbar-expand-lg">
+    <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
+      <img src="/src/images/logo/nh-logo.svg" loading="lazy"
+        class="nc-navbar__logo d-none d-md-block" alt="logo niagahoster">
+      <img src="/src/images/logo/n-logo.svg" loading="lazy"
+        class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
+    </a>
+    <div class="d-flex justify-content-end align-items-center gap-3">
+      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-md-block" href="javascript:void(0)"> Course
         Area</a>
-      <a href="javascript:void(0);" class="d-block d-lg-none mx-auto btn-search js-searchOpen">
+      <a href="javascript:void(0);" class="d-block d-lg-none nc-navbar-top__search js-searchOpen">
         <i class="nc-icon-search nc-icon-sm" aria-hidden="true"></i>
+      </a>
+
+      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+        data-bs-target="#navbarNico" aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </a>
 
       <section class="search-overlay d-block d-lg-none">
         <form class="search-form">
           <a href="javascript:void(0);" class="btn-search js-searchClose">
-            <i class="nc-icon-close nc-icon-white nc-icon-sm" aria-hidden="true"></i>
+            <i class="nc-icon-close nc-icon-dark nc-icon-sm" aria-hidden="true"></i>
           </a>
           <input class="search mt-3" type="search" placeholder="Cari..." />
           <div class="nc-searchbar__suggest">
@@ -39,28 +47,17 @@
           </div>
         </form>
       </section>
-
-      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse"
-        data-bs-target="#navbarNico" aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-
     </div>
     <div class="collapse navbar-collapse" id="navbarNico">
       <ul class="navbar-nav">
         <li class="nc-navbar__list ml-md-3">
-          <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-lg-block" href="javascript:void(0)">
-            Course
-            Area</a>
+          <form class="form-inline d-none d-lg-block">
+            <input class="nc-navbar-top__form form-control" type="search" placeholder="Cari course terbaik untuk Anda"
+              aria-label="Search">
+          </form>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 mx-auto d-none d-lg-block">
-        <input class="nc-navbar-top__form form-control" type="search" placeholder="Cari course terbaik untuk Anda"
-          aria-label="Search">
-      </form>
-      <ul class="navbar-nav nc-navbar-top__button--wrapper">
+      <ul class="navbar-nav nc-navbar-top__button--wrapper mx-auto">
         <!-- After Login -->
         <li class="nc-navbar-top__list d-none d-lg-block">
           <a class="nc-btn-outline--white nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Kelas Saya</a>
@@ -72,7 +69,7 @@
           </a>
           <div class="dropdown-menu nc-navbar-account__wrapper">
             <ul class="nc-navbar-account__card">
-              <li class="nc-navbar-account__card-list">
+              <li class="nc-navbar-account__card-list nc-navbar-account__card-list--first">
                 <a class="nc-navbar-account__card-detail" href="javascript:void(0)">
                   <img src="/img/avatar.svg" class="nc-navbar-account__card-detail--image" loading="lazy"
                     alt="nico setting">
@@ -88,7 +85,7 @@
                   <p class="nc-navbar-account__card--text">Pengaturan</p>
                 </a>
               </li>
-              <li class="nc-navbar-account__card-list">
+              <li class="nc-navbar-account__card-list nc-navbar-account__card-list--last">
                 <a class="nc-navbar-account__card--item" href="javascript:void(0)">
                   <i class="nc-icon-logout nc-icon-dark nc-icon-xs"></i>
                   <p class="nc-navbar-account__card--text">Logout</p>
@@ -110,6 +107,12 @@
       <!-- Navbar Mobile -->
       <ul class="navbar-nav d-block d-lg-none mb-3">
         <!-- Before Login -->
+        <li class="nc-navbar-top__list">
+          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
+            <i class="nc-icon-course nc-icon-white nc-icon-md"></i>
+            <p class="nc-navbar-top__list--text">Course Area</p>
+          </a>
+        </li>
         <li class="nc-navbar-top__list">
           <a class="nc-navbar-top__list--item" href="javascript:void(0)">
             <i class="nc-icon-login nc-icon-white nc-icon-md"></i>
@@ -204,19 +207,13 @@
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mx-auto">
           <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Web Development</a>
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Course Saya</a>
           </li>
           <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Marketing & Sales</a>
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Course Tersimpan</a>
           </li>
           <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Bussiness</a>
-          </li>
-          <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Design</a>
-          </li>
-          <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">IT & Software</a>
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Sertifikat</a>
           </li>
         </ul>
       </div>
@@ -229,7 +226,7 @@
       <h2 class="accordion-header nc-category d-block d-lg-none" id="flush-headingOne">
         <button class="accordion-button nc-navbar-bottom__title collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Pilih Kategori Kelas
+          Pilih Kategori Course
         </button>
       </h2>
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
@@ -239,31 +236,19 @@
             <li class="nav-item nc-navbar-bottom__list ">
               <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
                 <i class="nc-icon-page nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Web Development</p>
+                <p class="nc-navbar-bottom__list--text">Course Saya</p>
               </a>
             </li>
             <li class="nav-item nc-navbar-bottom__list">
               <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
                 <i class="nc-icon-horn nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Marketing & Sales</p>
+                <p class="nc-navbar-bottom__list--text">Course Tersimpan</p>
               </a>
             </li>
             <li class="nav-item nc-navbar-bottom__list">
               <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
                 <i class="nc-icon-bag nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Bussiness</p>
-              </a>
-            </li>
-            <li class="nav-item nc-navbar-bottom__list">
-              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
-                <i class="nc-icon-paint nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Design</p>
-              </a>
-            </li>
-            <li class="nav-item nc-navbar-bottom__list">
-              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
-                <i class="nc-icon-desktop nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">IT & Software</p>
+                <p class="nc-navbar-bottom__list--text">Sertifikat</p>
               </a>
             </li>
           </ul>
@@ -275,66 +260,200 @@
 
 <body>
 
-  <!-- Course Feature -->
+  <!-- My Course -->
   <section class="nc-section-white">
     <div class="container">
-      <div class="row nc-headline">
-        <div class="col-md-12 col-xl-3 nc-account-left">
-          <div class="nc-account-left__avatar">
-            <div class="nc-account-left__avatar--preview">
-              <div id="imagePreview" class="nc-account-left__avatar--thumb"></div>
-            </div>
-            <label for="imageUpload" class="nc-account-left__avatar--upload">
-              <span class="filename">Upload Foto</span>
-              <input id="imageUpload" type="file" class="inputfile form-control" accept=".png, .jpg, .jpeg" name="file">
-            </label>
+      <div class="nc-section-left">
+        <div class="nc-section-flex__wrapper">
+          <h2 class="nc-section-soft__title nc-section-soft__title--left">Sertifikat</h2>
+          <div class="nc-section-flex__badge">0</div>
+        </div>
+      </div>
+
+      <div class="nc-filter nc-filter--start">
+        <div class="dropdown">
+          <button class="nc-filter__button nc-btn-outline--primary nc-button--sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            Semua Course
+          </button>
+          <ul class="nc-filter__dropdown--menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <li><a class="nc-filter__dropdown--item dropdown-item active" href="#">Semua Course</a></li>
+            <li><a class="nc-filter__dropdown--item dropdown-item" href="#">Design</a></li>
+            <li><a class="nc-filter__dropdown--item dropdown-item" href="#">Bussiness</a></li>
+            <li><a class="nc-filter__dropdown--item dropdown-item" href="#">Web Development</a></li>
+            <li><a class="nc-filter__dropdown--item dropdown-item" href="#">Marketing & Sales</a></li>
+            <li><a class="nc-filter__dropdown--item nc-filter__dropdown--item-last dropdown-item" href="#">IT & Software</a></li>
+          </ul>
+        </div>
+        <input class="nc-filter__form form-control" type="search" placeholder="Cari course..." aria-label="Search">
+        <a href="" class="nc-filter__filter nc-btn-outline--primary nc-btn--lg">Reset Filter</a>
+      </div>
+
+      <div class="nc-filter__empty">
+        <div class="nc-filter__empty--wrapper">
+          <img src="/src/images/icon/empty.webp" alt="course not found" class="nc-filter__empty--image">
+          <h3 class="nc-filter__empty--description">Anda belum memiliki/memperoleh sertifikat dari Online Course Niagahoster</h3>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <!-- Course Pilihan -->
+  <section class="nc-section-white nc-section-center">
+    <div class="container">
+      <div class="nc-section-left">
+        <h2 class="nc-section-soft__title">Rekomendasi Course</h2>
+      </div>
+      <div class="row swiper-container slider-recommend">
+        <div class="swiper-wrapper col-md-12">
+          <div class="col-sm-12 col-md-4 swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Web Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-12 col-md-4 swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-3.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Best WordPress Theme & Responsive Blogger Template for Professional Blog</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Sosial Media Specialist at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-12 col-md-4 swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-2.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Kelas WA 20 Niagahoster: Belajar Mendapatkan Uang dari Internet agar cepat kaya
+                  raya seperti elon musk</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">UX Designer at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-12 col-md-4 swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Web Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-12 col-md-4 swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-3.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Best WordPress Theme & Responsive Blogger Template for Professional Blog</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Sosial Media Specialist at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-12 col-md-4 swiper-slide">
+            <article class="nc-card">
+              <img src="/src/images/card/thumb-2.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Kelas WA 20 Niagahoster: Belajar Mendapatkan Uang dari Internet agar cepat kaya
+                  raya seperti elon musk</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">UX Designer at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="col-md-12 col-xl-9 nc-account-right">
-          <div class="nc-account-right__button--wrapper">
-            <h1 class="nc-account-right__title">Pengaturan Akun</h1>
-            <a href="javascript:void(0)" class="nc-account-right__action nc-btn-outline--primary">Edit Akun</a>
-            <!-- <a href="javascript:void(0)" class="nc-account-right__action nc-btn--primary">Simpan</a> -->
-          </div>
-          <div class="nc-account-right__form">
-            <div class="mb-3">
-              <label for="yourname" class="nc-account-right__label form-label">Nama Lengkap</label>
-              <input type="text" class="nc-account-right__input form-control" id="yourname"
-                placeholder="Masukkan nama lengkap" aria-describedby="yournamehelp" />
-              <div id="yournamehelp" class="nc-account-right__message">
-                Data yang Anda masukkan tidak valid
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="youremail" class="nc-account-right__label form-label">Email</label>
-              <input type="text" class="nc-account-right__input form-control" id="youremail"
-                placeholder="Contoh: budi@mail.com" aria-describedby="youremailhelp" />
-              <div id="youremailhelp" class="nc-account-right__message">
-                Email yang Anda masukkan tidak valid
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="yournumber" class="nc-account-right__label form-label">Nomor Telepon/HP</label>
-              <input type="phone" class="nc-account-right__input form-control" id="yournumber"
-                placeholder="Contoh: 08123456xxx" aria-describedby="yournumberhelp" />
-              <div id="yournumberhelp" class="nc-account-right__message">
-                Data yang Anda masukkan tidak valid
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="yourpassword" class="nc-recovery-left__label form-label">Password</label>
-              <div class="input-group flex-nowrap">
-                <input type="password" class="nc-recovery-left__input nc-recovery-left__input--border form-control"
-                  id="yourpassword" placeholder="Ketik kata sandi di sini" aria-describedby="yourpasswordhelp" />
-                <span toggle="#yourpassword"
-                  class="input-group-text nc-recovery-left__input--icon nc-icon-eye-close js-pass-update"></span>
-              </div>
-              <div id="yourpasswordhelp" class="nc-recovery-left__message nc-recovery-left__message--error">
-                Kata sandi harus berisi minimal 6 karakter
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="swiper-button-prev nc-card__button--prev"><span></span></div>
+        <div class="swiper-button-next nc-card__button--next"><span></span></div>
       </div>
     </div>
   </section>
@@ -505,56 +624,92 @@
 
 <script src="dist/js/app.js"></script>
 <script src="dist/js/vendor.js"></script>
+<script src="src/js/swipper.js"></script>
 <script>
-  $(function (e) {
-    var $open = $('.js-searchOpen');
-    var $close = $('.js-searchClose');
-    var $body = $('body');
-    var $lay = $('.search-overlay');
-    var $input = $('.search-form > .search');
-
-    $open.on('click', function (e) {
-      e.preventDefault();
-      $body.addClass('-hide');
-      $lay.addClass('-show');
-      $input.focus();
-    });
-
-    $close.on('click', function (e) {
-      e.preventDefault();
-      $body.removeClass('-hide');
-      $lay.removeClass('-show');
-    });
-  });
-
-  $(".js-pass-update").click(function () {
-    $(this).toggleClass("nc-icon-eye-open")
-    var input = $($(this).attr("toggle"))
-    if (input.attr("type") == "password") {
-      input.attr("type", "text")
-    } else {
-      input.attr("type", "password")
-    }
-  });
-
-  $("input[type=file]").change(function (e) {
-    $(this).parents(".nc-account-left__upload").find(".filename").text(e.target.files[0].name);
-  });
-
-  function readURL(input) {
-    if (input.files && input.files[0]) {
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
-        $('#imagePreview').hide();
-        $('#imagePreview').fadeIn(650);
+  var Recommend = new Swiper('.slider-recommend', {
+    slidesPerView: "auto",
+    lazyLoading: true,
+    navigation: {
+      nextEl: '.nc-card__button--next',
+      prevEl: '.nc-card__button--prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1.25
+      },
+      600: {
+        slidesPerView: 2.5
+      },
+      900: {
+        slidesPerView: 3
+      },
+      1200: {
+        slidesPerView: 3
       }
-      reader.readAsDataURL(input.files[0]);
     }
-  }
-  $("#imageUpload").change(function () {
-    readURL(this);
   });
 </script>
-
+<script>
+  var swiperNew = new Swiper('.slider-new', {
+    slidesPerView: "auto",
+    lazyLoading: true,
+    navigation: {
+      nextEl: '.nc-card__button--next',
+      prevEl: '.nc-card__button--prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1.25
+      },
+      600: {
+        slidesPerView: 2.5
+      },
+      900: {
+        slidesPerView: 4
+      },
+      1200: {
+        slidesPerView: 4
+      }
+    }
+  });
+</script>
+<script>
+  var swiperAll = new Swiper('.slider-all', {
+    slidesPerView: "auto",
+    lazyLoading: true,
+    navigation: {
+      nextEl: '.nc-card__button--next',
+      prevEl: '.nc-card__button--prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1.25
+      },
+      600: {
+        slidesPerView: 2.5
+      },
+      900: {
+        slidesPerView: 4
+      },
+      1200: {
+        slidesPerView: 4
+      }
+    }
+  });
+</script>
 </html>

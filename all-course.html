@@ -5,31 +5,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document Rahasia</title>
+  <title>All Course</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/swipper.css">
   <link rel="stylesheet" href="dist/css/app.css">
 </head>
 <header class="nc-header-none">
-  <nav class="navbar nc-navbar-top navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
-        <img src="https://www.niagahoster.co.id/assets/images/2021/logo/nh-logo-white.svg" loading="lazy"
-          class="nc-navbar__logo d-none d-md-block w-100" alt="logo niagahoster">
-        <img src="https://www.niagahoster.co.id/assets/images/2021/logo/n-logo-white.svg" loading="lazy"
-          class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
-      </a>
-      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-block d-lg-none" href="javascript:void(0)"> Course
+  <nav class="navbar nc-navbar-top navbar-expand-lg">
+    <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
+      <img src="/src/images/logo/nh-logo.svg" loading="lazy"
+        class="nc-navbar__logo d-none d-md-block" alt="logo niagahoster">
+      <img src="/src/images/logo/n-logo.svg" loading="lazy"
+        class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
+    </a>
+    <div class="d-flex justify-content-end align-items-center gap-3">
+      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-md-block" href="javascript:void(0)"> Course
         Area</a>
-      <a href="javascript:void(0);" class="d-block d-lg-none mx-auto btn-search js-searchOpen">
+      <a href="javascript:void(0);" class="d-block d-lg-none nc-navbar-top__search js-searchOpen">
         <i class="nc-icon-search nc-icon-sm" aria-hidden="true"></i>
+      </a>
+
+      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+        data-bs-target="#navbarNico" aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </a>
 
       <section class="search-overlay d-block d-lg-none">
         <form class="search-form">
           <a href="javascript:void(0);" class="btn-search js-searchClose">
-            <i class="nc-icon-close nc-icon-white nc-icon-sm" aria-hidden="true"></i>
+            <i class="nc-icon-close nc-icon-dark nc-icon-sm" aria-hidden="true"></i>
           </a>
           <input class="search mt-3" type="search" placeholder="Cari..." />
           <div class="nc-searchbar__suggest">
@@ -39,28 +47,17 @@
           </div>
         </form>
       </section>
-
-      <a href="javascript:void(0)" class="navbar-toggler collapsed" data-bs-toggle="collapse"
-        data-bs-target="#navbarNico" aria-controls="navbarNico" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-
     </div>
     <div class="collapse navbar-collapse" id="navbarNico">
       <ul class="navbar-nav">
         <li class="nc-navbar__list ml-md-3">
-          <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-lg-block" href="javascript:void(0)">
-            Course
-            Area</a>
+          <form class="form-inline d-none d-lg-block">
+            <input class="nc-navbar-top__form form-control" type="search" placeholder="Cari course terbaik untuk Anda"
+              aria-label="Search">
+          </form>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 mx-auto d-none d-lg-block">
-        <input class="nc-navbar-top__form form-control" type="search" placeholder="Cari course terbaik untuk Anda"
-          aria-label="Search">
-      </form>
-      <ul class="navbar-nav nc-navbar-top__button--wrapper">
+      <ul class="navbar-nav nc-navbar-top__button--wrapper mx-auto">
         <!-- After Login -->
         <li class="nc-navbar-top__list d-none d-lg-block">
           <a class="nc-btn-outline--white nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Kelas Saya</a>
@@ -72,7 +69,7 @@
           </a>
           <div class="dropdown-menu nc-navbar-account__wrapper">
             <ul class="nc-navbar-account__card">
-              <li class="nc-navbar-account__card-list">
+              <li class="nc-navbar-account__card-list nc-navbar-account__card-list--first">
                 <a class="nc-navbar-account__card-detail" href="javascript:void(0)">
                   <img src="/img/avatar.svg" class="nc-navbar-account__card-detail--image" loading="lazy"
                     alt="nico setting">
@@ -88,7 +85,7 @@
                   <p class="nc-navbar-account__card--text">Pengaturan</p>
                 </a>
               </li>
-              <li class="nc-navbar-account__card-list">
+              <li class="nc-navbar-account__card-list nc-navbar-account__card-list--last">
                 <a class="nc-navbar-account__card--item" href="javascript:void(0)">
                   <i class="nc-icon-logout nc-icon-dark nc-icon-xs"></i>
                   <p class="nc-navbar-account__card--text">Logout</p>
@@ -110,6 +107,12 @@
       <!-- Navbar Mobile -->
       <ul class="navbar-nav d-block d-lg-none mb-3">
         <!-- Before Login -->
+        <li class="nc-navbar-top__list">
+          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
+            <i class="nc-icon-course nc-icon-white nc-icon-md"></i>
+            <p class="nc-navbar-top__list--text">Course Area</p>
+          </a>
+        </li>
         <li class="nc-navbar-top__list">
           <a class="nc-navbar-top__list--item" href="javascript:void(0)">
             <i class="nc-icon-login nc-icon-white nc-icon-md"></i>
@@ -204,19 +207,13 @@
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mx-auto">
           <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Web Development</a>
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Course Saya</a>
           </li>
           <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Marketing & Sales</a>
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Course Tersimpan</a>
           </li>
           <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Bussiness</a>
-          </li>
-          <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Design</a>
-          </li>
-          <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">IT & Software</a>
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Sertifikat</a>
           </li>
         </ul>
       </div>
@@ -229,7 +226,7 @@
       <h2 class="accordion-header nc-category d-block d-lg-none" id="flush-headingOne">
         <button class="accordion-button nc-navbar-bottom__title collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Pilih Kategori Kelas
+          Pilih Kategori Course
         </button>
       </h2>
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
@@ -239,31 +236,19 @@
             <li class="nav-item nc-navbar-bottom__list ">
               <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
                 <i class="nc-icon-page nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Web Development</p>
+                <p class="nc-navbar-bottom__list--text">Course Saya</p>
               </a>
             </li>
             <li class="nav-item nc-navbar-bottom__list">
               <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
                 <i class="nc-icon-horn nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Marketing & Sales</p>
+                <p class="nc-navbar-bottom__list--text">Course Tersimpan</p>
               </a>
             </li>
             <li class="nav-item nc-navbar-bottom__list">
               <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
                 <i class="nc-icon-bag nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Bussiness</p>
-              </a>
-            </li>
-            <li class="nav-item nc-navbar-bottom__list">
-              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
-                <i class="nc-icon-paint nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Design</p>
-              </a>
-            </li>
-            <li class="nav-item nc-navbar-bottom__list">
-              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
-                <i class="nc-icon-desktop nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">IT & Software</p>
+                <p class="nc-navbar-bottom__list--text">Sertifikat</p>
               </a>
             </li>
           </ul>
@@ -274,70 +259,432 @@
 </header>
 
 <body>
-
-  <!-- Course Feature -->
+  <!-- My Course -->
   <section class="nc-section-white">
     <div class="container">
-      <div class="row nc-headline">
-        <div class="col-md-12 col-xl-3 nc-account-left">
-          <div class="nc-account-left__avatar">
-            <div class="nc-account-left__avatar--preview">
-              <div id="imagePreview" class="nc-account-left__avatar--thumb"></div>
-            </div>
-            <label for="imageUpload" class="nc-account-left__avatar--upload">
-              <span class="filename">Upload Foto</span>
-              <input id="imageUpload" type="file" class="inputfile form-control" accept=".png, .jpg, .jpeg" name="file">
-            </label>
-          </div>
+      <div class="nc-section-flex">
+        <div class="nc-section-flex__wrapper">
+          <h2 class="nc-section-soft__title nc-section-soft__title--left">Course Saya</h2>
+          <div class="nc-section-flex__badge">10</div>
         </div>
-        <div class="col-md-12 col-xl-9 nc-account-right">
-          <div class="nc-account-right__button--wrapper">
-            <h1 class="nc-account-right__title">Pengaturan Akun</h1>
-            <a href="javascript:void(0)" class="nc-account-right__action nc-btn-outline--primary">Edit Akun</a>
-            <!-- <a href="javascript:void(0)" class="nc-account-right__action nc-btn--primary">Simpan</a> -->
-          </div>
-          <div class="nc-account-right__form">
-            <div class="mb-3">
-              <label for="yourname" class="nc-account-right__label form-label">Nama Lengkap</label>
-              <input type="text" class="nc-account-right__input form-control" id="yourname"
-                placeholder="Masukkan nama lengkap" aria-describedby="yournamehelp" />
-              <div id="yournamehelp" class="nc-account-right__message">
-                Data yang Anda masukkan tidak valid
+        <p class="nc-section-flex__link">Semua Course Saya</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <article class="nc-card nc-tooltip">
+            <div class="nc-tooltip__info nc-tooltip__info--md nc-tooltip__info--right">
+              <h2 class="nc-card__tooltip--title">Step by step belajar UX design untuk pemula</h2>
+              <p class="nc-card__tooltip--info">Handri Hermawan | 13 Juni 2021</p>
+              <p class="nc-card__tooltip--description">Nibh tristique euismod elementum commodo lectus venenatis, felis ornare fermentum. Mauris tristique quis dolor massa urna morbi nunc.</p>
+              <ul class="nc-card__tooltip--list">
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+            <div class="nc-card__wrapper nc-card__wrapper--top">
+              <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+              <div class="nc-card__author">
+                <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                <div>
+                  <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                  <p class="nc-card__author--role">Web Developer</p>
+                </div>
               </div>
             </div>
-            <div class="mb-3">
-              <label for="youremail" class="nc-account-right__label form-label">Email</label>
-              <input type="text" class="nc-account-right__input form-control" id="youremail"
-                placeholder="Contoh: budi@mail.com" aria-describedby="youremailhelp" />
-              <div id="youremailhelp" class="nc-account-right__message">
-                Email yang Anda masukkan tidak valid
+            <div class="nc-card__wrapper nc-card__wrapper--progress">
+              <hr class="nc-card__line">
+              <div class="nc-card__progress-info">
+                <h3 class="nc-card__progress-info--title">Progress Kelas</h3>
+                <p class="nc-card__progress-info--percent">85%</p>
+              </div>
+              <div class="nc-card__progress--wrapper nc-card__progress--move">
+                <div class="nc-card__progress--bar" >
+                </div>                       
               </div>
             </div>
-            <div class="mb-3">
-              <label for="yournumber" class="nc-account-right__label form-label">Nomor Telepon/HP</label>
-              <input type="phone" class="nc-account-right__input form-control" id="yournumber"
-                placeholder="Contoh: 08123456xxx" aria-describedby="yournumberhelp" />
-              <div id="yournumberhelp" class="nc-account-right__message">
-                Data yang Anda masukkan tidak valid
+            <div class="nc-card__wrapper nc-card__wrapper--bottom">
+              <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Lanjutkan Belajar</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="nc-card nc-tooltip">
+            <div class="nc-tooltip__info nc-tooltip__info--md nc-tooltip__info--right">
+              <h2 class="nc-card__tooltip--title">Step by step belajar UX design untuk pemula</h2>
+              <p class="nc-card__tooltip--info">Handri Hermawan | 13 Juni 2021</p>
+              <p class="nc-card__tooltip--description">Nibh tristique euismod elementum commodo lectus venenatis, felis ornare fermentum. Mauris tristique quis dolor massa urna morbi nunc.</p>
+              <ul class="nc-card__tooltip--list">
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+            <div class="nc-card__wrapper nc-card__wrapper--top">
+              <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+              <div class="nc-card__author">
+                <img src="/src/images/card/author.png" loading="lazy" alt="author" class="nc-card__author--image">
+                <div>
+                  <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                  <p class="nc-card__author--role">Web Developer</p>
+                </div>
               </div>
             </div>
-            <div class="mb-3">
-              <label for="yourpassword" class="nc-recovery-left__label form-label">Password</label>
-              <div class="input-group flex-nowrap">
-                <input type="password" class="nc-recovery-left__input nc-recovery-left__input--border form-control"
-                  id="yourpassword" placeholder="Ketik kata sandi di sini" aria-describedby="yourpasswordhelp" />
-                <span toggle="#yourpassword"
-                  class="input-group-text nc-recovery-left__input--icon nc-icon-eye-close js-pass-update"></span>
+            <div class="nc-card__wrapper nc-card__wrapper--progress">
+              <hr class="nc-card__line">
+              <div class="nc-card__progress-info">
+                <h3 class="nc-card__progress-info--title">Progress Kelas</h3>
+                <p class="nc-card__progress-info--percent">85%</p>
               </div>
-              <div id="yourpasswordhelp" class="nc-recovery-left__message nc-recovery-left__message--error">
-                Kata sandi harus berisi minimal 6 karakter
+              <div class="nc-card__progress--wrapper nc-card__progress--move">
+                <div class="nc-card__progress--bar" >
+                </div>                       
               </div>
             </div>
-          </div>
+            <div class="nc-card__wrapper nc-card__wrapper--bottom">
+              <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Lanjutkan Belajar</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="nc-card nc-tooltip">
+            <div class="nc-tooltip__info nc-tooltip__info--md nc-tooltip__info--left">
+              <h2 class="nc-card__tooltip--title">Step by step belajar UX design untuk pemula</h2>
+              <p class="nc-card__tooltip--info">Nama Author • Updated 01 November 2021</p>
+              <p class="nc-card__tooltip--description">Nibh tristique euismod elementum commodo lectus venenatis, felis ornare fermentum. Mauris tristique quis dolor massa urna morbi nunc.</p>
+              <ul class="nc-card__tooltip--list">
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+            <div class="nc-card__wrapper nc-card__wrapper--top">
+              <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+              <div class="nc-card__author">
+                <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                <div>
+                  <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                  <p class="nc-card__author--role">Web Developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="nc-card__wrapper nc-card__wrapper--progress">
+              <hr class="nc-card__line">
+              <div class="nc-card__progress-info">
+                <h3 class="nc-card__progress-info--title">Progress Kelas</h3>
+                <p class="nc-card__progress-info--percent">85%</p>
+              </div>
+              <div class="nc-card__progress--wrapper nc-card__progress--move">
+                <div class="nc-card__progress--bar" >
+                </div>                       
+              </div>
+            </div>
+            <div class="nc-card__wrapper nc-card__wrapper--bottom">
+              <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Lanjutkan Belajar</a>
+            </div>
+          </article>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Search Result Course -->
+  <section class="nc-section-soft">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-md-3">
+          <h2 class="nc-category__title">Filter</h2>
+          <div class="nc-category">
+            <div class="accordion nc-category__accordion" id="accordionExample">
+              <div class="accordion-item nc-category__accordion--item">
+                <h2 class="accordion-header nc-category__accordion--header" id="headingOne">
+                  <button class="accordion-button nc-category__accordion--button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Urutkan
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="nc-category__list">
+                      <li class="nc-category__list--radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="az" checked>
+                          <label class="form-check-label" for="az">
+                            A-Z
+                          </label>
+                        </div>
+                      </li>
+                      <li class="nc-category__list--radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="new">
+                          <label class="form-check-label" for="new">
+                            Terbaru
+                          </label>
+                        </div>
+                      </li>
+                      <li class="nc-category__list--radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="popular">
+                          <label class="form-check-label" for="popular">
+                            Terpopuler
+                          </label>
+                        </div>
+                      </li>
+                      <li class="nc-category__list--radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="best">
+                          <label class="form-check-label" for="best">
+                            Rating Terbaik
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="nc-category__line">
+              <div class="accordion-item nc-category__accordion--item">
+                <h2 class="accordion-header nc-category__accordion--header" id="headingTwo">
+                  <button class="accordion-button nc-category__accordion--button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Kategori
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="nc-category__list">
+                      <li class="nc-category__list--item">
+                        <label class="container">Semua Course
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Web Development
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Marketing & Sales
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Business
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">Design
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nc-category__list--item">
+                        <label class="container">IT & Software
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-md-3">
+          <div class="d-flex justify-content-between">
+            <a href="javascript:void(0)" class="nc-btn-outline--dark" data-bs-toggle="modal" data-bs-target="#shortList">
+              <i class="nc-icon-facebook"></i> Urutkan</a>
+            <a href="javascript:void(0)" class="nc-btn-outline--dark" data-bs-toggle="modal" data-bs-target="#shortCategory">
+              <i class="nc-icon-facebook"></i> Kategori</a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="nc-card-result__search">
+            <!-- If using search -->
+            <!-- <p class="nc-card-result__search--title">Menampilkan 2 hasil untuk - <span class="nc-card-result__search--value">"UX Design"</span></p> -->
+
+            <!-- If using category -->
+            <h2 class="nc-card-result__search--category">Semua Course</h2>
+          </div>
+          <div class="nc-card-result">
+            <div class="row">
+              <div class="nc-card-result__wrapper col-md-4">
+                <img src="/src/images/card/card-result.png" alt="Caption Here" class="nc-card-result__images">
+                <div class="nc-card-result__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="Caption Here" class="nc-card__author--image">
+                  <h3 class="nc-card-result__author--name">Handri Hermawan</h3>
+                </div>
+              </div>
+              <div class="nc-card-result__wrapper col-md-8">
+                <h2 class="nc-card-result__title">Panduan Belajar UX Untuk Pemula</h2>
+                <div class="nc-card-result__info">
+                  <div class="nc-card-result__info--lesson">8 Materi</div>
+                  <div class="nc-card-result__info--time">1.5 Jam</div>
+                </div>
+                <p class="nc-card-result__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto iste maiores minima saepe rerum deserunt voluptatem possimus neque sit! Maxime ea dicta unde cumque provident ducimus eligendi qui vitae!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, similique.</p>
+                <div class="nc-card-result__action">
+                  <a href="" class="nc-card-result__action--join nc-btn--primary">Ikuti Course</a>
+                  <a href="" class="nc-card-result__action--save nc-btn-outline--primary">
+                    <i class="nc-icon-tag nc-icon-xs"></i>
+                    Simpan Course
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nc-card-result">
+            <div class="row">
+              <div class="nc-card-result__wrapper col-md-4">
+                <img src="/src/images/card/card-result.png" alt="Caption Here" class="nc-card-result__images">
+                <div class="nc-card-result__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="Caption Here" class="nc-card__author--image">
+                  <h3 class="nc-card-result__author--name">Handri Hermawan</h3>
+                </div>
+              </div>
+              <div class="nc-card-result__wrapper col-md-8">
+                <h2 class="nc-card-result__title">Panduan Belajar UX Untuk Pemula</h2>
+                <div class="nc-card-result__info">
+                  <div class="nc-card-result__info--lesson">8 Materi</div>
+                  <div class="nc-card-result__info--time">1.5 Jam</div>
+                </div>
+                <p class="nc-card-result__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto iste maiores minima saepe rerum deserunt voluptatem possimus neque sit! Maxime ea dicta unde cumque provident ducimus eligendi qui vitae!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, similique.</p>
+                <div class="nc-card-result__action">
+                  <a href="" class="nc-card-result__action--join nc-btn--primary">Ikuti Course</a>
+                  <a href="" class="nc-card-result__action--save nc-btn-outline--primary">
+                    <i class="nc-icon-tag nc-icon-xs"></i>
+                    Simpan Course
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nc-pagination">
+            <ul class="nc-pagination__list">
+              <li class="nc-pagination__btn"><span class="nc-icon-arrow-left"></span></li>
+              <li class="nc-pagination__numbers"> 1</li>
+              <li class="nc-pagination__numbers active">2</li>
+              <li class="nc-pagination__numbers">3</li>
+              <li class="nc-pagination__btn active"><span class="nc-icon-arrow-right"></span></li>
+            </ul>
+          </div>   
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <div class="modal fade" id="shortList" tabindex="-1" aria-labelledby="shortListLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content nc-modal__content">
+        <div class="modal-body">
+          <div class="nc-sign__thanks">
+            <h1 class="nc-modal__title--md">Urutkan</h1>
+            <ul class="nc-category__list">
+              <li class="nc-category__list--radio">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="az" checked>
+                  <label class="form-check-label" for="az">
+                    A-Z
+                  </label>
+                </div>
+              </li>
+              <li class="nc-category__list--radio">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="new">
+                  <label class="form-check-label" for="new">
+                    Terbaru
+                  </label>
+                </div>
+              </li>
+              <li class="nc-category__list--radio">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="popular">
+                  <label class="form-check-label" for="popular">
+                    Terpopuler
+                  </label>
+                </div>
+              </li>
+              <li class="nc-category__list--radio nc-category__list--radio-last">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="best">
+                  <label class="form-check-label" for="best">
+                    Rating Terbaik
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="shortCategory" tabindex="-1" aria-labelledby="shortCategoryLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content nc-modal__content">
+        <div class="modal-body">
+          <div class="nc-sign__thanks">
+            <h1 class="nc-modal__title--md">Kategori</h1>
+            <ul class="nc-category__list">
+              <li class="nc-category__list--item">
+                <label class="container">Semua Course
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li class="nc-category__list--item">
+                <label class="container">Web Development
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li class="nc-category__list--item">
+                <label class="container">Marketing & Sales
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li class="nc-category__list--item">
+                <label class="container">Business
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li class="nc-category__list--item">
+                <label class="container">Design
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li class="nc-category__list--item nc-category__list--item-last">
+                <label class="container">IT & Software
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
 
 </body>
 
@@ -505,56 +852,4 @@
 
 <script src="dist/js/app.js"></script>
 <script src="dist/js/vendor.js"></script>
-<script>
-  $(function (e) {
-    var $open = $('.js-searchOpen');
-    var $close = $('.js-searchClose');
-    var $body = $('body');
-    var $lay = $('.search-overlay');
-    var $input = $('.search-form > .search');
-
-    $open.on('click', function (e) {
-      e.preventDefault();
-      $body.addClass('-hide');
-      $lay.addClass('-show');
-      $input.focus();
-    });
-
-    $close.on('click', function (e) {
-      e.preventDefault();
-      $body.removeClass('-hide');
-      $lay.removeClass('-show');
-    });
-  });
-
-  $(".js-pass-update").click(function () {
-    $(this).toggleClass("nc-icon-eye-open")
-    var input = $($(this).attr("toggle"))
-    if (input.attr("type") == "password") {
-      input.attr("type", "text")
-    } else {
-      input.attr("type", "password")
-    }
-  });
-
-  $("input[type=file]").change(function (e) {
-    $(this).parents(".nc-account-left__upload").find(".filename").text(e.target.files[0].name);
-  });
-
-  function readURL(input) {
-    if (input.files && input.files[0]) {
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
-        $('#imagePreview').hide();
-        $('#imagePreview').fadeIn(650);
-      }
-      reader.readAsDataURL(input.files[0]);
-    }
-  }
-  $("#imageUpload").change(function () {
-    readURL(this);
-  });
-</script>
-
 </html>

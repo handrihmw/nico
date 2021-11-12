@@ -2,11 +2,11 @@ $font-path : "src/font" !default;
 
 @font-face {
   font-family: 'courseicon';
-  src: url('#{$font-path}/courseicon.eot?i2sxjd');
-  src: url('#{$font-path}/courseicon.eot?i2sxjd#iefix') format('embedded-opentype'),
-  url('#{$font-path}/courseicon.ttf?i2sxjd') format('truetype'),
-  url('#{$font-path}/courseicon.woff?i2sxjd') format('woff'),
-  url('#{$font-path}/courseicon.svg?i2sxjd#courseicon') format('svg');
+  src: url('#{$font-path}/courseicon.eot?iefix');
+  src: url('#{$font-path}/courseicon.eot?iefix#iefix') format('embedded-opentype'),
+  url('#{$font-path}/courseicon.ttf?iefix') format('truetype'),
+  url('#{$font-path}/courseicon.woff?iefix') format('woff'),
+  url('#{$font-path}/courseicon.svg?iefix#courseicon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -22,6 +22,34 @@ $font-path : "src/font" !default;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.nc-icon-star:before {
+  content: "\e91b";
+}
+
+.nc-icon-share:before {
+  content: "\e91c";
+}
+
+.nc-icon-clock:before {
+  content: "\e916";
+  color: #7f8895;
+}
+.nc-icon-play .path1:before {
+  content: "\e917";
+  color: rgb(127, 136, 149);
+}
+.nc-icon-play .path2:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.nc-icon-arrow-left:before {
+  content: "\e919";
+}
+.nc-icon-arrow-right:before {
+  content: "\e91a";
 }
 
 .nc-icon-close:before {

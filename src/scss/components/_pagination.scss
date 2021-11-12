@@ -1,0 +1,68 @@
+.nc-pagination {
+  margin: 3rem 0;
+
+  &__list {
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: -2rem;
+
+    @include screen(desktop) {
+      margin-left: 0;
+    }
+  }
+
+  &__numbers,
+  &__btn {
+    @extend %font-16;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+  }
+
+  &__numbers,
+  &__btn {
+    background: $clr-white;
+    border: 1px solid $clr-hr;
+    border-radius: 0.5rem;
+    color: $clr-text-400;
+    height: 3rem;
+    width: 3rem;
+
+    &:hover {
+      border: 1px solid $clr-text-400;
+    }
+
+    &.active {
+      background: $clr-blue-200;
+      border: 1px solid $clr-blue-200;
+      color: $clr-white;
+
+      &:hover {
+        background: darken($clr-blue-200, 5%);
+        border: 1px solid darken($clr-blue-200, 5%);
+      }
+    }
+  }
+
+  &__btn {
+    color: $clr-hr;
+    pointer-events: none;
+
+    &.active {
+      background: $clr-white;
+      border: 1px solid $clr-hr;
+      color: $clr-text-400;
+      pointer-events: initial;
+
+      &:hover {
+        background: $clr-white;
+        border: 1px solid $clr-text-400;
+      }
+    }
+  }
+}
