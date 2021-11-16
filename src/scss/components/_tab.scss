@@ -1,21 +1,30 @@
 .nc-tab {
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
+
+  @include screen(desktop) {
+    margin-bottom: 5rem;
+  }
 
   &__list {
-    border-bottom: none;
+    border-bottom: 2px solid $clr-hr;
     justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: 5rem;
-    padding: 1rem 0;
+    margin-bottom: 2.5rem;
+    padding: 0;
 
     @include screen(desktop) {
       border-bottom: 2px solid $clr-hr;
-      flex-direction: unset;
+      margin-bottom: 5rem;
+      padding: 0;
     }
 
     &--item {
-      margin: 0.75rem;
-      padding: 0;
+      margin-bottom: -2px;
+      width: auto;
+
+      @include screen(desktopLarge) {
+        margin-bottom: -2px;
+        width: 320px;
+      }
     }
   }
 
@@ -24,16 +33,22 @@
   }
 
   &__title {
-    @extend %font-20-bold;
-    background-color: $clr-soft-200;
-    border-radius: 1.5rem;
     color: $clr-text-100;
+    display: block;
+    font-family: 'NunitoSansBold', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.005rem;
+    line-height: 1.5rem;
     text-align: center;
-    padding: 1rem 0;
+    padding-bottom: 0.5rem;
     position: relative;
 
     @include screen(desktop) {
-      padding: 0 5rem 1.1rem 5rem;
+      font-family: 'NunitoSansBold', sans-serif;
+      font-size: 1.25rem;
+      letter-spacing: 0.02rem;
+      line-height: 1.625rem;
+      padding-bottom: 1.5rem;
     }
 
     &:hover {
@@ -41,17 +56,20 @@
     }
 
     &.active {
-      background: none repeat scroll 0 0 transparent;
       border-bottom: 3px solid $clr-blue-200;
       color: $clr-text-400;
       cursor: pointer;
       overflow: hidden;
       position: relative;
-      padding: 1rem 0;
+      padding-bottom: 0.5rem;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
 
       @include screen(desktop) {
-        padding: 0 5rem 1.1rem 5rem;
+        background-color: transparent;
+        border-bottom: 3px solid $clr-blue-200;
+        border-radius: 0;
+        color: $clr-text-400;
+        padding-bottom: 1.5rem;
       }
     }
   }
@@ -67,6 +85,11 @@
     gap: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    &--title {
+      @extend %font-24;
+      margin-bottom: 2rem;
+    }
 
     &--image {
       @extend %image-render;

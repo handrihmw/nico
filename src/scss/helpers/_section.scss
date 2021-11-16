@@ -72,11 +72,12 @@ $section-colors: ("white", $clr-white, $clr-text-400, $clr-text-200),
   display: flex;
   justify-content: unset;
   margin-bottom: 1rem;
-  padding: 0 1rem;
+  padding: 0;
 
   @include screen(desktop) {
     justify-content: start;
     margin-bottom: 2rem;
+    padding: 0 1rem;
   }
 }
 

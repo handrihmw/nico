@@ -51,7 +51,7 @@
     margin-bottom: 2rem;
     width: 100%;
 
-    @include screen(desktop) {
+    @include screen(desktopLarge) {
       height: 300px;
       margin-bottom: 0;
       width: 460px;
