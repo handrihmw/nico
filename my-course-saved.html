@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="dist/css/swipper.css">
   <link rel="stylesheet" href="dist/css/app.css">
 </head>
-<header class="nc-header-none">
+<header class="nc-header-right">
   <nav class="navbar nc-navbar-top navbar-expand-lg">
     <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
       <img src="/src/images/logo/nh-logo.svg" loading="lazy"
@@ -21,7 +21,7 @@
         class="nc-navbar__logo d-block d-md-none" alt="logo niagahoster">
     </a>
     <div class="d-flex justify-content-end align-items-center gap-3">
-      <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button d-none d-md-block" href="javascript:void(0)"> Course
+      <a class="nc-btn--primary nc-btn--md nc-navbar-top__button d-none d-md-block" href="javascript:void(0)"> Course
         Area</a>
       <a href="javascript:void(0);" class="d-block d-lg-none nc-navbar-top__search js-searchOpen">
         <i class="nc-icon-search nc-icon-sm" aria-hidden="true"></i>
@@ -58,50 +58,14 @@
         </li>
       </ul>
       <ul class="navbar-nav nc-navbar-top__button--wrapper mx-auto">
-        <!-- After Login -->
-        <li class="nc-navbar-top__list d-none d-lg-block">
-          <a class="nc-btn-outline--white nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Kelas Saya</a>
-        </li>
-        <li class="dropdown nc-navbar-top__list d-none d-lg-block">
-          <a class="nc-navbar-top__list--account" data-toggle="dropdown" href="javascript:void(0)">
-            <img src="/img/avatar-soft.svg" class="nc-navbar-top__list--icon" loading="lazy" alt="avatar icon">
-            <p class="nc-navbar-top__list--text">Hallo, Dinda Nabila</p>
-          </a>
-          <div class="dropdown-menu nc-navbar-account__wrapper">
-            <ul class="nc-navbar-account__card">
-              <li class="nc-navbar-account__card-list nc-navbar-account__card-list--first">
-                <a class="nc-navbar-account__card-detail" href="javascript:void(0)">
-                  <img src="/img/avatar.svg" class="nc-navbar-account__card-detail--image" loading="lazy"
-                    alt="nico setting">
-                  <div class="nc-navbar-account__card-deatail--wrapper">
-                    <p class="nc-navbar-account__card-detail--name">Dinda Nabila</p>
-                    <p class="nc-navbar-account__card-detail--email">dinda.nabila@mail.com</p>
-                  </div>
-                </a>
-              </li>
-              <li class="nc-navbar-account__card-list">
-                <a class="nc-navbar-account__card--item" href="javascript:void(0)">
-                  <i class="nc-icon-setting nc-icon-dark nc-icon-xs"></i>
-                  <p class="nc-navbar-account__card--text">Pengaturan</p>
-                </a>
-              </li>
-              <li class="nc-navbar-account__card-list nc-navbar-account__card-list--last">
-                <a class="nc-navbar-account__card--item" href="javascript:void(0)">
-                  <i class="nc-icon-logout nc-icon-dark nc-icon-xs"></i>
-                  <p class="nc-navbar-account__card--text">Logout</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
 
         <!-- Before Login -->
-        <!-- <li class="nc-navbar-top__list d-none d-lg-block">
-          <a class="nc-btn-outline--white nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Masuk</a>
+        <li class="nc-navbar-top__list d-none d-lg-block">
+          <a class="nc-btn-outline--white nc-btn--md nc-navbar-top__button" href="javascript:void(0)"> Masuk</a>
         </li>
         <li class="nc-navbar-top__list d-none d-lg-block">
-          <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Daftar</a>
-        </li> -->
+          <a class="nc-btn--primary nc-btn--md nc-navbar-top__button" href="javascript:void(0)"> Daftar</a>
+        </li>
       </ul>
 
       <!-- Navbar Mobile -->
@@ -109,40 +73,20 @@
         <!-- Before Login -->
         <li class="nc-navbar-top__list">
           <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-course nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Course Area</p>
+            <i class="nc-icon-book-open nc-icon-sm"></i>
+            <p class="nc-navbar-top__list--menu">Course Area</p>
           </a>
         </li>
         <li class="nc-navbar-top__list">
           <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-login nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Login</p>
+            <i class="nc-icon-login nc-icon-white nc-icon-sm"></i>
+            <p class="nc-navbar-top__list--menu">Login</p>
           </a>
         </li>
         <li class="nc-navbar-top__list">
           <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-sign-up nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Daftar</p>
-          </a>
-        </li>
-
-        <!-- After Login -->
-        <li class="nc-navbar-top__list">
-          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-graduation nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Kelas Saya</p>
-          </a>
-        </li>
-        <li class="nc-navbar-top__list">
-          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-setting nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Pengaturan</p>
-          </a>
-        </li>
-        <li class="nc-navbar-top__list">
-          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-logout nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Logout</p>
+            <i class="nc-icon-sign-up nc-icon-white nc-icon-sm"></i>
+            <p class="nc-navbar-top__list--menu">Daftar</p>
           </a>
         </li>
       </ul>
@@ -257,7 +201,6 @@
     </div>
   </section>
 </header>
-
 <body>
 
   <!-- My Course -->
@@ -284,21 +227,150 @@
             <li><a class="nc-filter__dropdown--item nc-filter__dropdown--item-last dropdown-item" href="#">IT & Software</a></li>
           </ul>
         </div>
-        <input class="nc-filter__form form-control" type="search" placeholder="Cari course..." aria-label="Search">
+        <input class="nc-filter__form form-control" type="search" placeholder="Cari course tersimpan..." aria-label="Search">
         <a href="" class="nc-filter__filter nc-btn-outline--primary nc-btn--lg">Reset Filter</a>
       </div>
 
-      <div class="nc-filter__empty">
-        <p class="nc-filter__empty--title">Menampilkan 0 hasil untuk - <span class="nc-filter__empty--value">"UX Design"</span></p>
-        <div class="nc-filter__empty--wrapper">
-          <img src="/src/images/icon/empty.webp" alt="course not found" class="nc-filter__empty--image">
-          <h3 class="nc-filter__empty--description">Course yang Anda cari saat ini belum tersedia</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <article class="nc-card nc-tooltip">
+            <div class="nc-tooltip__info nc-tooltip__info--md nc-tooltip__info--right">
+              <h2 class="nc-card__tooltip--title">Step by step belajar UX design untuk pemula</h2>
+              <p class="nc-card__tooltip--info">Handri Hermawan | 13 Juni 2021</p>
+              <p class="nc-card__tooltip--description">Nibh tristique euismod elementum commodo lectus venenatis, felis ornare fermentum. Mauris tristique quis dolor massa urna morbi nunc.</p>
+              <ul class="nc-card__tooltip--list">
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+            <div class="nc-card__wrapper nc-card__wrapper--top">
+              <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+              <div class="nc-card__author">
+                <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                <div>
+                  <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                  <p class="nc-card__author--role">Web Developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="nc-card__wrapper nc-card__wrapper--progress">
+              <hr class="nc-card__line">
+              <div class="nc-card__progress-info">
+                <h3 class="nc-card__progress-info--title">Progress Kelas</h3>
+                <p class="nc-card__progress-info--percent">85%</p>
+              </div>
+              <div class="nc-card__progress--wrapper nc-card__progress--move">
+                <div class="nc-card__progress--bar" >
+                </div>                       
+              </div>
+            </div>
+            <div class="nc-card__wrapper nc-card__wrapper--bottom">
+              <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Lanjutkan Sesi</a>
+            </div>
+          </article>
         </div>
-      </div>  
+        <div class="col-md-4">
+          <article class="nc-card nc-tooltip">
+            <div class="nc-tooltip__info nc-tooltip__info--md nc-tooltip__info--right">
+              <h2 class="nc-card__tooltip--title">Step by step belajar UX design untuk pemula</h2>
+              <p class="nc-card__tooltip--info">Handri Hermawan | 13 Juni 2021</p>
+              <p class="nc-card__tooltip--description">Nibh tristique euismod elementum commodo lectus venenatis, felis ornare fermentum. Mauris tristique quis dolor massa urna morbi nunc.</p>
+              <ul class="nc-card__tooltip--list">
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+            <div class="nc-card__wrapper nc-card__wrapper--top">
+              <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+              <div class="nc-card__author">
+                <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                <div>
+                  <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                  <p class="nc-card__author--role">Web Developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="nc-card__wrapper nc-card__wrapper--progress">
+              <hr class="nc-card__line">
+              <div class="nc-card__progress-info">
+                <h3 class="nc-card__progress-info--title">Progress Kelas</h3>
+                <p class="nc-card__progress-info--percent">85%</p>
+              </div>
+              <div class="nc-card__progress--wrapper nc-card__progress--move">
+                <div class="nc-card__progress--bar" >
+                </div>                       
+              </div>
+            </div>
+            <div class="nc-card__wrapper nc-card__wrapper--bottom">
+              <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Lanjutkan Sesi</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="nc-card nc-tooltip">
+            <div class="nc-tooltip__info nc-tooltip__info--md nc-tooltip__info--left">
+              <h2 class="nc-card__tooltip--title">Step by step belajar UX design untuk pemula</h2>
+              <p class="nc-card__tooltip--info">Nama Author • Updated 01 November 2021</p>
+              <p class="nc-card__tooltip--description">Nibh tristique euismod elementum commodo lectus venenatis, felis ornare fermentum. Mauris tristique quis dolor massa urna morbi nunc.</p>
+              <ul class="nc-card__tooltip--list">
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+                <li class="nc-card__tooltip--list-item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+            <div class="nc-card__wrapper nc-card__wrapper--top">
+              <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+              <div class="nc-card__author">
+                <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                <div>
+                  <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                  <p class="nc-card__author--role">Web Developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="nc-card__wrapper nc-card__wrapper--progress">
+              <hr class="nc-card__line">
+              <div class="nc-card__progress-info">
+                <h3 class="nc-card__progress-info--title">Progress Kelas</h3>
+                <p class="nc-card__progress-info--percent">100%</p>
+              </div>
+              <div class="nc-card__progress--wrapper nc-card__progress--move">
+                <div class="nc-card__progress--complete" >
+                </div>                       
+              </div>
+            </div>
+            <div class="nc-card__wrapper nc-card__wrapper--flex">
+              <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Unduh Sertifikat</a>
+              <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn-outline--primary">Lihat Course</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="nc-pagination">
+        <ul class="nc-pagination__list">
+          <li class="nc-pagination__btn"><span class="nc-icon-arrow-left"></span></li>
+          <li class="nc-pagination__numbers"> 1</li>
+          <li class="nc-pagination__numbers active">2</li>
+          <li class="nc-pagination__numbers">3</li>
+          <li class="nc-pagination__btn active"><span class="nc-icon-arrow-right"></span></li>
+        </ul>
+      </div>   
     </div>
   </section>
 
-  <!-- Course Pilihan -->
+  <!-- Rekomendasi Course -->
   <section class="nc-section-white nc-section-center">
     <div class="container">
       <div class="nc-section-left">
@@ -308,6 +380,11 @@
         <div class="swiper-wrapper col-md-12">
           <div class="col-sm-12 col-md-4 swiper-slide">
             <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
               <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
               <div class="nc-card__wrapper nc-card__wrapper--top">
                 <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
@@ -322,7 +399,7 @@
               <div class="nc-card__wrapper nc-card__wrapper--bottom">
                 <hr class="nc-card__line">
                 <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
                   <a href="javascript:void(0);">
                     <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
                   </a>
@@ -332,6 +409,11 @@
           </div>
           <div class="col-sm-12 col-md-4 swiper-slide">
             <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
               <img src="/src/images/card/thumb-3.png" loading="lazy" alt="image card" class="nc-card__image">
               <div class="nc-card__wrapper nc-card__wrapper--top">
                 <h2 class="nc-card__title">Best WordPress Theme & Responsive Blogger Template for Professional Blog</h2>
@@ -346,7 +428,7 @@
               <div class="nc-card__wrapper nc-card__wrapper--bottom">
                 <hr class="nc-card__line">
                 <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
                   <a href="javascript:void(0);">
                     <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
                   </a>
@@ -356,6 +438,11 @@
           </div>
           <div class="col-sm-12 col-md-4 swiper-slide">
             <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
               <img src="/src/images/card/thumb-2.png" loading="lazy" alt="image card" class="nc-card__image">
               <div class="nc-card__wrapper nc-card__wrapper--top">
                 <h2 class="nc-card__title">Kelas WA 20 Niagahoster: Belajar Mendapatkan Uang dari Internet agar cepat kaya
@@ -371,7 +458,7 @@
               <div class="nc-card__wrapper nc-card__wrapper--bottom">
                 <hr class="nc-card__line">
                 <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
                   <a href="javascript:void(0);">
                     <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
                   </a>
@@ -381,6 +468,11 @@
           </div>
           <div class="col-sm-12 col-md-4 swiper-slide">
             <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
               <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
               <div class="nc-card__wrapper nc-card__wrapper--top">
                 <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
@@ -395,7 +487,7 @@
               <div class="nc-card__wrapper nc-card__wrapper--bottom">
                 <hr class="nc-card__line">
                 <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
                   <a href="javascript:void(0);">
                     <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
                   </a>
@@ -405,6 +497,11 @@
           </div>
           <div class="col-sm-12 col-md-4 swiper-slide">
             <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
               <img src="/src/images/card/thumb-3.png" loading="lazy" alt="image card" class="nc-card__image">
               <div class="nc-card__wrapper nc-card__wrapper--top">
                 <h2 class="nc-card__title">Best WordPress Theme & Responsive Blogger Template for Professional Blog</h2>
@@ -419,7 +516,7 @@
               <div class="nc-card__wrapper nc-card__wrapper--bottom">
                 <hr class="nc-card__line">
                 <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
                   <a href="javascript:void(0);">
                     <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
                   </a>
@@ -429,6 +526,11 @@
           </div>
           <div class="col-sm-12 col-md-4 swiper-slide">
             <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
               <img src="/src/images/card/thumb-2.png" loading="lazy" alt="image card" class="nc-card__image">
               <div class="nc-card__wrapper nc-card__wrapper--top">
                 <h2 class="nc-card__title">Kelas WA 20 Niagahoster: Belajar Mendapatkan Uang dari Internet agar cepat kaya
@@ -444,7 +546,7 @@
               <div class="nc-card__wrapper nc-card__wrapper--bottom">
                 <hr class="nc-card__line">
                 <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
                   <a href="javascript:void(0);">
                     <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
                   </a>
@@ -655,62 +757,5 @@
     }
   });
 </script>
-<script>
-  var swiperNew = new Swiper('.slider-new', {
-    slidesPerView: "auto",
-    lazyLoading: true,
-    navigation: {
-      nextEl: '.nc-card__button--next',
-      prevEl: '.nc-card__button--prev'
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      300: {
-        slidesPerView: 1.25
-      },
-      600: {
-        slidesPerView: 2.5
-      },
-      900: {
-        slidesPerView: 4
-      },
-      1200: {
-        slidesPerView: 4
-      }
-    }
-  });
-</script>
-<script>
-  var swiperAll = new Swiper('.slider-all', {
-    slidesPerView: "auto",
-    lazyLoading: true,
-    navigation: {
-      nextEl: '.nc-card__button--next',
-      prevEl: '.nc-card__button--prev'
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      300: {
-        slidesPerView: 1.25
-      },
-      600: {
-        slidesPerView: 2.5
-      },
-      900: {
-        slidesPerView: 4
-      },
-      1200: {
-        slidesPerView: 4
-      }
-    }
-  });
-</script>
+
 </html>

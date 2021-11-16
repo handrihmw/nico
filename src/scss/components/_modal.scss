@@ -79,9 +79,36 @@
 
     &--share {
       align-items: center;
+      cursor: pointer;
       display: flex;
       gap: 0.5rem;
       justify-content: center;
+      position: relative;
+    }
+  }
+
+  &__social {
+    background-color: $clr-white;
+    border-radius: 56px;
+    box-shadow: 0px 8px 32px rgba(0, 87, 178, 0.16);
+    display: none;
+    justify-content: space-between;
+    padding: 0.5rem;
+    position: absolute;
+    top: -90px;
+
+    &--icon {
+      background: transparent;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      color: $clr-text-400;
+      margin: 0 0.5rem;
+      padding: 0.75rem;
+
+      &:hover {
+        background: $clr-soft-200;
+        color: $clr-text-400;
+      }
     }
   }
 
@@ -172,6 +199,7 @@
   }
 }
 
+// For Review
 #star-1 {
   &:hover {
     ~ {
@@ -403,5 +431,45 @@
         }
       }
     }
+  }
+}
+
+// For Share Button
+.toggle input[type="checkbox"]:checked + .nc-modal__action--share .nc-modal__social {
+  animation: fadeIn 1s;
+  display: flex;
+}
+
+.toggle input[type="checkbox"]:not(:checked) + .nc-modal__action--share .nc-modal__social {
+  animation: fadeOut 1s;
+}
+
+.toggle input[type="checkbox"]:checked + .nc-modal__action--share .nc-icon-share {
+  display: none;
+}
+
+.toggle input[type="checkbox"]:not(:checked) + .nc-modal__action--share .nc-icon-close {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

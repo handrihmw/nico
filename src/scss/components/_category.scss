@@ -158,4 +158,28 @@
       }
     }
   }
+
+  &__filter {
+    @extend %flex-between;
+    margin-bottom: 1.5rem;
+
+    &--button {
+      &:hover,
+      &:active,
+      &:focus {
+        border: 1px solid $clr-blue-300;
+        box-shadow: none;
+      }
+    }
+
+    &--value {
+      @extend %font-14-bold;
+      background-color: $clr-soft-200;
+      border-radius: 1.5rem;
+      color: $clr-blue-300;
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1.25rem;
+    }
+  }
 }

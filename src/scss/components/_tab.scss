@@ -1,0 +1,89 @@
+.nc-tab {
+  margin-bottom: 5rem;
+
+  &__list {
+    border-bottom: none;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    padding: 1rem 0;
+
+    @include screen(desktop) {
+      border-bottom: 2px solid $clr-hr;
+      flex-direction: unset;
+    }
+
+    &--item {
+      margin: 0.75rem;
+      padding: 0;
+    }
+  }
+
+  &__line {
+    border-bottom: 2px solid $clr-hr;
+  }
+
+  &__title {
+    @extend %font-20-bold;
+    background-color: $clr-soft-200;
+    border-radius: 1.5rem;
+    color: $clr-text-100;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+
+    @include screen(desktop) {
+      padding: 0 5rem 1.1rem 5rem;
+    }
+
+    &:hover {
+      color: $clr-text-200;
+    }
+
+    &.active {
+      background: none repeat scroll 0 0 transparent;
+      border-bottom: 3px solid $clr-blue-200;
+      color: $clr-text-400;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      padding: 1rem 0;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+
+      @include screen(desktop) {
+        padding: 0 5rem 1.1rem 5rem;
+      }
+    }
+  }
+
+  &__description {
+    @extend %font-20;
+    color: $clr-text-200;
+    margin-bottom: 1.5rem;
+  }
+
+  &__mentor {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &--image {
+      @extend %image-render;
+      aspect-ratio: 1/1;
+      height: 2.625rem;
+      width: 2.625rem;
+    }
+
+    &--name {
+      @extend %font-16-bold;
+      margin-bottom: 0;
+    }
+
+    &--role {
+      @extend %font-14;
+      color: $clr-text-200;
+      height: 1.5rem;
+    }
+  }
+}

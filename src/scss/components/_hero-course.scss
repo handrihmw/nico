@@ -1,0 +1,60 @@
+.nc-hero-course {
+  background-color: $clr-soft-200;
+  color: $clr-text-400;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+  padding: 2rem 0;
+  width: 100%;
+
+  @include screen(desktop) {
+    padding: 3.75rem 1.25rem;
+  }
+
+  &-center {
+    display: grid;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+  }
+
+  &__wrapper {
+    align-items: center;
+  }
+
+  &__title {
+    @extend %font-32;
+    margin-bottom: 1.5rem;
+  }
+
+  &__line {
+    background-color: $clr-hr-blue;
+    margin-bottom: 1.5rem;
+  }
+
+  &__date,
+  &__audience,
+  &__time {
+    @extend %font-18-bold;
+    align-items: center;
+    color: $clr-text-400;
+    display: flex;
+    gap: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__image {
+    @extend %image-render;
+    height: auto;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    @include screen(desktop) {
+      height: 300px;
+      margin-bottom: 0;
+      width: 460px;
+    }
+  }
+}

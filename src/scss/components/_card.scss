@@ -1,11 +1,12 @@
 @import '../helpers/swipper';
 
 .nc-card {
-  border-color: $clr-white;
+  background-color: $clr-white;
   border-radius: 0.75rem;
   box-shadow: 0px 8px 16px rgba(0, 87, 128, 0.08);
+  height: auto;
   margin: 2rem 1rem;
-  min-height: 515px;
+  position: relative;
   width: 95%;
 
   @include screen(desktop) {
@@ -13,11 +14,7 @@
   }
 
   &__wrapper {
-    padding: 1rem;
-
-    @include screen(desktop) {
-      padding: 1.5rem;
-    }
+    padding: 1rem 1.5rem;
 
     &--top {
       padding-bottom: 0;
@@ -34,14 +31,35 @@
     }
 
     &--flex {
-      @extend %flex-between;
-      flex-direction: column;
+      @extend %flex-col-between;
       gap: 0.5rem;
-      padding-top: 0;
-      padding-bottom: 2rem;
+      padding: 0 1rem 2rem 1rem;
 
       @include screen(desktop) {
-        flex-direction: unset;
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-bottom: 0;
+
+    &--item {
+      @extend %font-16;
+      padding: 1rem 0;
+      position: relative;
+      width: 90%;
+
+      &:before {
+        content: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nMjInIGhlaWdodD0nMjInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PGNpcmNsZSBjeD0nMTEnIGN5PScxMC45NTEnIHI9JzEwLjUnIGZpbGw9JyMwMEJGQTYnLz48cGF0aCBmaWxsLXJ1bGU9J2V2ZW5vZGQnIGNsaXAtcnVsZT0nZXZlbm9kZCcgZD0nbTguODM0IDE0LjcxNi0yLjQtMi40YS44LjggMCAxIDEgMS4xMzEtMS4xMzFsMS43ODkgMS43ODkgNS4wMzgtNS43NDRhLjc5OS43OTkgMCAxIDEgMS4yMTUgMS4wNGwtNS42IDYuNGEuOC44IDAgMCAxLS41NzcuMjguODE0LjgxNCAwIDAgMS0uNTk2LS4yMzR6JyBmaWxsPScjZmZmJy8+PC9zdmc+);
+        left: -2rem;
+        padding-top: 0.875rem;
+        position: absolute;
+        top: 1px;
       }
     }
   }
@@ -49,10 +67,17 @@
   &__image {
     @extend %image-render;
     border-radius: 0.75rem 0.75rem 0 0;
-    height: auto;
-    min-height: 145px;
+    height: 130px;
     opacity: 1;
     width: 100%;
+
+    @include screen(desktop) {
+      height: 250px;
+    }
+
+    &--sm {
+      height: 100px;
+    }
 
     &:hover {
       opacity: .8;
@@ -60,10 +85,6 @@
       -moz-transition: opacity .3s ease-out;
       -webkit-transition: opacity .3s ease-out;
       -o-transition: opacity .3s ease-out;
-    }
-
-    @include screen(desktop) {
-      height: 240px;
     }
 
     &--sm {
@@ -77,19 +98,27 @@
 
   &__title {
     @extend %font-16-bold;
-    height: 4.5rem;
+    min-height: 5rem;
     margin-bottom: 2rem;
     width: 95%;
   }
 
   &__line {
     background-color: $clr-hr;
-    margin-bottom: 1.5rem;
   }
 
   &__author {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+
+    @include screen(desktop) {
+      flex-direction: unset;
+    }
+
+    &--center {
+      align-items: center;
+    }
 
     &--image {
       @extend %image-render;
@@ -112,7 +141,6 @@
 
   &__action {
     @extend %flex-between;
-    gap: 1rem;
 
     &--button {
       width: 100%;
@@ -121,8 +149,65 @@
     &--save {
       @extend %image-render;
       aspect-ratio: 1/1;
+      display: none;
       height: 2.5rem;
+      margin-left: 1rem;
       width: 2.5rem;
+
+      @include screen(desktop) {
+        display: block;
+      }
+    }
+
+    &--save-mobile {
+      box-shadow: 0px 4px 24px rgba(0, 87, 178, 0.08);
+      position: absolute;
+      right: 1rem;
+      top: 1rem
+    }
+
+    &--save-icon {
+      background: $clr-white;
+      border-radius: 50%;
+      box-shadow: 0px 4px 24px rgba(0, 87, 178, 0.08);
+      height: 2.5rem;
+      position: relative;
+      width: 2.5rem;
+      z-index: 2;
+
+      i {
+        left: 13px;
+        position: absolute;
+        top: 10px;
+      }
+    }
+  }
+
+  &__save {
+    box-shadow: 0px 4px 24px rgba(0, 87, 178, 0.08);
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    @include screen(desktop) {
+      display: none;
+    }
+
+    &--wrapper {
+      background: $clr-text-400;
+      border-radius: 50%;
+      height: 2.5rem;
+      opacity: 0.9;
+      position: relative;
+      width: 2.5rem;
+      z-index: 2;
+    }
+
+    &--icon {
+      left: 13px;
+      position: absolute;
+      top: 10px;
     }
   }
 
@@ -131,28 +216,28 @@
       @extend %font-20-bold;
       margin-bottom: 0.75rem;
     }
-  
+
     &--info {
       @extend %font-12;
       color: $clr-blue-200;
       margin-bottom: 0.75rem;
     }
-  
+
     &--description {
       @extend %font-14;
       margin-bottom: 0.875rem;
     }
-  
+
     &--list {
       list-style-type: none;
       margin-bottom: 0;
       margin-left: -0.5rem;
-  
+
       &-item {
         @extend %font-14;
         margin-bottom: 0.5rem;
         position: relative;
-  
+
         &::before {
           content: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.99992 5.33325C4.33325 5.33325 1.33325 8.33325 1.33325 11.9999C1.33325 15.6666 4.33325 18.6666 7.99992 18.6666C11.6666 18.6666 14.6666 15.6666 14.6666 11.9999C14.6666 8.33325 11.6666 5.33325 7.99992 5.33325ZM10.7999 10.8666L7.59992 14.0666C7.33325 14.3333 6.93325 14.3333 6.66659 14.0666L5.19992 12.5999C4.93325 12.3333 4.93325 11.9333 5.19992 11.6666C5.46659 11.3999 5.86659 11.3999 6.13325 11.6666L7.13325 12.6666L9.86659 9.93325C10.1333 9.66658 10.5333 9.66658 10.7999 9.93325C11.0666 10.1999 11.0666 10.5999 10.7999 10.8666Z' fill='%2300BFA6'/%3E%3C/svg%3E");
           position: absolute;
@@ -165,19 +250,19 @@
   &__progress {
     &-info {
       @extend %flex-between;
-  
+
       &--title,
       &--percent {
         @extend %font-12-bold;
       }
     }
-  
+
     &--wrapper {
       padding: 3px;
       border-radius: 2.5rem;
       background: $clr-blue-100;
     }
-  
+
     &--bar,
     &--complete {
       border-radius: 2.5rem;
@@ -187,7 +272,7 @@
       transition: 0.4s linear;
       transition-property: width, background-color;
     }
-  
+
     &--move {
       .nc-card__progress--bar {
         width: 85%;
@@ -242,6 +327,7 @@
 }
 
 .swiper-button-disabled {
+
   &.nc-card__button--prev,
   &.nc-card__button--next {
     background-color: lighten($clr-text-100, 10%);

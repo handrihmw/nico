@@ -365,6 +365,14 @@
         color: darken($clr-blue-200, 15%);
       }
     }
+
+    &__mentor {
+      margin-top: 4rem;
+
+      &--button {
+        width: 300px;
+      }
+    }
   }
 
   &-more {

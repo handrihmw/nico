@@ -16,7 +16,7 @@
     box-shadow: $shadow-white;
     color: $clr-text-400;
     visibility: hidden;
-    display: inline-block;
+    display: none;
     cursor: auto;
     width: 240px;
     padding: 1rem 1.5rem;
@@ -27,6 +27,10 @@
     word-wrap: break-word;
     text-align: left;
     width: auto;
+
+    @include screen(desktop) {
+      display: inline-block;
+    }
 
     > a {
       color: $clr-blue-200;

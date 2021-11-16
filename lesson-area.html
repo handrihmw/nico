@@ -201,6 +201,9 @@
           <p class="nc-lesson-detail__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sequi, beatae fuga deleniti rerum ipsam quasi, optio, enim officia esse saepe dolores libero. Illum tempore, veritatis quo eaque quas neque.</p>
           <a href="javascript:void(0)" class="nc-lesson-detail__more"></a>
         </div>
+        <div class="nc-lesson-detail__mentor">
+          <a href="#" class="nc-lesson-detail__mentor--button nc-btn--primary">Tanya Mentor</a>
+        </div>
       </div>
       <hr class="nc-lesson__divider--dash">
 
@@ -223,13 +226,14 @@
   <div class="d-flex justify-content-between">
     <a class="nc-btn--primary nc-btn--sm" href="javascript:void(0)" data-bs-toggle="modal"
     data-bs-target="#stopCourseModal"> Stop</a>
+
     <a class="nc-btn--primary nc-btn--sm" href="javascript:void(0)" data-bs-toggle="modal"
     data-bs-target="#successCourseModal"> Success</a> 
     <a class="nc-btn--primary nc-btn--sm" href="javascript:void(0)" data-bs-toggle="modal"
     data-bs-target="#reviewCourseModal"> Review</a>
+
   </div>
 </section>
-
 
 <!-- Modal Stop Course -->
 <div class="modal fade" id="stopCourseModal" tabindex="-1" aria-labelledby="modalModalLabel" aria-hidden="true">
@@ -271,8 +275,19 @@
           <h1 class="nc-modal__title">Selamat, Anda telah berhasil menyelesaikan course ini!</h1>
         </div>
         <div class="nc-modal__action">
-          <a href="javascript:void(0)" class="nc-modal__action--share nc-btn-outline--primary">
-          Bagikan <i class="nc-icon-share"></i></a>
+          <label class="toggle" for="toggle">
+            <input type="checkbox" id="toggle" />
+            <div class="nc-modal__action--share nc-btn-outline--primary">
+              Bagikan <i class="nc-icon-share"></i>
+              <i class="nc-icon-close nc-icon-orange"></i>
+              <div class="nc-modal__social">
+                <a href="#" class="nc-modal__social--icon"><i class="nc-icon-facebook"></i></a>
+                <a href="#" class="nc-modal__social--icon"><i class="nc-icon-linkedin"></i></a>
+                <a href="#" class="nc-modal__social--icon"><i class="nc-icon-instagram"></i></a>
+                <a href="#" class="nc-modal__social--icon"><i class="nc-icon-twitter"></i></a>
+              </div>
+            </div>
+          </label>
           <a href="javascript:void(0)" class="nc-btn--primary">Berikutnya</a>
         </div>
       </div>

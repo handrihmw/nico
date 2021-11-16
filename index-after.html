@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Tersimpan</title>
+  <title>Document Rahasia</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="dist/css/swipper.css">
+  <link rel="stylesheet" href="dist/css/swipper.css">
   <link rel="stylesheet" href="dist/css/app.css">
 </head>
-<header class="nc-header-none">
+<header class="nc-header-right">
   <nav class="navbar nc-navbar-top navbar-expand-lg">
     <a class="navbar-brand" aria-label="Logo Niagahoster" href="javascript:void(0);">
       <img src="/src/images/logo/nh-logo.svg" loading="lazy"
@@ -94,55 +94,33 @@
             </ul>
           </div>
         </li>
-
-        <!-- Before Login -->
-        <!-- <li class="nc-navbar-top__list d-none d-lg-block">
-          <a class="nc-btn-outline--white nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Masuk</a>
-        </li>
-        <li class="nc-navbar-top__list d-none d-lg-block">
-          <a class="nc-btn--primary nc-btn--sm nc-navbar-top__button" href="javascript:void(0)"> Daftar</a>
-        </li> -->
       </ul>
 
       <!-- Navbar Mobile -->
       <ul class="navbar-nav d-block d-lg-none mb-3">
-        <!-- Before Login -->
-        <li class="nc-navbar-top__list">
-          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-course nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Course Area</p>
-          </a>
-        </li>
-        <li class="nc-navbar-top__list">
-          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-login nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Login</p>
-          </a>
-        </li>
-        <li class="nc-navbar-top__list">
-          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-sign-up nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Daftar</p>
-          </a>
-        </li>
-
         <!-- After Login -->
         <li class="nc-navbar-top__list">
           <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-graduation nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Kelas Saya</p>
+            <i class="nc-icon-book-open nc-icon-sm"></i>
+            <p class="nc-navbar-top__list--menu">Course Area</p>
           </a>
         </li>
         <li class="nc-navbar-top__list">
           <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-setting nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Pengaturan</p>
+            <i class="nc-icon-graduation nc-icon-white nc-icon-sm"></i>
+            <p class="nc-navbar-top__list--menu">Course Saya</p>
           </a>
         </li>
         <li class="nc-navbar-top__list">
           <a class="nc-navbar-top__list--item" href="javascript:void(0)">
-            <i class="nc-icon-logout nc-icon-white nc-icon-md"></i>
-            <p class="nc-navbar-top__list--text">Logout</p>
+            <i class="nc-icon-setting nc-icon-white nc-icon-sm"></i>
+            <p class="nc-navbar-top__list--menu">Pengaturan Akun</p>
+          </a>
+        </li>
+        <li class="nc-navbar-top__list">
+          <a class="nc-navbar-top__list--item" href="javascript:void(0)">
+            <i class="nc-icon-logout nc-icon-white nc-icon-sm"></i>
+            <p class="nc-navbar-top__list--menu">Logout</p>
           </a>
         </li>
       </ul>
@@ -207,13 +185,19 @@
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mx-auto">
           <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Course Saya</a>
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Web Development</a>
           </li>
           <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Course Tersimpan</a>
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Marketing & Sales</a>
           </li>
           <li class="nc-navbar-bottom__list">
-            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Sertifikat</a>
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Bussiness</a>
+          </li>
+          <li class="nc-navbar-bottom__list">
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">Design</a>
+          </li>
+          <li class="nc-navbar-bottom__list">
+            <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">IT & Software</a>
           </li>
         </ul>
       </div>
@@ -236,22 +220,57 @@
             <li class="nav-item nc-navbar-bottom__list ">
               <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
                 <i class="nc-icon-page nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Course Saya</p>
+                <p class="nc-navbar-bottom__list--text">Web Development</p>
               </a>
             </li>
             <li class="nav-item nc-navbar-bottom__list">
               <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
                 <i class="nc-icon-horn nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Course Tersimpan</p>
+                <p class="nc-navbar-bottom__list--text">Marketing & Sales</p>
               </a>
             </li>
             <li class="nav-item nc-navbar-bottom__list">
               <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
                 <i class="nc-icon-bag nc-icon-dark nc-icon-xs"></i>
-                <p class="nc-navbar-bottom__list--text">Sertifikat</p>
+                <p class="nc-navbar-bottom__list--text">Bussiness</p>
+              </a>
+            </li>
+            <li class="nav-item nc-navbar-bottom__list">
+              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
+                <i class="nc-icon-paint nc-icon-dark nc-icon-xs"></i>
+                <p class="nc-navbar-bottom__list--text">Design</p>
+              </a>
+            </li>
+            <li class="nav-item nc-navbar-bottom__list">
+              <a class="nc-navbar-bottom__list--item" href="javascript:void(0)">
+                <i class="nc-icon-desktop nc-icon-dark nc-icon-xs"></i>
+                <p class="nc-navbar-bottom__list--text">IT & Software</p>
               </a>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nc-hero">
+    <div class="container">
+      <div class="row nc-hero__wrapper">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="nc-hero__title">Niagahoster Course</h1>
+          <p class="nc-hero__description--md">
+            Kembangkan kemampuan seputar digital marketing, online presence, cloud dan hosting bersama para ahli di
+            kursus online Niagahoster Course. Kunjungi forum komunitas belajar kami untuk dapatkan insight terbaik
+            setiap harinya.
+          </p>
+          <a href="javascript:void(0)" class="
+              nc-btn--primary
+              nc-hero__button
+            ">Gabung Sekarang</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://www.niagahoster.co.id/assets/images/2021/arunika/hosting-indonesia/hero.png"
+            class="nc-hero__image" loading="lazy" alt="Caption Here">
         </div>
       </div>
     </div>
@@ -260,53 +279,110 @@
 
 <body>
 
-  <!-- My Course -->
-  <section class="nc-section-white">
-    <div class="container">
-      <div class="nc-section-left">
-        <div class="nc-section-flex__wrapper">
-          <h2 class="nc-section-soft__title nc-section-soft__title--left">Sertifikat</h2>
-          <div class="nc-section-flex__badge">0</div>
-        </div>
-      </div>
-
-      <div class="nc-filter nc-filter--start">
-        <div class="dropdown">
-          <button class="nc-filter__button nc-btn-outline--primary nc-button--sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-            Semua Course
-          </button>
-          <ul class="nc-filter__dropdown--menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <li><a class="nc-filter__dropdown--item dropdown-item active" href="#">Semua Course</a></li>
-            <li><a class="nc-filter__dropdown--item dropdown-item" href="#">Design</a></li>
-            <li><a class="nc-filter__dropdown--item dropdown-item" href="#">Bussiness</a></li>
-            <li><a class="nc-filter__dropdown--item dropdown-item" href="#">Web Development</a></li>
-            <li><a class="nc-filter__dropdown--item dropdown-item" href="#">Marketing & Sales</a></li>
-            <li><a class="nc-filter__dropdown--item nc-filter__dropdown--item-last dropdown-item" href="#">IT & Software</a></li>
-          </ul>
-        </div>
-        <input class="nc-filter__form form-control" type="search" placeholder="Cari course..." aria-label="Search">
-        <a href="" class="nc-filter__filter nc-btn-outline--primary nc-btn--lg">Reset Filter</a>
-      </div>
-
-      <div class="nc-filter__empty">
-        <div class="nc-filter__empty--wrapper">
-          <img src="/src/images/icon/empty.webp" alt="course not found" class="nc-filter__empty--image">
-          <h3 class="nc-filter__empty--description">Anda belum memiliki/memperoleh sertifikat dari Online Course Niagahoster</h3>
-        </div>
-      </div>  
-    </div>
-  </section>
-
   <!-- Course Pilihan -->
   <section class="nc-section-white nc-section-center">
     <div class="container">
-      <div class="nc-section-left">
-        <h2 class="nc-section-soft__title">Rekomendasi Course</h2>
+      <div class="nc-section-center">
+        <div class="col-md-6">
+          <h2 class="nc-section-soft__title">Online Course Pilihan</h2>
+        </div>
       </div>
-      <div class="row swiper-container slider-recommend">
+      <div class="row swiper-container slider1">
         <div class="swiper-wrapper col-md-12">
-          <div class="col-sm-12 col-md-4 swiper-slide">
+          <div class="col-md-4 swiper-slide">
             <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
+              <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="author name" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Web Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 swiper-slide">
+            <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
+              <img src="/src/images/card/thumb-3.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Best WordPress Theme & Responsive Blogger</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">Sosial Media Specialist at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 swiper-slide">
+            <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
+              <img src="/src/images/card/thumb-2.png" loading="lazy" alt="image card" class="nc-card__image">
+              <div class="nc-card__wrapper nc-card__wrapper--top">
+                <h2 class="nc-card__title">Optimasi Keamanan WordPresss</h2>
+                <div class="nc-card__author">
+                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
+                  <div>
+                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
+                    <p class="nc-card__author--role">UX Designer at Niagahoster</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-card__wrapper nc-card__wrapper--bottom">
+                <hr class="nc-card__line">
+                <div class="nc-card__action">
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
+                  <a href="javascript:void(0);">
+                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 swiper-slide">
+            <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
               <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
               <div class="nc-card__wrapper nc-card__wrapper--top">
                 <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
@@ -321,7 +397,7 @@
               <div class="nc-card__wrapper nc-card__wrapper--bottom">
                 <hr class="nc-card__line">
                 <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
                   <a href="javascript:void(0);">
                     <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
                   </a>
@@ -329,11 +405,16 @@
               </div>
             </article>
           </div>
-          <div class="col-sm-12 col-md-4 swiper-slide">
+          <div class="col-md-4 swiper-slide">
             <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
               <img src="/src/images/card/thumb-3.png" loading="lazy" alt="image card" class="nc-card__image">
               <div class="nc-card__wrapper nc-card__wrapper--top">
-                <h2 class="nc-card__title">Best WordPress Theme & Responsive Blogger Template for Professional Blog</h2>
+                <h2 class="nc-card__title">Optimasi Keamanan WordPresss</h2>
                 <div class="nc-card__author">
                   <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
                   <div>
@@ -345,7 +426,7 @@
               <div class="nc-card__wrapper nc-card__wrapper--bottom">
                 <hr class="nc-card__line">
                 <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
                   <a href="javascript:void(0);">
                     <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
                   </a>
@@ -353,12 +434,16 @@
               </div>
             </article>
           </div>
-          <div class="col-sm-12 col-md-4 swiper-slide">
+          <div class="col-md-4 swiper-slide">
             <article class="nc-card">
+              <a href="javascript:void(0);" class="nc-card__save">
+                <div class="nc-card__save--wrapper">
+                  <i class="nc-card__save--icon nc-icon-tag nc-icon-white nc-icon-xs"></i>
+                </div>
+              </a>
               <img src="/src/images/card/thumb-2.png" loading="lazy" alt="image card" class="nc-card__image">
               <div class="nc-card__wrapper nc-card__wrapper--top">
-                <h2 class="nc-card__title">Kelas WA 20 Niagahoster: Belajar Mendapatkan Uang dari Internet agar cepat kaya
-                  raya seperti elon musk</h2>
+                <h2 class="nc-card__title">Cara Membuat Email Profesional dan Pengaplikasiannya</h2>
                 <div class="nc-card__author">
                   <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
                   <div>
@@ -370,80 +455,7 @@
               <div class="nc-card__wrapper nc-card__wrapper--bottom">
                 <hr class="nc-card__line">
                 <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
-                  <a href="javascript:void(0);">
-                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-12 col-md-4 swiper-slide">
-            <article class="nc-card">
-              <img src="/src/images/card/thumb-1.png" loading="lazy" alt="image card" class="nc-card__image">
-              <div class="nc-card__wrapper nc-card__wrapper--top">
-                <h2 class="nc-card__title">Step by step belajar UX design untuk pemula</h2>
-                <div class="nc-card__author">
-                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
-                  <div>
-                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
-                    <p class="nc-card__author--role">Web Developer</p>
-                  </div>
-                </div>
-              </div>
-              <div class="nc-card__wrapper nc-card__wrapper--bottom">
-                <hr class="nc-card__line">
-                <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
-                  <a href="javascript:void(0);">
-                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-12 col-md-4 swiper-slide">
-            <article class="nc-card">
-              <img src="/src/images/card/thumb-3.png" loading="lazy" alt="image card" class="nc-card__image">
-              <div class="nc-card__wrapper nc-card__wrapper--top">
-                <h2 class="nc-card__title">Best WordPress Theme & Responsive Blogger Template for Professional Blog</h2>
-                <div class="nc-card__author">
-                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
-                  <div>
-                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
-                    <p class="nc-card__author--role">Sosial Media Specialist at Niagahoster</p>
-                  </div>
-                </div>
-              </div>
-              <div class="nc-card__wrapper nc-card__wrapper--bottom">
-                <hr class="nc-card__line">
-                <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
-                  <a href="javascript:void(0);">
-                    <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-12 col-md-4 swiper-slide">
-            <article class="nc-card">
-              <img src="/src/images/card/thumb-2.png" loading="lazy" alt="image card" class="nc-card__image">
-              <div class="nc-card__wrapper nc-card__wrapper--top">
-                <h2 class="nc-card__title">Kelas WA 20 Niagahoster: Belajar Mendapatkan Uang dari Internet agar cepat kaya
-                  raya seperti elon musk</h2>
-                <div class="nc-card__author">
-                  <img src="/src/images/card/author.png" loading="lazy" alt="" class="nc-card__author--image">
-                  <div>
-                    <h3 class="nc-card__author--name">Handri Hermawan</h3>
-                    <p class="nc-card__author--role">UX Designer at Niagahoster</p>
-                  </div>
-                </div>
-              </div>
-              <div class="nc-card__wrapper nc-card__wrapper--bottom">
-                <hr class="nc-card__line">
-                <div class="nc-card__action">
-                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Buka Kelas</a>
+                  <a href="javascript:void(0);" class="nc-card__action--button nc-btn--sm nc-btn--primary">Ikuti Course</a>
                   <a href="javascript:void(0);">
                     <img src="/src/images/card/save.svg" loading="lazy" alt="save course" class="nc-card__action--save">
                   </a>
@@ -457,7 +469,193 @@
       </div>
     </div>
   </section>
+  
+  <!-- Course Feature -->
+  <section class="nc-section-white nc-section-center">
+    <div class="container">
+      <div class="nc-section-center">
+        <div class="col-md-6">
+          <h2 class="nc-section-soft__title">Kelas Online Terbaik</h2>
+        </div>
+      </div>
+      <div class="row nc-headline">
+        <div class="nc-headline__wrapper col-md-6">
+          <img src="/src/images/feature/thumbs.png" loading="lazy" alt="image thumbnail" class="nc-headline__image">
+        </div>
+        <div class="nc-headline__wrapper col-md-6">
+          <h2 class="nc-headline__title">100%</h2>
+          <p class="nc-headline__description">Akses gratis ke seluruh materi course yang ada pada platform Niagahoster
+            Course.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row nc-headline">
+        <div class="nc-headline__wrapper order-lg-2 order-md-1 col-md-6">
+          <img src="/src/images/feature/thumbs-2.png" loading="lazy" alt="image thumbnail" class="nc-headline__image">
+        </div>
+        <div class="nc-headline__wrapper order-lg-1 order-md-2 col-md-6">
+          <h2 class="nc-headline__title">Dukungan Forum Komunitas</h2>
+          <p class="nc-headline__description">Disamping mendapatkan materi dan praktik dari para expert Anda akan
+            mendapatkan dukungan komunitas untuk membantu progress belajar Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Course Banner -->
+  <section class="nc-section-soft">
+    <div class="container">
+      <div class="nc-section-center">
+        <div class="col-md-4">
+          <h2 class="nc-section-soft__title">Kursus Online Gratis Paling Up-to-Date</h2>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="nc-feature__card nc-feature__card--sm">
+            <h3 class="nc-feature__title nc-feature__title--sm">Fleksibilitas</h3>
+            <p class="nc-feature__description nc-feature__description--sm">Firewall Imunify360 mampu mendeteksi ancaman
+              keamanan dan melindungi website secara menyeluruh dengan teknologi AI terpadu</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="nc-feature__card nc-feature__card--sm">
+            <h3 class="nc-feature__title nc-feature__title--sm">Kurikulum Terkini</h3>
+            <p class="nc-feature__description nc-feature__description--sm">Education Team Niagahoster senantiasa
+              memastikan kurikulum yang ada serta course yang kami berikan selalu up-to-date dan mengikuti perkembangan
+              yang ada sehingga Anda akan selalu dapat meningkatkan kemampuan Anda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row nc-banner">
+        <div class="nc-banner__wrapper col-lg-6 order-1 order-lg-0">
+          <h2 class="nc-banner__title">Kesempatan Akses Mentoring Program Eksklusif</h2>
+          <p class="nc-banner__description">Dengan mengikuti Course yang ada pada Niagahoster Course dan mampu
+            menyelesaikannya, maka Anda akan mendapatkan kesempatan untuk bergabung dengan Mentoring Program Exclusive
+            yang hanya kami tawarkan pada pengguna Niagahoster Course.</p>
+          <a href="javascript:void(0);" class="nc-btn--primary nc-banner__button">Belajar di Course</a>
+        </div>
+        <div class="nc-banner__wrapper col-lg-6 order-0 order-lg-1">
+          <img src="/src/images/banner/thumbs.png" class="nc-banner__illustration" loading="lazy"
+            alt="Performa Luar Biasa">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Course Review -->
+  <section class="nc-section-white">
+    <div class="container">
+      <div class="nc-slider-testimony">
+        <div class="nc-slider__wrapper">
+          <img src="/src/images/icon/quote.svg" class="nc-slider__quote" loading="lazy" alt="Caption Here">
+        </div>
+        <div class="nc-slider__wrapper">
+          <h2 class="nc-slider__title">Review Niagahoster Course</h2>
+          <p class="nc-slider__description">Ribuan pelanggan telah menggunakan layanan Niagahoster. Kini giliran Anda
+            membuktikannya!</p>
+        </div>
+        <div class="nc-slider__action">
+          <i class="swiper-button-prev nc-icon-prev nc-icon-md"></i>
+          <i class="swiper-button-next nc-icon-next nc-icon-md"></i>
+        </div>
+      </div>
 
+      <div class="nc-transparent">
+        <div class="row swiper-container slider2">
+          <div class="swiper-wrapper col-md-12">
+            <div class="col-md-6 col-sm-12 swiper-slide">
+              <div class="nc-feature__card nc-feature__card--md">
+                <p class="nc-feature__title nc-feature__title--md">
+                  Recommended Hosting!
+                </p>
+                <p class="nc-feature__description nc-feature__description--md">
+                  The best hosting I’ve ever met! Serius loh, selain harganya terjangkau, kualitas server serta pelayanannya
+                  terbaik dibanding provider lainnya yang pernah saya coba. RECOMMENDED!!!
+                </p>
+                <div class="nc-feature__account">
+                  <img src="/src/images/icon/circle.png" class="nc-feature__account--image" loading="lazy" alt="Icon">
+                  <div class="nc-feature__account-wrapper">
+                    <p class="nc-feature__account--username">Rent Villa di Lembang</p>
+                    <p class="nc-feature__account--website">https://www.niagahoster.co.id/</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 swiper-slide">
+              <div class="nc-feature__card nc-feature__card--md">
+                <p class="nc-feature__title nc-feature__title--md">
+                  Good Job, Niagahoster!
+                </p>
+                <p class="nc-feature__description nc-feature__description--md">
+                  Sangat susah mencari penyedia layanan web hosting yang memiliki spek berkualitas, unlimited, respon cepat,
+                  dan customer support 24 jam. Terlebih NH berani memberikan garansi serta harga yang ditawarkan bisa
+                  dibilang termurah di kelasnya. Good job, Niagahoster!
+                </p>
+                <div class="nc-feature__account">
+                  <img src="/src/images/icon/circle.png" class="nc-feature__account--image" loading="lazy" alt="Icon">
+                  <div class="nc-feature__account-wrapper">
+                    <p class="nc-feature__account--username">Digital Optimizer Indonesia</p>
+                    <p class="nc-feature__account--website">https://www.niagahoster.co.id</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 swiper-slide">
+              <div class="nc-feature__card nc-feature__card--md">
+                <p class="nc-feature__title nc-feature__title--md">
+                  Recommended Hosting!
+                </p>
+                <p class="nc-feature__description nc-feature__description--md">
+                  The best hosting I’ve ever met! Serius loh, selain harganya terjangkau, kualitas server serta pelayanannya
+                  terbaik dibanding provider lainnya yang pernah saya coba. RECOMMENDED!!!
+                </p>
+                <div class="nc-feature__account">
+                  <img src="/src/images/icon/circle.png" class="nc-feature__account--image" loading="lazy" alt="Icon">
+                  <div class="nc-feature__account-wrapper">
+                    <p class="nc-feature__account--username">Rent Villa di Lembang</p>
+                    <p class="nc-feature__account--website">https://www.niagahoster.co.id/</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 swiper-slide">
+              <div class="nc-feature__card nc-feature__card--md">
+                <p class="nc-feature__title nc-feature__title--md">
+                  Good Job, Niagahoster!
+                </p>
+                <p class="nc-feature__description nc-feature__description--md">
+                  Sangat susah mencari penyedia layanan web hosting yang memiliki spek berkualitas, unlimited, respon cepat,
+                  dan customer support 24 jam. Terlebih NH berani memberikan garansi serta harga yang ditawarkan bisa
+                  dibilang termurah di kelasnya. Good job, Niagahoster!
+                </p>
+                <div class="nc-feature__account">
+                  <img src="/src/images/icon/circle.png" class="nc-feature__account--image" loading="lazy" alt="Icon">
+                  <div class="nc-feature__account-wrapper">
+                    <p class="nc-feature__account--username">Digital Optimizer Indonesia</p>
+                    <p class="nc-feature__account--website">https://www.niagahoster.co.id</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Course Join -->
+  <section class="nc-section-accent">
+    <div class="nc-section-accent__wrapper">
+      <h2 class="nc-section-accent__title">Mulai Course Anda Dari Sekarang!</h2>
+      <p class="nc-section-accent__description">Bergabung sekarang dan dapatkan update mengenai course-course terbaru dari
+        Niagahoster Course dan juga kesempatan bergabung dalam mentoring program eksklusif serta komunitas belajar.</p>
+      <a href="javascript:void(0);" class="nc-section-accent__button nc-btn--primary">Ikuti Course</a>
+    </div>
+  </section>
 </body>
 
 <footer class="nc-footer">
@@ -620,13 +818,54 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <hr class="nc-footer__line" />
+    <div class="row clearfix">
+      <div class="column col-lg-7 col-md-12">
+        <p class="nc-footer__copyright">
+          Copyright ©2021 Niagahoster | Hosting powered by PHP8, CloudLinux, CloudFlare, BitNinja and DC DCI-Indonesia |
+          Cloud VPS Murah powered by Webuzo Softaculous, Intel SSD and cloud computing technology
+        </p>
+      </div>
+      <div class="column col-lg-5 col-md-12">
+        <ul class="nc-footer__privacy">
+          <li class="nc-footer__privacy--list"><a href="https://www.niagahoster.co.id/syarat-dan-ketentuan"
+              class="nc-footer__privacy--link">Syarat dan Ketentuan</a></li>
+          <li class="nc-footer__privacy--list"><a href="https://www.niagahoster.co.id/kebijakan-privasi"
+              class="nc-footer__privacy--link">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="dist/js/app.js"></script>
 <script src="dist/js/vendor.js"></script>
 <script src="src/js/swipper.js"></script>
 <script>
-  var Recommend = new Swiper('.slider-recommend', {
+  $(function (e) {
+    var $open = $('.js-searchOpen');
+    var $close = $('.js-searchClose');
+    var $body = $('body');
+    var $lay = $('.search-overlay');
+    var $input = $('.search-form > .search');
+
+    $open.on('click', function (e) {
+      e.preventDefault();
+      $body.addClass('-hide');
+      $lay.addClass('-show');
+      $input.focus();
+    });
+
+    $close.on('click', function (e) {
+      e.preventDefault();
+      $body.removeClass('-hide');
+      $lay.removeClass('-show');
+    });
+  });
+</script>
+<script>
+  var swiper = new Swiper('.slider1', {
     slidesPerView: "auto",
     lazyLoading: true,
     navigation: {
@@ -639,6 +878,9 @@
       clickable: true
     },
     breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
       300: {
         slidesPerView: 1.25
       },
@@ -654,60 +896,28 @@
     }
   });
 </script>
+
 <script>
-  var swiperNew = new Swiper('.slider-new', {
+    var newSwiper = new Swiper('.slider2', {
     slidesPerView: "auto",
     lazyLoading: true,
+    spaceBetween: 30,
     navigation: {
-      nextEl: '.nc-card__button--next',
-      prevEl: '.nc-card__button--prev'
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+      nextEl: '.nc-icon-next',
+      prevEl: '.nc-icon-prev'
     },
     breakpoints: {
       300: {
-        slidesPerView: 1.25
+        slidesPerView: 1
       },
       600: {
-        slidesPerView: 2.5
+        slidesPerView: 1.5
       },
       900: {
-        slidesPerView: 4
+        slidesPerView: 2
       },
       1200: {
-        slidesPerView: 4
-      }
-    }
-  });
-</script>
-<script>
-  var swiperAll = new Swiper('.slider-all', {
-    slidesPerView: "auto",
-    lazyLoading: true,
-    navigation: {
-      nextEl: '.nc-card__button--next',
-      prevEl: '.nc-card__button--prev'
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      300: {
-        slidesPerView: 1.25
-      },
-      600: {
-        slidesPerView: 2.5
-      },
-      900: {
-        slidesPerView: 4
-      },
-      1200: {
-        slidesPerView: 4
+        slidesPerView: 2
       }
     }
   });
